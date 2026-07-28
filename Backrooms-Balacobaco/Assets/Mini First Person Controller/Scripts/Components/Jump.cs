@@ -19,7 +19,7 @@ public class Jump : MonoBehaviour
 
     void Awake()
     {
-        jumpAction = InputSystem.actions.FindAction("Move");
+        jumpAction = InputSystem.actions.FindAction("Jump");
         // Get rigidbody.
         rigidbody = GetComponent<Rigidbody>();
     }
