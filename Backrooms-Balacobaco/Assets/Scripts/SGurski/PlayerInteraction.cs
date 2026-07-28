@@ -152,6 +152,8 @@ public class PlayerInteraction : MonoBehaviour
         canFinish = true;
     }
 
+    
+
     void RotateObject()
     {
         Vector2 rotation = lookAction.ReadValue<Vector2>();
