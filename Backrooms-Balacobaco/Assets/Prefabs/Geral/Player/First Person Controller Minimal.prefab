@@ -267,7 +267,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5240771479555520432}
-  - component: {fileID: 5240771479555520433}
+  - component: {fileID: 4044707178271162848}
   m_Layer: 0
   m_Name: First Person Audio
   m_TagString: Untagged
@@ -290,9 +290,10 @@ Transform:
   m_Children:
   - {fileID: 5348414136412221763}
   - {fileID: 1919019609379411264}
+  - {fileID: 7352813080876245482}
   m_Father: {fileID: 5238820401998598406}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5240771479555520433
+--- !u!114 &4044707178271162848
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -301,19 +302,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 5240771479555520439}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f45facc01772ba47a9ae17bb7061b71, type: 3}
+  m_Script: {fileID: 11500000, guid: 0083b5fac41d73b43877e190a322659b, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
-  character: {fileID: 5269945355364510514}
-  groundCheck: {fileID: 5272657471857185710}
+  m_EditorClassIdentifier: Assembly-CSharp::FirstPersonAudio
+  character: {fileID: 2726557219122891078}
+  groundCheck: {fileID: 6207569049622709842}
   stepAudio: {fileID: 7492485762413666113}
-  runningAudio: {fileID: 0}
+  runningAudio: {fileID: 2739926409251472066}
   velocityThreshold: 0.01
   landingAudio: {fileID: 344904778207081987}
-  landingSFX:
-  - {fileID: 8300000, guid: 9fcb6dc763cd0354da305b5de2091287, type: 3}
-  - {fileID: 8300000, guid: ab9637a2491abbf4ca9c9601321cbb88, type: 3}
-  - {fileID: 8300000, guid: 50b288ce0d5ac1e439827c5365c74c31, type: 3}
+  landingSFX: []
   jump: {fileID: 0}
   jumpAudio: {fileID: 0}
   jumpSFX: []
@@ -334,8 +332,9 @@ GameObject:
   - component: {fileID: 5238820401998598406}
   - component: {fileID: 5286307983767585980}
   - component: {fileID: 5222740939418225544}
-  - component: {fileID: 5269945355364510514}
+  - component: {fileID: 2726557219122891078}
   - component: {fileID: 2343381427822934097}
+  - component: {fileID: -1116358540801230556}
   m_Layer: 0
   m_Name: First Person Controller Minimal
   m_TagString: Untagged
@@ -413,7 +412,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 1
---- !u!114 &5269945355364510514
+--- !u!114 &2726557219122891078
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -422,13 +421,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 5241267463746980526}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97fca36bd81de7c4cafce7bbf02ca611, type: 3}
+  m_Script: {fileID: 11500000, guid: e8fa8fa8ee8a7364b8f307c503944e39, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: Assembly-CSharp::FirstPersonMovement
   speed: 5
   canRun: 0
   runSpeed: 9
-  inputActions: {fileID: 0}
+  inputActions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
 --- !u!114 &2343381427822934097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -450,7 +449,7 @@ MonoBehaviour:
   OnView:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5269945355364510514}
+      - m_Target: {fileID: 2726557219122891078}
         m_TargetAssemblyTypeName: FirstPersonMovement, Assembly-CSharp
         m_MethodName: Stop
         m_Mode: 6
@@ -462,7 +461,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 5273061343101857912}
+      - m_Target: {fileID: 3704872978644299485}
         m_TargetAssemblyTypeName: FirstPersonLook, Assembly-CSharp
         m_MethodName: Freeze
         m_Mode: 6
@@ -477,7 +476,7 @@ MonoBehaviour:
   OnFinishView:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5269945355364510514}
+      - m_Target: {fileID: 2726557219122891078}
         m_TargetAssemblyTypeName: FirstPersonMovement, Assembly-CSharp
         m_MethodName: Stop
         m_Mode: 6
@@ -489,7 +488,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 5273061343101857912}
+      - m_Target: {fileID: 3704872978644299485}
         m_TargetAssemblyTypeName: FirstPersonLook, Assembly-CSharp
         m_MethodName: Freeze
         m_Mode: 6
@@ -501,8 +500,22 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  camMovement: {fileID: 5273061343101857912}
+  camMovement: {fileID: 3704872978644299485}
   passwordCode: {fileID: 0}
+--- !u!114 &-1116358540801230556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5241267463746980526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74797f6b022bc4b4fa83bd7e8375a68a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Jump
+  jumpStrength: 2.8
+  groundCheck: {fileID: 6207569049622709842}
 --- !u!1 &5241892580736583940
 GameObject:
   m_ObjectHideFlags: 0
@@ -605,8 +618,8 @@ GameObject:
   - component: {fileID: 5256384803381100468}
   - component: {fileID: 5262169347900679442}
   - component: {fileID: 5304019296978978324}
-  - component: {fileID: 5273061343101857912}
   - component: {fileID: 5876109774438887248}
+  - component: {fileID: 3704872978644299485}
   m_Layer: 0
   m_Name: First Person Camera
   m_TagString: MainCamera
@@ -696,22 +709,6 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5242010300582068122}
   m_Enabled: 1
---- !u!114 &5273061343101857912
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5242010300582068122}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec72980442fddac4d86e75ab24b4d027, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  character: {fileID: 5238820401998598406}
-  baseSensivity: 0.2
-  smoothing: 1.5
-  inputActions: {fileID: 0}
 --- !u!114 &5876109774438887248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -756,6 +753,22 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!114 &3704872978644299485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5242010300582068122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7817ba3b76eb30e42bfad0ca3eb020cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FirstPersonLook
+  character: {fileID: 5238820401998598406}
+  baseSensivity: 2
+  smoothing: 1.5
+  inputActions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
 --- !u!1 &5242082517093631028
 GameObject:
   m_ObjectHideFlags: 0
@@ -765,7 +778,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5235998417850327242}
-  - component: {fileID: 5272657471857185710}
+  - component: {fileID: 6207569049622709842}
   m_Layer: 0
   m_Name: Ground Check
   m_TagString: Untagged
@@ -788,7 +801,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 5238820401998598406}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5272657471857185710
+--- !u!114 &6207569049622709842
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -797,11 +810,140 @@ MonoBehaviour:
   m_GameObject: {fileID: 5242082517093631028}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 084c01ab381b9da4082c1f84cf70751b, type: 3}
+  m_Script: {fileID: 11500000, guid: 62fb3147399bd9a4e8227fd629a6bf05, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: Assembly-CSharp::GroundCheck
   distanceThreshold: 0.15
   isGrounded: 1
+--- !u!1 &5635186881921769758
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7352813080876245482}
+  - component: {fileID: 2739926409251472066}
+  m_Layer: 0
+  m_Name: Running Audio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7352813080876245482
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5635186881921769758}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5240771479555520432}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &2739926409251472066
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5635186881921769758}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &8991929060214075566
 GameObject:
   m_ObjectHideFlags: 0
