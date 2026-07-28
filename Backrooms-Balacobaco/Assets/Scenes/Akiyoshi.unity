@@ -580,6 +580,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chest
       objectReference: {fileID: 0}
+    - target: {fileID: 136754, guid: 97a5370926a5afe459de07335829d2d3, type: 3}
+      propertyPath: m_TagString
+      value: BauMadeira
+      objectReference: {fileID: 0}
     - target: {fileID: 431626, guid: 97a5370926a5afe459de07335829d2d3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.738
@@ -1734,7 +1738,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1748,14 +1752,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1023612539937890, guid: 5c8ca0e010b536742b9bfabc2b939bd0, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1170465915587908, guid: 5c8ca0e010b536742b9bfabc2b939bd0, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1954392265443040, guid: 5c8ca0e010b536742b9bfabc2b939bd0, type: 3}
       propertyPath: m_Name
       value: TreasureChest_2
@@ -1800,22 +1796,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 23228123202805532, guid: 5c8ca0e010b536742b9bfabc2b939bd0, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
+    - target: {fileID: 4698890724216566862, guid: 5c8ca0e010b536742b9bfabc2b939bd0, type: 3}
+      propertyPath: item
       value: 
-      objectReference: {fileID: 2100000, guid: 9d2126d0d8d484781bf9fe54b03fe18b, type: 2}
-    - target: {fileID: 23244375160109540, guid: 5c8ca0e010b536742b9bfabc2b939bd0, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 9d2126d0d8d484781bf9fe54b03fe18b, type: 2}
-    - target: {fileID: 23458773846771030, guid: 5c8ca0e010b536742b9bfabc2b939bd0, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 9d2126d0d8d484781bf9fe54b03fe18b, type: 2}
-    - target: {fileID: 23520860778758442, guid: 5c8ca0e010b536742b9bfabc2b939bd0, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 9d2126d0d8d484781bf9fe54b03fe18b, type: 2}
+      objectReference: {fileID: 11400000, guid: da9587e7b7a0be74e879b90a997d23bc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
