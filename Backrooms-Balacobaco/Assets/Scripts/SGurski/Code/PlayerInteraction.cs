@@ -160,4 +160,9 @@ public class PlayerInteraction : MonoBehaviour
         currentObject.transform.Rotate(cam.transform.up, -Mathf.Deg2Rad*rotation.x*rotateSpeed, Space.World);
         currentObject.transform.Rotate(cam.transform.right, -Mathf.Deg2Rad*rotation.y*rotateSpeed, Space.World);
     }
+
+    void PushingObject()
+    {
+        
+    }
 }

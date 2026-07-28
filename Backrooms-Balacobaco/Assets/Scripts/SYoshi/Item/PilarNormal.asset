@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a3dbfe5067961b48bf3cb43a8eb7e72, type: 3}
-  m_Name: Caixa
+  m_Name: PilarNormal
   m_EditorClassIdentifier: Assembly-CSharp::Item
   canGrab: 0
   audio: {fileID: 0}
-  texto: 
+  texto: "Muito b\xE1sico, n\xE3o serve"

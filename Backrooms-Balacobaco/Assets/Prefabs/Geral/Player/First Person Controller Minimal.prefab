@@ -766,7 +766,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FirstPersonLook
   character: {fileID: 5238820401998598406}
-  baseSensivity: 2
+  baseSensivity: 0.2
   smoothing: 1.5
   inputActions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
 --- !u!1 &5242082517093631028
