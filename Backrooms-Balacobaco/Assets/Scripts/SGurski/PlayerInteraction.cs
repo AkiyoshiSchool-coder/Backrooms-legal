@@ -86,6 +86,10 @@ public class PlayerInteraction : MonoBehaviour
             
                         StartCoroutine(MovingObject(currentObject, ObjectViewer.position));
                     }
+                    else
+                    {
+                        
+                    }
                 }
             }
         }
