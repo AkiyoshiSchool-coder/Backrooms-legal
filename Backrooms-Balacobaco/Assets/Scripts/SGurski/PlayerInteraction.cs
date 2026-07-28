@@ -9,7 +9,6 @@ public class PlayerInteraction : MonoBehaviour
     [SerializeField] private float rayRange = 2.5f;
     [SerializeField] private float interactSpeed = 5f;
     [SerializeField] private float rotateSpeed = 200f;
-    [SerializeField] private Vector3 viewOffset;
     [SerializeField] private Vector3 defaultCameraOffset;
 
     public InputActionAsset inputActions;
@@ -91,7 +90,10 @@ public class PlayerInteraction : MonoBehaviour
                     }
                     else
                     {
-                        StartCoroutine(LookAtObject(currentObject.transform.position));
+                        Vector3 viewOffset = currentObject.item.offset;
+                        originRotation = cam.transform.rotation;
+
+                        StartCoroutine(LookAtObject(currentObject.transform.position + viewOffset, false));
                     }
                 }
             }
@@ -120,7 +122,8 @@ public class PlayerInteraction : MonoBehaviour
         }
         else
         {
-            StartCoroutine(LookAtObject(gameObject.transform.position + defaultCameraOffset));
+            cam.transform.rotation = originRotation;
+            StartCoroutine(LookAtObject(gameObject.transform.position + defaultCameraOffset, true));
         }
         OnFinishView.Invoke();
     }
@@ -150,19 +153,21 @@ public class PlayerInteraction : MonoBehaviour
         canFinish = true;
     }
 
-    IEnumerator LookAtObject(Vector3 pos)
+    IEnumerator LookAtObject(Vector3 pos, bool cameraSwitch)
     {
+        camMovement.enabled = cameraSwitch;
         cameraMoving = true;
         float timer = 0;
         canFinish = false;
         while(timer<1)
         {
-            cam.transform.position = Vector3.Lerp(cam.transform.position, pos+viewOffset, Time.deltaTime*interactSpeed);
+            cam.transform.position = Vector3.Lerp(cam.transform.position, pos, Time.deltaTime*interactSpeed);
             timer+=Time.deltaTime;
             yield return null;
         }
 
-        cam.transform.position = pos+viewOffset;
+        cam.transform.position = pos;
+        cam.transform.LookAt(pos + new Vector3(-1, 0, 0));
         cameraMoving = false;
         if(interacting == true)
         {
