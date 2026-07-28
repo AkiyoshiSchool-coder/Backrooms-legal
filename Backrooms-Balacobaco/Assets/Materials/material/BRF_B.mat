@@ -62,6 +62,10 @@ Material:
     - _AlphaClip: 1
     - _AlphaToMask: 1
     - _BaseShade_Feather: 0.157
+    - _BumpScale: 1
+    - _Is_Filter_HiCutPointLightColor: 1
+    - _Is_Filter_LightColor: 1
+    - _RimLight: 0
     - _ShadeColor_Step: 0
     - _StencilComp: 0
     - _Tweak_SystemShadowsLevel: -0.072

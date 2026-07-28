@@ -23,7 +23,7 @@ Material:
   m_Name: BRC_a
   m_Shader: {fileID: 4800000, guid: be891319084e9d147b09d89e80ce60e0, type: 3}
   m_Parent: {fileID: 2100000, guid: cb0464f8701509943bae772ab57e7831, type: 2}
-  m_ModifiedSerializedProperties: 2
+  m_ModifiedSerializedProperties: 18
   m_ValidKeywords:
   - _ALPHATEST_ON
   - _EMISSIVE_SIMPLE
@@ -81,8 +81,10 @@ Material:
     - _2nd_ShadeColor_Step: 0
     - _AlphaClip: 1
     - _AlphaToMask: 1
+    - _AutoRenderQueue: 1
     - _BaseShade_Feather: 0.0001
     - _BumpScale: 1
+    - _CullMode: 2
     - _EMISSIVE: 0
     - _HighColor_Power: 0
     - _Is_NormalMapToBase: 0
