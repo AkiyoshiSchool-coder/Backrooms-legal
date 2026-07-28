@@ -445,6 +445,8 @@ MonoBehaviour:
   rayRange: 2
   interactSpeed: 5
   rotateSpeed: 200
+  viewOffset: {x: 2, y: 0, z: 0}
+  defaultCameraOffset: {x: 0, y: 1.5, z: 0}
   inputActions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   ObjectViewer: {fileID: 8627616412587608354}
   OnView:
