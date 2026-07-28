@@ -1,37 +1,60 @@
 using UnityEngine;
+using System.Collections;
 using TMPro;
 
 public class PasswordCode : MonoBehaviour
 {
     [SerializeField] private string password;
     private TextMeshPro passText;
+    private bool canType = true;
     void Start()
     {
         passText = gameObject.GetComponent<TextMeshPro>();
     }
 
+    void Update()
+    {
+        Debug.Log(canType);
+    }
+
     public void InsertCharacter(string number)
     {
-        if(passText.text.Length < 4)
+        if(canType)
         {
-            passText.text += number;
-        }
-        else if(passText.text.Length >= 4)
-        {
-            EnterText();
+            if(passText.text.Length < 4)
+            {
+                passText.text += number;
+            }
+            if(passText.text.Length >= 4)
+            {
+                StartCoroutine(PasswordEnter());
+            }
         }
     }
 
-    public void EnterText()
+    IEnumerator PasswordEnter()
     {
+        canType = false;
         if(passText.text == password)
         {
-            Debug.Log("moranget abacatudo 67 42");
+            passText.color = Color.green;
+            yield return new WaitForSeconds(0.8f);
+            passText.text = "";
+            yield return new WaitForSeconds(0.3f);
+            passText.text = "CORRETO";
+            yield break;
         }
         else
         {
-            Debug.Log("errou");
+            passText.color = Color.red;
+            yield return new WaitForSeconds(0.8f);
+            passText.text = "";
+            yield return new WaitForSeconds(0.3f);
+            passText.text = "ERRADO";
+            yield return new WaitForSeconds(0.8f);
+            passText.text = "";
+            passText.color = Color.white;
         }
-        passText.text = "";
+        canType = true;
     }
 }

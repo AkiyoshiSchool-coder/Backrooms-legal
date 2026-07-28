@@ -66,7 +66,7 @@ public class PlayerInteraction : MonoBehaviour
             if(obj != null)
             {
                 UIManager.instance.changeColor(Color.yellow);
-                if(interactAction.IsPressed())
+                if(interactAction.WasPressedThisFrame())
                 {
                     if(obj.isMoving)
                     {
@@ -89,7 +89,7 @@ public class PlayerInteraction : MonoBehaviour
                     {
                         if(currentObject.item.name == "Botao")
                         {
-                            passwordCode.InsertCharacter(currentObject.item.texto);
+                            passwordCode.InsertCharacter(currentObject.name);
                         }
                     }
                 }
@@ -104,7 +104,10 @@ public class PlayerInteraction : MonoBehaviour
     void CanFinish()
     {
         canFinish = true;
-        UIManager.instance.InteractText(true);
+        if(currentObject.item.canGrab)
+        {
+            UIManager.instance.InteractText(true);
+        }
     }
 
     void FinishView()
@@ -138,7 +141,7 @@ public class PlayerInteraction : MonoBehaviour
 
         heldItem.transform.position = pos;
         heldItem.isMoving = false;
-        if(interacting == true)
+        if(interacting == true && currentObject.item.canGrab)
         {
             UIManager.instance.InteractText(true);
         }
