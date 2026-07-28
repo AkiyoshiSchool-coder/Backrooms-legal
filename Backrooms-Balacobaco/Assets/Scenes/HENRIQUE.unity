@@ -630,6 +630,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2244217876451162829, guid: 57c9acc510ae1fb4bb6a617279d6e71b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 652806688}
+    - targetCorrespondingSourceObject: {fileID: 2244217876451162829, guid: 57c9acc510ae1fb4bb6a617279d6e71b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 652806691}
   m_SourcePrefab: {fileID: 100100000, guid: 57c9acc510ae1fb4bb6a617279d6e71b, type: 3}
 --- !u!4 &292352204 stripped
 Transform:
@@ -989,6 +992,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.50228536, y: 0.38345516, z: 0.30980024}
   m_Center: {x: -0.000031352043, y: -0.0000012367964, z: 0.00000003725289}
+--- !u!114 &652806691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 652806685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f02eb07542d40a40bc1a444541a8fef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Interactables
+  item: {fileID: 11400000, guid: 97b666a06d21c094eaacc1d6f8e2ff86, type: 2}
+  isMoving: 0
 --- !u!4 &674137014 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3417198704780361152, guid: 57c9acc510ae1fb4bb6a617279d6e71b, type: 3}
