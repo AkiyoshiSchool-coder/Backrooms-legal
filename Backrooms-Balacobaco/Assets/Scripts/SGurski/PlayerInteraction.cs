@@ -9,6 +9,8 @@ public class PlayerInteraction : MonoBehaviour
     [SerializeField] private float rayRange = 2.5f;
     [SerializeField] private float interactSpeed = 5f;
     [SerializeField] private float rotateSpeed = 200f;
+    [SerializeField] private Vector3 viewOffset;
+    [SerializeField] private Vector3 defaultCameraOffset;
 
     public InputActionAsset inputActions;
     private InputAction interactAction;
@@ -24,6 +26,7 @@ public class PlayerInteraction : MonoBehaviour
     private Quaternion originRotation;
     private bool interacting;
     private bool canFinish;
+    private bool cameraMoving = false;
 
     public FirstPersonLook camMovement;
 
@@ -67,7 +70,7 @@ public class PlayerInteraction : MonoBehaviour
                 UIManager.instance.changeColor(Color.yellow);
                 if(interactAction.IsPressed())
                 {
-                    if(obj.isMoving)
+                    if(obj.isMoving || cameraMoving)
                     {
                         return;
                     }
@@ -88,7 +91,7 @@ public class PlayerInteraction : MonoBehaviour
                     }
                     else
                     {
-                        
+                        StartCoroutine(LookAtObject(currentObject.transform.position));
                     }
                 }
             }
@@ -115,6 +118,10 @@ public class PlayerInteraction : MonoBehaviour
             currentObject.transform.rotation = originRotation;
             StartCoroutine(MovingObject(currentObject, originPosition));
         }
+        else
+        {
+            StartCoroutine(LookAtObject(gameObject.transform.position + defaultCameraOffset));
+        }
         OnFinishView.Invoke();
     }
 
@@ -132,6 +139,31 @@ public class PlayerInteraction : MonoBehaviour
 
         heldItem.transform.position = pos;
         heldItem.isMoving = false;
+        if(interacting == true)
+        {
+            UIManager.instance.InteractText(true);
+        }
+        else
+        {
+            UIManager.instance.InteractText(false);
+        }
+        canFinish = true;
+    }
+
+    IEnumerator LookAtObject(Vector3 pos)
+    {
+        cameraMoving = true;
+        float timer = 0;
+        canFinish = false;
+        while(timer<1)
+        {
+            cam.transform.position = Vector3.Lerp(cam.transform.position, pos+viewOffset, Time.deltaTime*interactSpeed);
+            timer+=Time.deltaTime;
+            yield return null;
+        }
+
+        cam.transform.position = pos+viewOffset;
+        cameraMoving = false;
         if(interacting == true)
         {
             UIManager.instance.InteractText(true);
