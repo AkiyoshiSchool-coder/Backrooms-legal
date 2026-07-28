@@ -411,7 +411,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 80
+  m_Constraints: 112
   m_CollisionDetection: 1
 --- !u!114 &5269945355364510514
 MonoBehaviour:
@@ -444,9 +444,7 @@ MonoBehaviour:
   cam: {fileID: 5256384803381100468}
   rayRange: 2
   interactSpeed: 5
-  rotateSpeed: 200
-  viewOffset: {x: 2, y: 0, z: 0}
-  defaultCameraOffset: {x: 0, y: 1.5, z: 0}
+  rotateSpeed: 50
   inputActions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   ObjectViewer: {fileID: 8627616412587608354}
   OnView:
@@ -504,6 +502,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   camMovement: {fileID: 5273061343101857912}
+  passwordCode: {fileID: 0}
 --- !u!1 &5241892580736583940
 GameObject:
   m_ObjectHideFlags: 0
