@@ -26,6 +26,7 @@ public class PlayerInteraction : MonoBehaviour
     private bool canFinish;
 
     public FirstPersonLook camMovement;
+    public PasswordCode passwordCode;
 
 
     void Start()
@@ -72,8 +73,6 @@ public class PlayerInteraction : MonoBehaviour
                         return;
                     }
 
-                    OnView.Invoke();
-
                     currentObject = obj;
                     interacting = true;
 
@@ -83,8 +82,15 @@ public class PlayerInteraction : MonoBehaviour
                     {
                         originPosition = currentObject.transform.position;
                         originRotation = currentObject.transform.rotation;
-            
+                        OnView.Invoke();
                         StartCoroutine(MovingObject(currentObject, ObjectViewer.position));
+                    }
+                    else
+                    {
+                        if(currentObject.item.name == "Botao")
+                        {
+                            passwordCode.InsertCharacter(currentObject.item.texto);
+                        }
                     }
                 }
             }
