@@ -14,8 +14,8 @@ public class BottleSpin : MonoBehaviour
     {
         if(spin)
         {
-            // transform.Rotate(0, 720*Time.deltaTime, 0, Space.Self);
-            transform.Translate(0, 0.1f*Time.deltaTime, 0);
+            transform.Rotate(0, 720*Time.deltaTime, 0, Space.Self);
+            transform.Translate(0, 0, 0.1f*Time.deltaTime);
         }
     }
 
