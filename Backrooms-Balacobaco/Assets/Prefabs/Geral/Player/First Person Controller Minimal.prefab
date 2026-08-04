@@ -849,7 +849,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62fb3147399bd9a4e8227fd629a6bf05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GroundCheck
-  distanceThreshold: 0.15
+  distanceThreshold: 0.5
   isGrounded: 1
 --- !u!1 &5635186881921769758
 GameObject:
