@@ -1,31 +1,23 @@
 using UnityEngine;
 using System.Collections;
-using TMPro;
 
 public class PasswordCode : MonoBehaviour
 {
     [SerializeField] private string password;
-    private TextMeshPro passText;
+    [SerializeField] private string passInput;
+    public SafeDoorAnimation safeDoor;
     private bool canType = true;
-    void Start()
-    {
-        passText = gameObject.GetComponent<TextMeshPro>();
-    }
-
-    void Update()
-    {
-        Debug.Log(canType);
-    }
 
     public void InsertCharacter(string number)
     {
         if(canType)
         {
-            if(passText.text.Length < 4)
+            if(passInput.Length < 4)
             {
-                passText.text += number;
+                passInput += number;
+                Debug.Log(passInput);
             }
-            if(passText.text.Length >= 4)
+            if(passInput.Length >= 4)
             {
                 StartCoroutine(PasswordEnter());
             }
@@ -35,25 +27,16 @@ public class PasswordCode : MonoBehaviour
     IEnumerator PasswordEnter()
     {
         canType = false;
-        if(passText.text == password)
+        if(passInput == password)
         {
-            passText.color = Color.green;
-            yield return new WaitForSeconds(0.8f);
-            passText.text = "";
-            yield return new WaitForSeconds(0.3f);
-            passText.text = "CORRETO";
+            Debug.Log("SENHA CORRETA");
+            safeDoor.PlayAnim();
             yield break;
         }
         else
         {
-            passText.color = Color.red;
-            yield return new WaitForSeconds(0.8f);
-            passText.text = "";
-            yield return new WaitForSeconds(0.3f);
-            passText.text = "ERRADO";
-            yield return new WaitForSeconds(0.8f);
-            passText.text = "";
-            passText.color = Color.white;
+            Debug.Log("SENHA INCORRETA");
+            passInput = "";
         }
         canType = true;
     }
