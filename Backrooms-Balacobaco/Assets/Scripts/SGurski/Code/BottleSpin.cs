@@ -1,16 +1,31 @@
 using UnityEngine;
+using System.Collections;
 
 public class BottleSpin : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    Coroutine corrotina;
+    private float timer = 0f;
+
+    public void OpenBottle()
     {
-        
+        if(corrotina==null)
+        {
+            corrotina = StartCoroutine(BottleAnimation());
+        }
     }
 
-    void Update()
+    IEnumerator BottleAnimation()
     {
-        transform.Rotate(0, 360*Time.deltaTime, 0, Space.World);
-        transform.Translate(0, 0.2f*Time.deltaTime, 0);
+        timer+=Time.deltaTime;
+        if(timer<=1)
+        {
+            transform.Rotate(0, 720*Time.deltaTime, 0, Space.World);
+            transform.Translate(0, 0.1f*Time.deltaTime, 0);
+            yield return null; 
+        } 
+        else
+        {
+            yield break;
+        }
     }
 }
