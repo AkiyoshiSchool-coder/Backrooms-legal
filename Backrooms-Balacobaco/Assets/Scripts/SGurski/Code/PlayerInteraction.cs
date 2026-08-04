@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.InputSystem;
 using UnityEngine.Events;
+using UnityEngine.XR;
 
 public class PlayerInteraction : MonoBehaviour
 {
@@ -9,10 +10,12 @@ public class PlayerInteraction : MonoBehaviour
     [SerializeField] private float rayRange = 2.5f;
     [SerializeField] private float interactSpeed = 5f;
     [SerializeField] private float rotateSpeed = 200f;
+    [SerializeField] private GameObject handPos;
     private InputAction interactAction;
     private InputAction lookAction;
     private InputAction dropAction;
     private InputAction extraAction;
+    private InputAction getInHandAction;
 
     public Transform ObjectViewer;
     public UnityEvent OnView;
@@ -35,6 +38,7 @@ public class PlayerInteraction : MonoBehaviour
         lookAction = InputSystem.actions.FindAction("Look");
         dropAction = InputSystem.actions.FindAction("Drop");
         extraAction = InputSystem.actions.FindAction("Extra");
+        getInHandAction = InputSystem.actions.FindAction("Grab");
     }
 
     void Update()
@@ -64,6 +68,11 @@ public class PlayerInteraction : MonoBehaviour
                         Invoke("FinishView", 1f);
                     }
                 }
+            }
+
+            if(getInHandAction.WasPressedThisFrame())
+            {
+                GrabObject();
             }
             
             if(canFinish && dropAction.WasPressedThisFrame())
@@ -131,6 +140,7 @@ public class PlayerInteraction : MonoBehaviour
         UIManager.instance.InteractText(false);
         if(currentObject.item.canGrab)
         {
+            currentObject.transform.SetParent(null);
             currentObject.transform.rotation = originRotation;
             StartCoroutine(MovingObject(currentObject, originPosition));
         }
@@ -174,5 +184,16 @@ public class PlayerInteraction : MonoBehaviour
             currentObject.transform.Rotate(cam.transform.up, -Mathf.Deg2Rad*rotation.x*rotateSpeed, Space.World);
             currentObject.transform.Rotate(cam.transform.right, -Mathf.Deg2Rad*rotation.y*rotateSpeed, Space.World);
         }
+    }
+
+    void GrabObject()
+    {
+        if (currentObject.item.inHand)
+        {
+            currentObject.transform.rotation = handPos.transform.rotation;
+            currentObject.transform.position = handPos.transform.position;
+            currentObject.transform.SetParent(handPos.transform);
+        }
+        OnFinishView.Invoke();
     }
 }

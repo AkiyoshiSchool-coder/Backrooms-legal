@@ -17,3 +17,4 @@ MonoBehaviour:
   texto: Um bau de cristal
   canRotate: 1
   inHand: 1
+  hasExtraAction: 0

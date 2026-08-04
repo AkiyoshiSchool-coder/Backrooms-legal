@@ -64,7 +64,7 @@
                     "name": "Previous",
                     "type": "Button",
                     "id": "2776c80d-3c14-4091-8c56-d04ced07a2b0",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -73,7 +73,7 @@
                     "name": "Next",
                     "type": "Button",
                     "id": "b7230bb6-fc9b-4f52-8b25-f5e19cb2c2ba",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -82,7 +82,7 @@
                     "name": "Sprint",
                     "type": "Button",
                     "id": "641cd816-40e6-41b4-8c3d-04687c349290",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -115,9 +115,9 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Zoom",
+                    "name": "Grab",
                     "type": "Button",
-                    "id": "769f269c-424f-4d8d-907d-2b77edd0b1a9",
+                    "id": "a64c325d-785a-4f69-8fae-d1b03bef2693",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -479,12 +479,12 @@
                 },
                 {
                     "name": "",
-                    "id": "b08a461f-31e5-42d8-9ddc-ce59ae8d0423",
-                    "path": "<Mouse>/middleButton",
+                    "id": "23927bc8-e387-4e2b-ad32-4b1044e9baf0",
+                    "path": "<Keyboard>/g",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";Keyboard&Mouse",
-                    "action": "Zoom",
+                    "groups": "",
+                    "action": "Grab",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
