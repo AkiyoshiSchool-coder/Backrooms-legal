@@ -3,29 +3,24 @@ using System.Collections;
 
 public class BottleSpin : MonoBehaviour
 {
-    Coroutine corrotina;
-    private float timer = 0f;
-
+    [SerializeField] private bool spin = false;
     public void OpenBottle()
     {
-        if(corrotina==null)
+        spin = true;
+        Invoke("DisableSpin", 1f);
+    }
+
+    void Update()
+    {
+        if(spin)
         {
-            corrotina = StartCoroutine(BottleAnimation());
+            // transform.Rotate(0, 720*Time.deltaTime, 0, Space.Self);
+            transform.Translate(0, 0.1f*Time.deltaTime, 0);
         }
     }
 
-    IEnumerator BottleAnimation()
+    void DisableSpin()
     {
-        timer+=Time.deltaTime;
-        if(timer<=1)
-        {
-            transform.Rotate(0, 720*Time.deltaTime, 0, Space.World);
-            transform.Translate(0, 0.1f*Time.deltaTime, 0);
-            yield return null; 
-        } 
-        else
-        {
-            yield break;
-        }
+        spin = false;
     }
 }

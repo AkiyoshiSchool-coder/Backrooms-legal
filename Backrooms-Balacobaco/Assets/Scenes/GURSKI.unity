@@ -1587,6 +1587,24 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &1533244939 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3896346897838621402, guid: 72274de488f9a2f429c4cc1eb9351dc4, type: 3}
+  m_PrefabInstance: {fileID: 244815876039856797}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1533244943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533244939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47fbb9399b2cca249ac9ed807bec11cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BottleSpin
+  spin: 0
 --- !u!1 &1560388167
 GameObject:
   m_ObjectHideFlags: 0
@@ -1888,7 +1906,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3896346897838621402, guid: 72274de488f9a2f429c4cc1eb9351dc4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1533244943}
   m_SourcePrefab: {fileID: 100100000, guid: 72274de488f9a2f429c4cc1eb9351dc4, type: 3}
 --- !u!1001 &4982670620712626239
 PrefabInstance:
