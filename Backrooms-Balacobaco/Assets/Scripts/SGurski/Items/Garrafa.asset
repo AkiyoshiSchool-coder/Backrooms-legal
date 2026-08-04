@@ -16,3 +16,4 @@ MonoBehaviour:
   audio: {fileID: 0}
   texto: 
   canRotate: 1
+  hasExtraAction: 1

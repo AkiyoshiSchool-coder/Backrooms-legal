@@ -12,6 +12,7 @@ public class PlayerInteraction : MonoBehaviour
     private InputAction interactAction;
     private InputAction lookAction;
     private InputAction dropAction;
+    private InputAction extraAction;
 
     public Transform ObjectViewer;
     public UnityEvent OnView;
@@ -25,6 +26,7 @@ public class PlayerInteraction : MonoBehaviour
 
     public FirstPersonLook camMovement;
     public PasswordCode passwordCode;
+    public BottleSpin bottleCode;
 
     void Start()
     {
@@ -32,6 +34,7 @@ public class PlayerInteraction : MonoBehaviour
         interactAction = InputSystem.actions.FindAction("Interact");
         lookAction = InputSystem.actions.FindAction("Look");
         dropAction = InputSystem.actions.FindAction("Drop");
+        extraAction = InputSystem.actions.FindAction("Extra");
     }
 
     void Update()
@@ -43,12 +46,26 @@ public class PlayerInteraction : MonoBehaviour
     {
         if(interacting)
         {
-            if(currentObject.item.canGrab && interactAction.IsPressed())
+            if(currentObject.item.canGrab)
             {
-                RotateObject();
-                return;
-            }
+                if(interactAction.IsPressed())
+                {
+                    RotateObject();
+                    return;
+                }
 
+                if(currentObject.item.hasExtraAction && extraAction.WasPressedThisFrame())
+                {
+                    if(currentObject.item.name == "Garrafa")
+                    {
+                        bottleCode = currentObject.gameObject.GetComponentInChildren<BottleSpin>();
+                        bottleCode.OpenBottle();
+                        canFinish = false;
+                        Invoke("FinishView", 1f);
+                    }
+                }
+            }
+            
             if(canFinish && dropAction.WasPressedThisFrame())
             {
                 FinishView();
