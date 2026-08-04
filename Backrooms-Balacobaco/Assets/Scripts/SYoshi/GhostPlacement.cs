@@ -1,9 +1,12 @@
+using System;
 using UnityEngine;
 
 public class GhostPlacement : MonoBehaviour
 {
 
     public bool playerInRange;
+    [SerializeField] private Animator animator;
+
 
     private void OnTriggerEnter( Collider colisao)
     {
@@ -11,5 +14,9 @@ public class GhostPlacement : MonoBehaviour
         {
             playerInRange = true;
         }
+    }
+    private void Animator()
+    {
+        
     }
 }

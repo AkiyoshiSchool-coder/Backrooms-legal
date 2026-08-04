@@ -139,10 +139,13 @@ public class PlayerInteraction : MonoBehaviour
 
     void FinishView()
     {
-        if(ghostPlacement.playerInRange)
+        if(ghostPlacement!=null)
         {
-            originPosition = pilarPos.transform.position;
-            originRotation = pilarPos.transform.rotation;
+            if(ghostPlacement.playerInRange)
+            {
+                originPosition = pilarPos.transform.position;
+                originRotation = pilarPos.transform.rotation;
+            }
         }
         canFinish = false;
         interacting = false;
