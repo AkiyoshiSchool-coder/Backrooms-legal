@@ -15,3 +15,4 @@ MonoBehaviour:
   canGrab: 1
   audio: {fileID: 0}
   texto: 
+  canRotate: 1
