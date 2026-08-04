@@ -397,7 +397,7 @@ Rigidbody:
   serializedVersion: 5
   m_Mass: 100
   m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_AngularDamping: 0
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -446,6 +446,7 @@ MonoBehaviour:
   rayRange: 2
   interactSpeed: 5
   rotateSpeed: 50
+  handPos: {fileID: 0}
   ObjectViewer: {fileID: 8627616412587608354}
   OnView:
     m_PersistentCalls:
@@ -537,8 +538,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.5, y: 0.8359341, z: 1.5}
-  m_Center: {x: 0, y: 0.5820329, z: 0}
+  m_Size: {x: 1.5, y: 0.83593416, z: 0.7206607}
+  m_Center: {x: 0, y: 0.5820329, z: 0.38966966}
 --- !u!114 &2633877100225383704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -552,7 +553,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Push
   pushingAction: {fileID: -9223351769926386834, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-  hand: {fileID: 2800000, guid: 89339bee614d4b54dbf3cc197211eef9, type: 3}
+  hand: {fileID: 2800000, guid: 87ef740a541e95349abe7f8c1515c6b3, type: 3}
+  colorNew: {r: 1, g: 0, b: 0, a: 1}
+  originalP: {fileID: 0}
 --- !u!1 &5241892580736583940
 GameObject:
   m_ObjectHideFlags: 0
@@ -805,6 +808,9 @@ MonoBehaviour:
   character: {fileID: 5238820401998598406}
   baseSensivity: 0.2
   smoothing: 1.5
+  mcam: {fileID: 5256384803381100468}
+  zoomVision: 30
+  normalVision: 60
   inputActions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
 --- !u!1 &5242082517093631028
 GameObject:
@@ -851,7 +857,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GroundCheck
   distanceThreshold: 0.5
-  isGrounded: 1
+  isGrounded: 0
 --- !u!1 &5635186881921769758
 GameObject:
   m_ObjectHideFlags: 0
