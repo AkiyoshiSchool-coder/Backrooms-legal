@@ -77,7 +77,8 @@ public class Push : MonoBehaviour
                         
                         objpuxavel.transform.SetParent(this.gameObject.transform);
                         objpuxavel.transform.position = objectBox.transform.position;
-                        objpuxavel.GetComponent<BoxCollider>().enabled = false;
+                        //objpuxavel.GetComponent<Rigidbody>().isKinematic = true;
+                        //objpuxavel.GetComponent<BoxCollider>().enabled = false;
                         umavez = true;
                     }
                 }
@@ -86,8 +87,10 @@ public class Push : MonoBehaviour
         else
         {
             objpuxavel.transform.SetParent(originalP.transform);
-            objpuxavel.GetComponent<BoxCollider>().enabled = true;
+            //objpuxavel.GetComponent<BoxCollider>().enabled = true;
+            //objpuxavel.GetComponent<Rigidbody>().isKinematic = false;
             objpuxavel.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+            
             UIManager.instance.ChangeImage(hand);
             UIManager.instance.changeColor(Color.black); 
             objpuxavel = null;
