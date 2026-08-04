@@ -11,7 +11,7 @@ public class Push : MonoBehaviour
     public bool umavez = false;
     [SerializeField] private Color colorNew;
     [SerializeField] private GameObject originalP;
-    [SerializeField] private GameObject objectViewer;
+    [SerializeField] private GameObject objectBox;
 
     private void OnEnable()
     {
@@ -76,7 +76,7 @@ public class Push : MonoBehaviour
                     {
                         
                         objpuxavel.transform.SetParent(this.gameObject.transform);
-                        objpuxavel.transform.position = objectViewer.transform.position;
+                        objpuxavel.transform.position = objectBox.transform.position;
                         objpuxavel.GetComponent<BoxCollider>().enabled = false;
                         umavez = true;
                     }
