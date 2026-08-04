@@ -285,7 +285,7 @@ GameObject:
   - component: {fileID: 4122912719863824054}
   - component: {fileID: 8248872602749970955}
   - component: {fileID: -2093802763327252932}
-  - component: {fileID: 436392218552181391}
+  - component: {fileID: 309797836666647521}
   m_Layer: 0
   m_Name: Tampa
   m_TagString: Untagged
@@ -395,7 +395,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Interactables
   item: {fileID: 11400000, guid: 3f896aa5dda43cc47bd180bb76ec2f63, type: 2}
   isMoving: 0
---- !u!65 &436392218552181391
+--- !u!65 &309797836666647521
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
