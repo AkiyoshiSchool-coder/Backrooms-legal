@@ -9,4 +9,5 @@ public class Item : ScriptableObject
     public bool canRotate;
     public bool inHand;
     public bool hasExtraAction;
+
 }

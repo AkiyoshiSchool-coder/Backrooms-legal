@@ -11,7 +11,8 @@ public class PlayerInteraction : MonoBehaviour
     [SerializeField] private float interactSpeed = 5f;
     [SerializeField] private float rotateSpeed = 200f;
     [SerializeField] private GameObject handPos;
-    public GameObject pilarPos;
+    [SerializeField] private GameObject pilarPos;
+    [SerializeField] private GhostPlacement ghostPlacement;
     private InputAction interactAction;
     private InputAction lookAction;
     private InputAction dropAction;
@@ -25,8 +26,10 @@ public class PlayerInteraction : MonoBehaviour
     private Interactables currentObject;
     private Vector3 originPosition;
     private Quaternion originRotation;
+    [SerializeField] private BoxCollider boxCollider;
     private bool interacting;
     private bool canFinish;
+    
 
     public FirstPersonLook camMovement;
     public PasswordCode passwordCode;
@@ -136,6 +139,11 @@ public class PlayerInteraction : MonoBehaviour
 
     void FinishView()
     {
+        if(ghostPlacement.playerInRange)
+        {
+            originPosition = pilarPos.transform.position;
+            originRotation = pilarPos.transform.rotation;
+        }
         canFinish = false;
         interacting = false;
         UIManager.instance.InteractText(false);
@@ -194,6 +202,7 @@ public class PlayerInteraction : MonoBehaviour
             currentObject.transform.rotation = handPos.transform.rotation;
             currentObject.transform.position = handPos.transform.position;
             currentObject.transform.SetParent(handPos.transform);
+            boxCollider.enabled = false;
         }
         OnFinishView.Invoke();
     }
