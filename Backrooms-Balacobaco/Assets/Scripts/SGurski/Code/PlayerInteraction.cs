@@ -62,7 +62,7 @@ public class PlayerInteraction : MonoBehaviour
                     return;
                 }
 
-                if(currentObject.item.hasExtraAction && extraAction.WasPressedThisFrame())
+                if(currentObject.item.hasExtraAction && canFinish && extraAction.WasPressedThisFrame())
                 {
                     if(currentObject.item.name == "Garrafa")
                     {
