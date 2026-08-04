@@ -4,11 +4,17 @@ using System.Collections;
 public class BottleSpin : MonoBehaviour
 {
     [SerializeField] private bool spin = false;
+    public GameObject tampa, tampaSpawn;
     
     public void OpenBottle()
     {
         spin = true;
         Invoke("DisableSpin", 1f);
+    }
+
+    void Start()
+    {
+        transform.Rotate(-90, 0, 0, Space.Self);
     }
     
     void Update()
@@ -22,6 +28,7 @@ public class BottleSpin : MonoBehaviour
 
     void DisableSpin()
     {
+        Instantiate(tampa, tampaSpawn.transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 }
