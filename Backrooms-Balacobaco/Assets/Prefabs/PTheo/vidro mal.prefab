@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8faafd62b0bbcf4489334c1fa14ee1c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::QuebrarVidro
-  timer: 0.01
+  timer: 0.001
 --- !u!65 &2896035862579239027
 BoxCollider:
   m_ObjectHideFlags: 0
