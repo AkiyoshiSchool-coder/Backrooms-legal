@@ -149,12 +149,13 @@ public class PlayerInteraction : MonoBehaviour
         canFinish = true;
     }
 
-    
-
     void RotateObject()
     {
-        Vector2 rotation = lookAction.ReadValue<Vector2>();
-        currentObject.transform.Rotate(cam.transform.up, -Mathf.Deg2Rad*rotation.x*rotateSpeed, Space.World);
-        currentObject.transform.Rotate(cam.transform.right, -Mathf.Deg2Rad*rotation.y*rotateSpeed, Space.World);
+        if(currentObject.item.canRotate)
+        {
+            Vector2 rotation = lookAction.ReadValue<Vector2>();
+            currentObject.transform.Rotate(cam.transform.up, -Mathf.Deg2Rad*rotation.x*rotateSpeed, Space.World);
+            currentObject.transform.Rotate(cam.transform.right, -Mathf.Deg2Rad*rotation.y*rotateSpeed, Space.World);
+        }
     }
 }
