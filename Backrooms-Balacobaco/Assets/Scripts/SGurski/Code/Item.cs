@@ -7,4 +7,5 @@ public class Item : ScriptableObject
     public AudioClip audio;
     public string texto;
     public bool canRotate;
+    public bool inHand;
 }
