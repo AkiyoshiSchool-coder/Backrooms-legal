@@ -12,5 +12,6 @@ public class Armadilha : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         Destroy(this.gameObject);
+        print(other);
     }
 }
