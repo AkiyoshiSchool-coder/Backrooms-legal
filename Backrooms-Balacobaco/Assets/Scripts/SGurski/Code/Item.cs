@@ -8,4 +8,5 @@ public class Item : ScriptableObject
     public string texto;
     public bool canRotate;
     public bool inHand;
+    public bool hasExtraAction;
 }
