@@ -9,11 +9,17 @@ public class FirstPersonLook : MonoBehaviour
     public float baseSensivity = 2f;
     public float smoothing = 1.5f;
 
+    [SerializeField] private Camera mcam;
+
+    [SerializeField] private float zoomVision = 30;
+    [SerializeField] private float normalVision = 60;
+
     Vector2 velocity;
     Vector2 frameVelocity;
 
     public InputActionAsset inputActions;
     private InputAction lookAction;
+    private InputAction zoomAction;
 
 
     void Reset()
@@ -27,6 +33,7 @@ public class FirstPersonLook : MonoBehaviour
         // Lock the mouse cursor to the game screen.
         Cursor.lockState = CursorLockMode.Locked;
         lookAction = InputSystem.actions.FindAction("Look");
+        zoomAction = InputSystem.actions.FindAction("Zoom");
 
         sensitivity = baseSensivity;
     }
@@ -43,6 +50,16 @@ public class FirstPersonLook : MonoBehaviour
         // Rotate camera up-down and controller left-right from velocity.
         transform.localRotation = Quaternion.AngleAxis(-velocity.y, Vector3.right);
         character.localRotation = Quaternion.AngleAxis(velocity.x, Vector3.up);
+
+        if(zoomAction.WasPressedThisFrame())
+        {
+            mcam.fieldOfView = zoomVision;
+        }
+
+        if(zoomAction.WasReleasedThisFrame())
+        {
+            mcam.fieldOfView = normalVision;
+        }
     }
 
     public void Freeze(bool freeze)

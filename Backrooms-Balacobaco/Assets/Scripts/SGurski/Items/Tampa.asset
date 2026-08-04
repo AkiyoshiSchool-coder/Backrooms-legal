@@ -10,9 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a3dbfe5067961b48bf3cb43a8eb7e72, type: 3}
-  m_Name: Paper
+  m_Name: Tampa
   m_EditorClassIdentifier: Assembly-CSharp::Item
   canGrab: 1
   audio: {fileID: 0}
   texto: 
   canRotate: 1
+  inHand: 0
+  hasExtraAction: 0
