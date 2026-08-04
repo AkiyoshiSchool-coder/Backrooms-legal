@@ -1,12 +1,17 @@
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Utilities;
 public class Push : MonoBehaviour
 {
     [SerializeField] private InputActionReference pushingAction;
     [SerializeField] private Texture hand;
     private GameObject objpuxavel;
     private bool perto;
+    public bool umavez = false;
+    [SerializeField] private Color colorNew;
+    [SerializeField] private GameObject originalP;
+    [SerializeField] private GameObject objectBox;
 
     private void OnEnable()
     {
@@ -21,11 +26,19 @@ public class Push : MonoBehaviour
     
     void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Box")
+        if(umavez == false)
         {
-            UIManager.instance.ChangeImage(hand);
-            objpuxavel = other.gameObject;
-            perto = true;
+            if(other.tag == "Box")
+            {
+                UIManager.instance.ChangeImage(hand);
+                objpuxavel = other.gameObject;
+                if(objpuxavel.GetComponent<Pegavel>() != null)
+                {
+                    UIManager.instance.changeColor(colorNew);
+                }
+                objpuxavel.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+                perto = true;
+            }  
         }
     }
 
@@ -33,23 +46,54 @@ public class Push : MonoBehaviour
     {
         if(other.tag == "Box")
         {
-            UIManager.instance.ChangeImage(hand);
-            if(objpuxavel!=null)
-                objpuxavel.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
-            objpuxavel = null;
-            perto = false;
+            if(objpuxavel.GetComponent<Pegavel>() == null)
+            {
+                UIManager.instance.ChangeImage(hand);
+            
+                if(objpuxavel!=null)
+                {
+                    objpuxavel.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+                }
+                objpuxavel = null;
+                perto = false;
+            }
         }
     }
     
     public void PushingObject(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if(umavez == false)
         {
             if (perto == true)
             {
                 if(objpuxavel!=null)
-                    objpuxavel.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+                {
+                    if(objpuxavel.GetComponent<Pegavel>() == null)
+                    {
+                        objpuxavel.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+                    }
+                    else
+                    {
+                        
+                        objpuxavel.transform.SetParent(this.gameObject.transform);
+                        objpuxavel.transform.position = objectBox.transform.position;
+                        objpuxavel.GetComponent<BoxCollider>().enabled = false;
+                        umavez = true;
+                    }
+                }
             }
         }
+        else
+        {
+            objpuxavel.transform.SetParent(originalP.transform);
+            objpuxavel.GetComponent<BoxCollider>().enabled = true;
+            objpuxavel.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+            UIManager.instance.ChangeImage(hand);
+            UIManager.instance.changeColor(Color.black); 
+            objpuxavel = null;
+            perto = false;
+            umavez = false;
+        }
+        
     }
 }
