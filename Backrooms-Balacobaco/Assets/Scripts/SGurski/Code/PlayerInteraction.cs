@@ -11,6 +11,7 @@ public class PlayerInteraction : MonoBehaviour
     [SerializeField] private float interactSpeed = 5f;
     [SerializeField] private float rotateSpeed = 200f;
     [SerializeField] private GameObject handPos;
+    public GameObject pilarPos;
     private InputAction interactAction;
     private InputAction lookAction;
     private InputAction dropAction;
