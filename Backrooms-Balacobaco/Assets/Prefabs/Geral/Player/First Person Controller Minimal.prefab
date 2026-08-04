@@ -335,6 +335,8 @@ GameObject:
   - component: {fileID: 2726557219122891078}
   - component: {fileID: 2343381427822934097}
   - component: {fileID: -1116358540801230556}
+  - component: {fileID: 2536667789107392207}
+  - component: {fileID: 2633877100225383704}
   m_Layer: 0
   m_Name: First Person Controller Minimal
   m_TagString: Untagged
@@ -393,7 +395,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5241267463746980526}
   serializedVersion: 5
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -444,7 +446,6 @@ MonoBehaviour:
   rayRange: 2
   interactSpeed: 5
   rotateSpeed: 50
-  inputActions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   ObjectViewer: {fileID: 8627616412587608354}
   OnView:
     m_PersistentCalls:
@@ -514,8 +515,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74797f6b022bc4b4fa83bd7e8375a68a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Jump
-  jumpStrength: 2.8
+  jumpStrength: 280
   groundCheck: {fileID: 6207569049622709842}
+--- !u!65 &2536667789107392207
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5241267463746980526}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.5, y: 1, z: 1.5}
+  m_Center: {x: 0, y: 0.5, z: 0}
+--- !u!114 &2633877100225383704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5241267463746980526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd830c078fe55e419ac7c1c7edce332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Push
+  pushingAction: {fileID: -9223351769926386834, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  hand: {fileID: 2800000, guid: 89339bee614d4b54dbf3cc197211eef9, type: 3}
 --- !u!1 &5241892580736583940
 GameObject:
   m_ObjectHideFlags: 0

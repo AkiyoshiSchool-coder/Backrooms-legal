@@ -9,8 +9,6 @@ public class PlayerInteraction : MonoBehaviour
     [SerializeField] private float rayRange = 2.5f;
     [SerializeField] private float interactSpeed = 5f;
     [SerializeField] private float rotateSpeed = 200f;
-
-    public InputActionAsset inputActions;
     private InputAction interactAction;
     private InputAction lookAction;
     private InputAction dropAction;
@@ -27,7 +25,6 @@ public class PlayerInteraction : MonoBehaviour
 
     public FirstPersonLook camMovement;
     public PasswordCode passwordCode;
-
 
     void Start()
     {
@@ -159,10 +156,5 @@ public class PlayerInteraction : MonoBehaviour
         Vector2 rotation = lookAction.ReadValue<Vector2>();
         currentObject.transform.Rotate(cam.transform.up, -Mathf.Deg2Rad*rotation.x*rotateSpeed, Space.World);
         currentObject.transform.Rotate(cam.transform.right, -Mathf.Deg2Rad*rotation.y*rotateSpeed, Space.World);
-    }
-
-    void PushingObject()
-    {
-        
     }
 }
