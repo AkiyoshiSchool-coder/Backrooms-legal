@@ -7,6 +7,8 @@ TagManager:
   - BauCristal
   - BauMadeira
   - Box
+  - Pilar
+  - Banquinho
   layers:
   - Default
   - TransparentFX
