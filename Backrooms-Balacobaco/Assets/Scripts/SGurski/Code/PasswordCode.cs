@@ -24,26 +24,25 @@ public class PasswordCode : MonoBehaviour
             }
             if(passInput.Length >= 4)
             {
-                StartCoroutine(PasswordEnter());
+                PasswordEnter();
             }
         }
     }
 
-    IEnumerator PasswordEnter()
+    void PasswordEnter()
     {
         canType = false;
         if(passInput == password)
         {
             Debug.Log("SENHA CORRETA");
             safeDoor.PlayAnim();
-            yield break;
         }
         else
         {
             Debug.Log("SENHA INCORRETA");
             passInput = "";
+            canType = true;
         }
-        canType = true;
     }
 
     public string sendSenha()
