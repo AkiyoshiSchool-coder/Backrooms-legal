@@ -72,6 +72,10 @@ public class PlayerInteraction : MonoBehaviour
                         canFinish = false;
                         Invoke("FinishView", 1f);
                     }
+                    //if(currentObject.item.name == "Hammer")
+                    //{
+                        
+                    //}
                 }
             }
 
