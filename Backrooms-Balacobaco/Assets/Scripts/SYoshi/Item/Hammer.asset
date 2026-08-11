@@ -17,3 +17,4 @@ MonoBehaviour:
   texto: Um martelo completo
   canRotate: 1
   inHand: 1
+  hasExtraAction: 1

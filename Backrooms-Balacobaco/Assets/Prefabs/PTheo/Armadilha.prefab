@@ -128,6 +128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Armadilha
   objetoAlvo: {fileID: 5241267463746980526, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
+  timer: 1
 --- !u!65 &569744982730543367
 BoxCollider:
   m_ObjectHideFlags: 0
