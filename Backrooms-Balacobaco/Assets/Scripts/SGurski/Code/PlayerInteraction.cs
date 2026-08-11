@@ -56,6 +56,7 @@ public class PlayerInteraction : MonoBehaviour
         {
             if(currentObject.item.canGrab)
             {
+                boxCollider = currentObject.GetComponent<BoxCollider>();
                 if(interactAction.IsPressed())
                 {
                     RotateObject();
@@ -145,6 +146,7 @@ public class PlayerInteraction : MonoBehaviour
             {
                 originPosition = pilarPos.transform.position;
                 originRotation = pilarPos.transform.rotation;
+                ghostPlacement.onPillar = true;
             }
         }
         canFinish = false;
@@ -155,7 +157,11 @@ public class PlayerInteraction : MonoBehaviour
             currentObject.transform.SetParent(null);
             currentObject.transform.rotation = originRotation;
             StartCoroutine(MovingObject(currentObject, originPosition));
-            boxCollider.enabled = true;
+            if(ghostPlacement.onPillar && ghostPlacement.IsGhostChest)
+            {
+                boxCollider.enabled = false;
+            }
+
         }
         else
         {
