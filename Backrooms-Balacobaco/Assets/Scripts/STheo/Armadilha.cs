@@ -1,10 +1,12 @@
 using UnityEngine;
+using System.Collections;
+using Unity.VisualScripting;
 
 public class Armadilha : MonoBehaviour
 {
     public GameObject objetoAlvo; 
-    private CapsuleCollider meuColisor;
-    public float timer = 1f;
+    [SerializeField] private CapsuleCollider meuColisor;
+    float timer = 3f;
     private bool ativarTimer = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -13,26 +15,29 @@ public class Armadilha : MonoBehaviour
         meuColisor.enabled = true;
     }
     void Update(){
-        print(timer);
+        //print(timer);
+        //timer+=Time.deltaTime;
+        //ReativarComponente();
     }
     void ReativarComponente()
     {
-        print("bosta");
-        timer+=Time.deltaTime;
-        if(timer>=2f){
-            if (objetoAlvo != null)
+        //print("bosta");
+        if (objetoAlvo != null)
+        {
+            if (meuColisor != null)
             {
-                if (meuColisor != null)
-                {
-                    // Reativa o componente
                 meuColisor.enabled = true;
-                ativarTimer = false;
-                timer = 1f;
-                print("volta");
-                }
+                //print("volta");
+                Destroy(this.gameObject);
             }
         }
-        
+    }
+
+    IEnumerator Timer()
+    {
+        yield return new WaitForSeconds(0.5f);
+        ReativarComponente();
+        yield break;
     }
 
     // Update is called once per frame
@@ -41,18 +46,15 @@ public class Armadilha : MonoBehaviour
         timer = 1f;
         if (objetoAlvo != null)
         {
-            // Pega um componente especifico, por exemplo, um BoxCollider ou um Script customizado
 
             if (meuColisor != null)
             {
-                // Desativa o componente temporariamente
                 meuColisor.enabled = false;
                 print("invisivel");
+                StartCoroutine("Timer");
             }
         }
-        Destroy(this.gameObject);
         print("armadilha");
-        ReativarComponente();
 
     }
 }
