@@ -1,0 +1,8 @@
+## FMOD Studio temporary and user files
+.cache/
+.unsaved/
+.user/
+.restore/
+
+# Optional: Ignore the build folder if you only want to track the source project
+# Build/
