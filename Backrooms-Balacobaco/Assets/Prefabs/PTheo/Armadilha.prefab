@@ -127,6 +127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7edc63976706536409cf4769ac9e9c07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Armadilha
+  objetoAlvo: {fileID: 5241267463746980526, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
 --- !u!65 &569744982730543367
 BoxCollider:
   m_ObjectHideFlags: 0
