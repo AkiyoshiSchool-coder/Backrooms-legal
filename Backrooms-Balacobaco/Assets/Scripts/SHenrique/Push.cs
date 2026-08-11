@@ -1,3 +1,4 @@
+using Mono.Cecil.Cil;
 using UnityEngine;
 using UnityEngine.InputSystem;
 public class Push : MonoBehaviour
@@ -8,12 +9,10 @@ public class Push : MonoBehaviour
     private bool perto;
     public bool umavez = false;
     [SerializeField] private Color colorNew;
-    [SerializeField] private GameObject originalP;
-    [SerializeField] private GameObject objectBox;
-    private BoxCollider boxCollider;
-    private BoxCollider pegavelColider;
     private Rigidbody rb;
     private bool pegavel;
+    [SerializeField] private FirstPersonMovement firstPersonMovement;
+    [SerializeField] private GameObject box;
 
     private void OnEnable()
     {
@@ -22,11 +21,6 @@ public class Push : MonoBehaviour
     private void OnDisable()
     {
         pushingAction.action.performed -= PushingObject;
-    }
-
-    void Awake()
-    {
-        boxCollider = objectBox.GetComponent<BoxCollider>();
     }
     
     void OnTriggerEnter(Collider other)
@@ -39,12 +33,12 @@ public class Push : MonoBehaviour
                 objpuxavel = other.gameObject;
                 rb = objpuxavel.GetComponent<Rigidbody>();
                 pegavel = objpuxavel.GetComponent<Pegavel>();
-                pegavelColider = objpuxavel.GetComponent<BoxCollider>();
 
                 if(pegavel == true)
                 {
                     UIManager.instance.changeColor(colorNew);
                 }
+
                 rb.constraints = RigidbodyConstraints.FreezeAll;
                 perto = true;
             }  
@@ -65,7 +59,6 @@ public class Push : MonoBehaviour
                 }
                 objpuxavel = null;
                 perto = false;
-                pegavel = false;
                 rb = null;
             }
         }
@@ -85,13 +78,16 @@ public class Push : MonoBehaviour
                     }
                     else
                     {
-
-                        objpuxavel.transform.SetParent(this.transform);
-                        objpuxavel.transform.position = objectBox.transform.position;
-                        objectBox.transform.localScale = objpuxavel.transform.localScale;
-                        boxCollider.size = pegavelColider.size;
-                        pegavelColider.enabled = false;
-                        boxCollider.enabled = true;
+                        rb.constraints &= ~RigidbodyConstraints.FreezePositionX;
+                        rb.constraints &= ~RigidbodyConstraints.FreezePositionZ;
+                        objpuxavel.transform.position = box.transform.position;
+                        firstPersonMovement.PushingObject(rb);
+                        //objpuxavel.transform.SetParent(this.transform);
+                        //objpuxavel.transform.position = objectBox.transform.position;
+                        //objectBox.transform.localScale = objpuxavel.transform.localScale;
+                        //boxCollider.size = pegavelColider.size;
+                        //pegavelColider.enabled = false;
+                        //boxCollider.enabled = true;
                         umavez = true;
                     }
                 }
@@ -99,18 +95,18 @@ public class Push : MonoBehaviour
         }
         else
         {
-            objectBox.transform.localScale = new Vector3(1f, 1f, 1f);
-            boxCollider.enabled = false;
-            objpuxavel.transform.SetParent(originalP.transform);
+            firstPersonMovement.StopPushing();
+            //objectBox.transform.localScale = new Vector3(1f, 1f, 1f);
+            //boxCollider.enabled = false;
+            //objpuxavel.transform.SetParent(originalP.transform);
             rb.constraints = RigidbodyConstraints.None;
             UIManager.instance.ChangeImage(hand);
             UIManager.instance.changeColor(Color.black);
             objpuxavel = null;
-            pegavelColider.enabled = true;
-            pegavelColider = null;
+            //pegavelColider.enabled = true;
+            //pegavelColider = null;
             perto = false;
             umavez = false;
-            pegavel = false;
             rb = null;
         }
 
