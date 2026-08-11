@@ -13,6 +13,7 @@ public class PlayerInteraction : MonoBehaviour
     [SerializeField] private GameObject handPos;
     [SerializeField] private GameObject pilarPos;
     [SerializeField] private GhostPlacement ghostPlacement;
+    [SerializeField] private TableCraft tableCraft;
     private InputAction interactAction;
     private InputAction lookAction;
     private InputAction dropAction;
@@ -152,6 +153,15 @@ public class PlayerInteraction : MonoBehaviour
                 originRotation = pilarPos.transform.rotation;
                 ghostPlacement.onPillar = true;
             }
+        }
+        if(tableCraft!=null)
+        {
+           if(tableCraft.PlayerInRange)
+            {
+                originPosition = tableCraft.posicao.transform.position;
+                originRotation = tableCraft.posicao.transform.rotation;
+                tableCraft.OnTable = true;
+            } 
         }
         canFinish = false;
         interacting = false;
