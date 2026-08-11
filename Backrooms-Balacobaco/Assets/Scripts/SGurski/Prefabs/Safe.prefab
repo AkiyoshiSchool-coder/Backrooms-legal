@@ -347,7 +347,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f0be2a268fbea441bb957dee0636879, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PasswordCode
-  password: 4567
+  password: 
   passInput: 
   safeDoor: {fileID: 5051916773113811617}
 --- !u!1 &1279515574293070562
