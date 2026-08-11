@@ -2885,10 +2885,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Safe
       objectReference: {fileID: 0}
-    - target: {fileID: 234258954373915622, guid: cf94eb26842951a4b92f30bde9cd1d17, type: 3}
-      propertyPath: lightIntensity
-      value: 0.03
-      objectReference: {fileID: 0}
     - target: {fileID: 1346975475223392631, guid: cf94eb26842951a4b92f30bde9cd1d17, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.7
@@ -2928,50 +2924,6 @@ PrefabInstance:
     - target: {fileID: 1346975475223392631, guid: cf94eb26842951a4b92f30bde9cd1d17, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1840903435055680301, guid: cf94eb26842951a4b92f30bde9cd1d17, type: 3}
-      propertyPath: lightIntensity
-      value: 0.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 3375870083055052200, guid: cf94eb26842951a4b92f30bde9cd1d17, type: 3}
-      propertyPath: lightIntensity
-      value: 0.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 5894066948914921974, guid: cf94eb26842951a4b92f30bde9cd1d17, type: 3}
-      propertyPath: lightIntensity
-      value: 0.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 6367364533198445963, guid: cf94eb26842951a4b92f30bde9cd1d17, type: 3}
-      propertyPath: lightIntensity
-      value: 0.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 6413168107309505651, guid: cf94eb26842951a4b92f30bde9cd1d17, type: 3}
-      propertyPath: lightIntensity
-      value: 0.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 7014302354642494192, guid: cf94eb26842951a4b92f30bde9cd1d17, type: 3}
-      propertyPath: lightIntensity
-      value: 0.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 7194235302594786659, guid: cf94eb26842951a4b92f30bde9cd1d17, type: 3}
-      propertyPath: lightIntensity
-      value: 0.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 8098727075464572619, guid: cf94eb26842951a4b92f30bde9cd1d17, type: 3}
-      propertyPath: lightIntensity
-      value: 0.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 8919527117302876748, guid: cf94eb26842951a4b92f30bde9cd1d17, type: 3}
-      propertyPath: lightIntensity
-      value: 0.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 8989590539221966945, guid: cf94eb26842951a4b92f30bde9cd1d17, type: 3}
-      propertyPath: lightIntensity
-      value: 0.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 9176296716277632957, guid: cf94eb26842951a4b92f30bde9cd1d17, type: 3}
-      propertyPath: lightIntensity
-      value: 0.03
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
