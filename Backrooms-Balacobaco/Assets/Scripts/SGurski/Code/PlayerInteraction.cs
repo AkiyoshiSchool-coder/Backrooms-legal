@@ -123,6 +123,7 @@ public class PlayerInteraction : MonoBehaviour
                         if(currentObject.item.name == "Botao")
                         {
                             passwordCode.InsertCharacter(currentObject.name);
+                            currentObject.gameObject.GetComponent<BlinkButton>().Blink();
                         }
                     }
                 }
