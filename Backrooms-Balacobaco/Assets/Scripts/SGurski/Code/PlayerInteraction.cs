@@ -155,6 +155,7 @@ public class PlayerInteraction : MonoBehaviour
             currentObject.transform.SetParent(null);
             currentObject.transform.rotation = originRotation;
             StartCoroutine(MovingObject(currentObject, originPosition));
+            boxCollider.enabled = true;
         }
         else
         {
