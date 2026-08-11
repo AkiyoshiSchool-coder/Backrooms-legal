@@ -280,7 +280,7 @@ GameObject:
   m_Component:
   - component: {fileID: 800609493486916179}
   - component: {fileID: 74313442649299103}
-  - component: {fileID: 5107239769561389127}
+  - component: {fileID: 6660763881548352420}
   m_Layer: 0
   m_Name: Bottle
   m_TagString: Untagged
@@ -321,8 +321,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Interactables
   item: {fileID: 11400000, guid: bd1b91d102cdf0547af5d2866e3e29e5, type: 2}
   isMoving: 0
---- !u!65 &5107239769561389127
-BoxCollider:
+--- !u!136 &6660763881548352420
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -339,9 +339,11 @@ BoxCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.15, y: 0.48, z: 0.15}
-  m_Center: {x: 0, y: 0.08, z: 0}
+  serializedVersion: 2
+  m_Radius: 0.08
+  m_Height: 0.5
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.05, z: 0}
 --- !u!1001 &1058666878265992458
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -364,19 +366,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1009890353103478593, guid: 54fad6ead4aca4e41a6aee0608dd0e25, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071067
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1009890353103478593, guid: 54fad6ead4aca4e41a6aee0608dd0e25, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.7071069
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1009890353103478593, guid: 54fad6ead4aca4e41a6aee0608dd0e25, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1009890353103478593, guid: 54fad6ead4aca4e41a6aee0608dd0e25, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1009890353103478593, guid: 54fad6ead4aca4e41a6aee0608dd0e25, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -394,8 +396,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tampa
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    - target: {fileID: 8248872602749970955, guid: 54fad6ead4aca4e41a6aee0608dd0e25, type: 3}
+      propertyPath: tampa
+      value: 
+      objectReference: {fileID: 7122647618877911388, guid: 54fad6ead4aca4e41a6aee0608dd0e25, type: 3}
+    m_RemovedComponents:
+    - {fileID: -2093802763327252932, guid: 54fad6ead4aca4e41a6aee0608dd0e25, type: 3}
+    - {fileID: 2650307792950120830, guid: 54fad6ead4aca4e41a6aee0608dd0e25, type: 3}
+    m_RemovedGameObjects:
+    - {fileID: 5138400087320921410, guid: 54fad6ead4aca4e41a6aee0608dd0e25, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54fad6ead4aca4e41a6aee0608dd0e25, type: 3}

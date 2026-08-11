@@ -286,6 +286,7 @@ GameObject:
   - component: {fileID: 8248872602749970955}
   - component: {fileID: -2093802763327252932}
   - component: {fileID: 2650307792950120830}
+  - component: {fileID: 5428354633407091228}
   m_Layer: 0
   m_Name: Tampa
   m_TagString: Untagged
@@ -381,6 +382,8 @@ MonoBehaviour:
   spin: 0
   tampa: {fileID: 0}
   tampaSpawn: {fileID: 0}
+  thisTampa: {fileID: 0}
+  passcode: {fileID: 0}
 --- !u!114 &-2093802763327252932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -416,3 +419,16 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.002
   m_Center: {x: 0.0000001254084, y: 0.0000034224659, z: -0.000096728225}
+--- !u!114 &5428354633407091228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7122647618877911388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa415cf93dd5b4a4fa1015d54fc6ee17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WriteSenha
+  textoSenha: {fileID: 5381264388605827598}

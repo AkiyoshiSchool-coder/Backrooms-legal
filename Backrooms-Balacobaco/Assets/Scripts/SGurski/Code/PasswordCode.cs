@@ -8,6 +8,11 @@ public class PasswordCode : MonoBehaviour
     public SafeDoorAnimation safeDoor;
     private bool canType = true;
 
+    void Start()
+    {
+        password = Random.Range(0, 10000).ToString("D4"); // https://stackoverflow.com/questions/5418324
+    }
+
     public void InsertCharacter(string number)
     {
         if(canType)
@@ -39,5 +44,10 @@ public class PasswordCode : MonoBehaviour
             passInput = "";
         }
         canType = true;
+    }
+
+    public string sendSenha()
+    {
+        return password;
     }
 }

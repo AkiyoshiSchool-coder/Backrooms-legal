@@ -4,7 +4,8 @@ using System.Collections;
 public class BottleSpin : MonoBehaviour
 {
     [SerializeField] private bool spin = false;
-    public GameObject tampa, tampaSpawn;
+    public GameObject tampa, tampaSpawn, thisTampa;
+    public PasswordCode passcode;
     
     public void OpenBottle()
     {
@@ -28,7 +29,8 @@ public class BottleSpin : MonoBehaviour
 
     void DisableSpin()
     {
-        Instantiate(tampa, tampaSpawn.transform.position, Quaternion.identity);
+        thisTampa = Instantiate(tampa, tampaSpawn.transform.position, Quaternion.identity);
+        thisTampa.GetComponent<WriteSenha>().Init(passcode);
         Destroy(gameObject);
     }
 }
