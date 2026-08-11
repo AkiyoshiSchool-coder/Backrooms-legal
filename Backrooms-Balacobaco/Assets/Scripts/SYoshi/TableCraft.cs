@@ -2,7 +2,9 @@ using UnityEngine;
 
 public class TableCraft : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public bool PlayerInRange;
+    public bool OnTable;
+    public GameObject posicao;
     void Start()
     {
         
@@ -12,5 +14,13 @@ public class TableCraft : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("Player"))
+        {
+            PlayerInRange = true;
+        }
     }
 }

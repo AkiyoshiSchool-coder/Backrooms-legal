@@ -13,6 +13,7 @@ public class PlayerInteraction : MonoBehaviour
     [SerializeField] private GameObject handPos;
     [SerializeField] private GameObject pilarPos;
     [SerializeField] private GhostPlacement ghostPlacement;
+    [SerializeField] private TableCraft tableCraft;
     private InputAction interactAction;
     private InputAction lookAction;
     private InputAction dropAction;
@@ -153,6 +154,15 @@ public class PlayerInteraction : MonoBehaviour
                 ghostPlacement.onPillar = true;
             }
         }
+        if(tableCraft!=null)
+        {
+           if(tableCraft.PlayerInRange)
+            {
+                originPosition = tableCraft.posicao.transform.position;
+                originRotation = tableCraft.posicao.transform.rotation;
+                tableCraft.OnTable = true;
+            } 
+        }
         canFinish = false;
         interacting = false;
         UIManager.instance.InteractText(false);
@@ -161,7 +171,7 @@ public class PlayerInteraction : MonoBehaviour
             currentObject.transform.SetParent(null);
             currentObject.transform.rotation = originRotation;
             StartCoroutine(MovingObject(currentObject, originPosition));
-            if(ghostPlacement.onPillar && ghostPlacement.IsGhostChest)
+            if(ghostPlacement.onPillar && currentObject.item.name == "pivot")
             {
                 boxCollider.enabled = false;
             }
