@@ -161,7 +161,7 @@ public class PlayerInteraction : MonoBehaviour
             currentObject.transform.SetParent(null);
             currentObject.transform.rotation = originRotation;
             StartCoroutine(MovingObject(currentObject, originPosition));
-            if(ghostPlacement.onPillar && ghostPlacement.IsGhostChest)
+            if(ghostPlacement.onPillar && currentObject.item.name == "pivot")
             {
                 boxCollider.enabled = false;
             }

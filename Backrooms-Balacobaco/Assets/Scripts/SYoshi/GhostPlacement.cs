@@ -3,8 +3,6 @@ using UnityEngine;
 
 public class GhostPlacement : MonoBehaviour
 {
-
-    public bool IsGhostChest = true;
     public bool playerInRange;
     [SerializeField] private Animator animator;
     public bool onPillar;
