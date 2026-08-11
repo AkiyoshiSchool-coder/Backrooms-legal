@@ -145,6 +145,7 @@ public class PlayerInteraction : MonoBehaviour
             {
                 originPosition = pilarPos.transform.position;
                 originRotation = pilarPos.transform.rotation;
+                ghostPlacement.onPillar = true;
             }
         }
         canFinish = false;

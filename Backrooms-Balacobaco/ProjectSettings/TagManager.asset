@@ -9,6 +9,7 @@ TagManager:
   - Box
   - Pilar
   - Banquinho
+  - PilarTopo
   layers:
   - Default
   - TransparentFX

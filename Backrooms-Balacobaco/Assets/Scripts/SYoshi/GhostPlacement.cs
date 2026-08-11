@@ -6,29 +6,33 @@ public class GhostPlacement : MonoBehaviour
 
     public bool playerInRange;
     [SerializeField] private Animator animator;
-    private bool onPillar;
+    public bool onPillar;
     public bool open;
 
-
-    private void OnTriggerEnter( Collider colisao)
+    void Update()
     {
-        if(colisao.CompareTag("Player"))
+        if(onPillar)
         {
-            playerInRange = true;
-        }
-        if(colisao.CompareTag("Pilar"))
-        {
-            onPillar = true;
+            StartAnim();
         }
     }
 
-    public void CheckPillar()
+     public void StartAnim()
     {
-       // if()
+       open = true;
+       Animator();
     }
 
     private void Animator()
     {
         animator.SetBool("aberto", open);
+    }
+
+    private void OnTriggerEnter(Collider colisao)
+    {
+        if(colisao.CompareTag("Player"))
+        {
+            playerInRange = true;
+        }
     }
 }
