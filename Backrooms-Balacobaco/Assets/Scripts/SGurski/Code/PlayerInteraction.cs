@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine.InputSystem;
 using UnityEngine.Events;
 using UnityEngine.XR;
@@ -28,8 +29,10 @@ public class PlayerInteraction : MonoBehaviour
     private Vector3 originPosition;
     private Quaternion originRotation;
     [SerializeField] private BoxCollider boxCollider;
+
     private bool interacting;
     private bool canFinish;
+    [SerializeField] private List<string> Names = new List<string>();
     
 
     public FirstPersonLook camMovement;
@@ -53,8 +56,10 @@ public class PlayerInteraction : MonoBehaviour
 
     void InteractCheck()
     {
+        
         if(interacting)
         {
+            Names[0] = currentObject.item.name;
             if(currentObject.item.canGrab)
             {
                 boxCollider = currentObject.GetComponent<BoxCollider>();
@@ -172,9 +177,13 @@ public class PlayerInteraction : MonoBehaviour
             currentObject.transform.SetParent(null);
             currentObject.transform.rotation = originRotation;
             StartCoroutine(MovingObject(currentObject, originPosition));
-            if(ghostPlacement.onPillar && currentObject.item.name == "pivot")
+            if(ghostPlacement.onPillar &&  Names[0] == Names[1])
             {
                 boxCollider.enabled = false;
+            }
+            else
+            {
+                boxCollider.enabled = true;
             }
 
         }

@@ -1556,6 +1556,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 411496412}
     - target: {fileID: 2343381427822934097, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
+      propertyPath: tableCraft
+      value: 
+      objectReference: {fileID: 123526738}
+    - target: {fileID: 2343381427822934097, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
       propertyPath: boxCollider
       value: 
       objectReference: {fileID: 1267473742}
@@ -1563,6 +1567,14 @@ PrefabInstance:
       propertyPath: ghostPlacement
       value: 
       objectReference: {fileID: 411496415}
+    - target: {fileID: 2343381427822934097, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
+      propertyPath: Names.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343381427822934097, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
+      propertyPath: 'Names.Array.data[1]'
+      value: GChest
+      objectReference: {fileID: 0}
     - target: {fileID: 2343381427822934097, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
       propertyPath: OnFinishView.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
       value: 0
@@ -2249,7 +2261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f02eb07542d40a40bc1a444541a8fef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Interactables
-  item: {fileID: 11400000, guid: da9587e7b7a0be74e879b90a997d23bc, type: 2}
+  item: {fileID: 11400000, guid: 6c4218e3a9aa6fd49b9bd5f106a26b32, type: 2}
   isMoving: 0
 --- !u!1001 &1269269333
 PrefabInstance:
