@@ -28,10 +28,12 @@ public class PlayerInteraction : MonoBehaviour
     private Interactables currentObject;
     private Vector3 originPosition;
     private Quaternion originRotation;
+    [SerializeField] private Quaternion HammerRotation;
     [SerializeField] private BoxCollider boxCollider;
 
     private bool interacting;
     private bool canFinish;
+    private bool Grabbed;
     [SerializeField] private List<string> Names = new List<string>();
     
 
@@ -63,7 +65,7 @@ public class PlayerInteraction : MonoBehaviour
             if(currentObject.item.canGrab)
             {
                 boxCollider = currentObject.GetComponent<BoxCollider>();
-                if(interactAction.IsPressed())
+                if(interactAction.IsPressed() && Grabbed == false)
                 {
                     RotateObject();
                     return;
@@ -234,7 +236,14 @@ public class PlayerInteraction : MonoBehaviour
     {
         if (currentObject.item.inHand)
         {
+            if(Names[0] == Names[2])
+            {
+                currentObject.transform.rotation = HammerRotation;
+            }
+            else
+            {
             currentObject.transform.rotation = handPos.transform.rotation;
+            }
             currentObject.transform.position = handPos.transform.position;
             currentObject.transform.SetParent(handPos.transform);
             boxCollider.enabled = false;
