@@ -7,8 +7,17 @@ public class TableCraft : MonoBehaviour
     public GameObject posicao;
     public GameObject Base;
     public GameObject Cabeca;
+    public GameObject Marcelo;
     public BoxCollider boxCollider;
 
+
+    void Update()
+    {
+        if(Cabeca.transform.position == posicao.transform.position)
+        {
+            CraftHammer();
+        }
+    }
     private void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("Player"))
@@ -22,5 +31,14 @@ public class TableCraft : MonoBehaviour
         {
             PlayerInRange = false;
         }
+    }
+    private void CraftHammer()
+    {
+    
+        Cabeca.SetActive(false);
+        Base.SetActive(false);
+        Marcelo.SetActive(true);
+        boxCollider.enabled = true;
+        
     }
 }
