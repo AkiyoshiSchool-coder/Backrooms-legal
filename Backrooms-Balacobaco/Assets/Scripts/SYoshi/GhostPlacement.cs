@@ -34,4 +34,11 @@ public class GhostPlacement : MonoBehaviour
             playerInRange = true;
         }
     }
+    private void OnTriggerExit(Collider colisao)
+    {
+        if(colisao.CompareTag("Player"))
+        {
+            playerInRange = false;
+        }
+    }
 }

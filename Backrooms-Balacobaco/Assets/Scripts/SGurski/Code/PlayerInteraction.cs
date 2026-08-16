@@ -162,7 +162,7 @@ public class PlayerInteraction : MonoBehaviour
         }
         if(tableCraft!=null)
         {
-           if(tableCraft.PlayerInRange)
+           if(tableCraft.PlayerInRange && ghostPlacement.onPillar == true)
             {
                 originPosition = tableCraft.posicao.transform.position;
                 originRotation = tableCraft.posicao.transform.rotation;
@@ -180,6 +180,7 @@ public class PlayerInteraction : MonoBehaviour
             if(ghostPlacement.onPillar &&  Names[0] == Names[1])
             {
                 boxCollider.enabled = false;
+                tableCraft.boxCollider.enabled = true;
             }
             else
             {
