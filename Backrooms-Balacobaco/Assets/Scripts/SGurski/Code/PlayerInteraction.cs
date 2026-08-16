@@ -236,11 +236,7 @@ public class PlayerInteraction : MonoBehaviour
     {
         if (currentObject.item.inHand)
         {
-            if(Names[0] == Names[2])
-            {
-                currentObject.transform.rotation = HammerRotation;
-            }
-            else
+            if(Names[0] != Names[2])
             {
             currentObject.transform.rotation = handPos.transform.rotation;
             }

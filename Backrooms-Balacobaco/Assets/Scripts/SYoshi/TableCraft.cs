@@ -11,9 +11,12 @@ public class TableCraft : MonoBehaviour
 
     void Update()
     {
-        if(Cabeca.transform.position == posicao.transform.position)
+        if(Cabeca != null)
         {
-            CraftHammer();
+            if(Cabeca.transform.position == posicao.transform.position)
+            {
+                CraftHammer();
+            }
         }
     }
     private void OnTriggerEnter(Collider other)
@@ -33,7 +36,7 @@ public class TableCraft : MonoBehaviour
     private void CraftHammer()
     {
         Marcelo.transform.SetParent(null);
-        Destroy(Head);
+        Destroy(Cabeca);
         Destroy(Base);
         Marcelo.SetActive(true);
         boxCollider.enabled = true;
