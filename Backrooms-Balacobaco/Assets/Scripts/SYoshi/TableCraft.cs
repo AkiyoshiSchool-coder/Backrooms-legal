@@ -5,11 +5,9 @@ public class TableCraft : MonoBehaviour
     public bool PlayerInRange;
     public bool OnTable;
     public GameObject posicao;
-    public GameObject Base;
-    public GameObject Cabeca;
-    public GameObject Marcelo;
+    public GameObject Base,Marcelo,Cabeca;
     public BoxCollider boxCollider;
-
+    
 
     void Update()
     {
@@ -34,7 +32,7 @@ public class TableCraft : MonoBehaviour
     }
     private void CraftHammer()
     {
-    
+        Marcelo.transform.SetParent(null);
         Cabeca.SetActive(false);
         Base.SetActive(false);
         Marcelo.SetActive(true);
