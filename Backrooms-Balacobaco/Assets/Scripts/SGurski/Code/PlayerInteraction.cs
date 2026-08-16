@@ -28,7 +28,6 @@ public class PlayerInteraction : MonoBehaviour
     private Interactables currentObject;
     private Vector3 originPosition;
     private Quaternion originRotation;
-    [SerializeField] private Quaternion HammerRotation;
     [SerializeField] private BoxCollider boxCollider;
 
     private bool interacting;
@@ -236,10 +235,7 @@ public class PlayerInteraction : MonoBehaviour
     {
         if (currentObject.item.inHand)
         {
-            if(Names[0] != Names[2])
-            {
             currentObject.transform.rotation = handPos.transform.rotation;
-            }
             currentObject.transform.position = handPos.transform.position;
             currentObject.transform.SetParent(handPos.transform);
             boxCollider.enabled = false;
