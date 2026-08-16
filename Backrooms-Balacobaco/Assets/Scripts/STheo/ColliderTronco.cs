@@ -4,22 +4,46 @@ using Unity.VisualScripting;
 public class ColliderTronco : MonoBehaviour
 {
     [SerializeField] private GameObject tronco;
+    private float startDelay = 2f;
+    private float spawnInterval = 0.7f;
+    private int positionZ;
+    private int num;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+    void Start()
+    {
+        InvokeRepeating("InvocarTronco", startDelay, spawnInterval);
+    }
+
+    void Update()
+    {
+        num = UnityEngine.Random.Range(1,3);
+        if(num == 1)
+        {
+            positionZ = -16;
+        }else{
+            positionZ = -6;
+        }
+
+        
+    }
+
     IEnumerator Timer()
     {
-        yield return new WaitForSeconds(0.5f);
-        InvocarTronco();
+        yield return new WaitForSeconds(5f);
+        print("oJogo");
         yield break;
     }
 
     void InvocarTronco()
     {
-        Instantiate(tronco, new Vector3(0,0,0), Quaternion.identity);
-        print("oJogo");
+        Vector3 randomPosition = new Vector3(Random.Range(-14, -5), 1, positionZ);
+        Instantiate(tronco, randomPosition, Quaternion.identity);
     }
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerStay(Collider other)
     {
-        InvocarTronco();
+        //InvocarTronco();
     }
 }
