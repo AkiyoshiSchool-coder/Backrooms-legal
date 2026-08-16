@@ -33,8 +33,8 @@ public class TableCraft : MonoBehaviour
     private void CraftHammer()
     {
         Marcelo.transform.SetParent(null);
-        Cabeca.SetActive(false);
-        Base.SetActive(false);
+        Destroy(Head);
+        Destroy(Base);
         Marcelo.SetActive(true);
         boxCollider.enabled = true;
         

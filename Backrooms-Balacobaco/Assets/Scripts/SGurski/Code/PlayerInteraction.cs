@@ -241,7 +241,9 @@ public class PlayerInteraction : MonoBehaviour
                 currentObject.transform.rotation = HammerRotation;
             }
             else
+            {
             currentObject.transform.rotation = handPos.transform.rotation;
+            }
             currentObject.transform.position = handPos.transform.position;
             currentObject.transform.SetParent(handPos.transform);
             boxCollider.enabled = false;
