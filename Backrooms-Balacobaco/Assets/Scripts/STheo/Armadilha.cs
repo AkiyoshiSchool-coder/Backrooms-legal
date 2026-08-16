@@ -5,13 +5,11 @@ using Unity.VisualScripting;
 public class Armadilha : MonoBehaviour
 {
     public GameObject objetoAlvo; 
-    [SerializeField] private CapsuleCollider meuColisor;
-    float timer = 3f;
-    private bool ativarTimer = false;
+    [SerializeField] private BoxCollider meuColisor;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        meuColisor = objetoAlvo.GetComponent<CapsuleCollider>();
+        meuColisor = objetoAlvo.GetComponent<BoxCollider>();
         meuColisor.enabled = true;
     }
     void Update(){
@@ -43,7 +41,6 @@ public class Armadilha : MonoBehaviour
     // Update is called once per frame
     void OnTriggerEnter(Collider other)
     {
-        timer = 1f;
         if (objetoAlvo != null)
         {
 
