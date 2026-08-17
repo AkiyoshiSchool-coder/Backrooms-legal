@@ -649,6 +649,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4785453102101354702}
   - component: {fileID: 8215179064806693287}
+  - component: {fileID: 355878384112758215}
   m_Layer: 0
   m_Name: SenhaEmpty
   m_TagString: Untagged
@@ -685,7 +686,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PasswordCode
   password: 
   passInput: 
+  audioEmitter: {fileID: 355878384112758215}
   safeDoor: {fileID: 5051916773113811617}
+--- !u!114 &355878384112758215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1099363725671510363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -388697849
+      Data2: 1176441554
+      Data3: 370034358
+      Data4: -2106493394
+    Path: event:/Safe-Button
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1279515574293070562
 GameObject:
   m_ObjectHideFlags: 0
@@ -888,7 +921,7 @@ GameObject:
   - component: {fileID: 8893318246125177380}
   - component: {fileID: 7638644800740365819}
   - component: {fileID: 1408652946365822214}
-  - component: {fileID: 9176296716277632957}
+  - component: {fileID: 1764961437354113520}
   m_Layer: 0
   m_Name: 1
   m_TagString: Untagged
@@ -1040,7 +1073,7 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
---- !u!114 &9176296716277632957
+--- !u!114 &1764961437354113520
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

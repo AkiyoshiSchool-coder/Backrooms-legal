@@ -1,10 +1,12 @@
 using UnityEngine;
 using System.Collections;
+using FMODUnity;
 
 public class PasswordCode : MonoBehaviour
 {
     [SerializeField] private string password;
     [SerializeField] private string passInput;
+    public StudioEventEmitter audioEmitter;
     public SafeDoorAnimation safeDoor;
     private bool canType = true;
 
@@ -15,6 +17,7 @@ public class PasswordCode : MonoBehaviour
 
     public void InsertCharacter(string number)
     {
+        audioEmitter.Play();
         if(canType)
         {
             if(passInput.Length < 4)
