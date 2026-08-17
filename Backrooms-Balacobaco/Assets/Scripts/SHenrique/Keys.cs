@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Keys : MonoBehaviour
 {
-    private float keys = 0;
+    public float keys = 0;
     [SerializeField] TextMeshProUGUI textochave;
 
     public void KeyChange()
