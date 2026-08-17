@@ -12,20 +12,14 @@ public class Armadilha : MonoBehaviour
         meuColisor = objetoAlvo.GetComponent<BoxCollider>();
         meuColisor.enabled = true;
     }
-    void Update(){
-        //print(timer);
-        //timer+=Time.deltaTime;
-        //ReativarComponente();
-    }
+
     void ReativarComponente()
     {
-        //print("bosta");
         if (objetoAlvo != null)
         {
             if (meuColisor != null)
             {
                 meuColisor.enabled = true;
-                //print("volta");
                 Destroy(this.gameObject);
             }
         }
@@ -47,11 +41,9 @@ public class Armadilha : MonoBehaviour
             if (meuColisor != null)
             {
                 meuColisor.enabled = false;
-                print("invisivel");
                 StartCoroutine("Timer");
             }
         }
-        print("armadilha");
 
     }
 }

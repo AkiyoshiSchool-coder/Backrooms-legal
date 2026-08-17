@@ -5,7 +5,7 @@ public class ColliderTronco : MonoBehaviour
 {
     [SerializeField] private GameObject tronco;
     private float startDelay = 2f;
-    private float spawnInterval = 0.7f;
+    private float spawnInterval = 1f;
     private float positionZ;
     private int num;
     
@@ -23,7 +23,7 @@ public class ColliderTronco : MonoBehaviour
         {
             positionZ = -16f;
         }else{
-            positionZ = -6.86f;
+            positionZ = -6.96f;
         }
 
         
