@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Item
   canGrab: 1
   audio: {fileID: 0}
-  texto: 
+  texto: Zoom - Pressionar scroll
   canRotate: 1
   inHand: 0
   hasExtraAction: 0

@@ -54,6 +54,7 @@ public class PlayerInteraction : MonoBehaviour
         extraAction = InputSystem.actions.FindAction("Extra");
         getInHandAction = InputSystem.actions.FindAction("Grab");
         pauseAction = InputSystem.actions.FindAction("Pause");
+        InputActions.FindActionMap("Player").Enable();
     }
 
     void Update()
@@ -61,18 +62,23 @@ public class PlayerInteraction : MonoBehaviour
         InteractCheck();
         if(pauseAction.WasPressedThisFrame() && pauseMenu != null) // remover segunda condicao apos terminar o jogo
         {
-            pauseMenu.SetActive(!pauseMenu.activeSelf);
-            Time.timeScale = Convert.ToInt32(!pauseMenu.activeSelf); // https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/types/how-to-convert-a-string-to-a-number
-            if(pauseMenu.activeSelf)
-            {
-                Cursor.lockState = CursorLockMode.None;
-                InputActions.FindActionMap("Player").Disable();
-            }
-            else
-            {
-                Cursor.lockState = CursorLockMode.Locked;
-                InputActions.FindActionMap("Player").Enable();
-            }
+            Pausar();
+        }
+    }
+
+    public void Pausar()
+    {
+        pauseMenu.SetActive(!pauseMenu.activeSelf);
+        Time.timeScale = Convert.ToInt32(!pauseMenu.activeSelf); // https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/types/how-to-convert-a-string-to-a-number
+        if(pauseMenu.activeSelf)
+        {
+            Cursor.lockState = CursorLockMode.None;
+            InputActions.FindActionMap("Player").Disable();
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            InputActions.FindActionMap("Player").Enable();
         }
     }
 
