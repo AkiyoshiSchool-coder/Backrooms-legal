@@ -29,6 +29,10 @@ public class UIManager : MonoBehaviour
         else
             gameObject.GetComponent<RawImage>().texture = image;
     }
+    public void ChangeText(TextMeshProUGUI textMeshProUGUI, string texto)
+    {
+        textMeshProUGUI.text = texto;
+    }
 
     public void InteractText(bool setYorN)
     {
