@@ -10,6 +10,7 @@ public class Jump : MonoBehaviour
     [SerializeField, Tooltip("Prevents jumping when the transform is in mid-air.")]
     GroundCheck groundCheck;
     private InputAction jumpAction;
+    Rigidbody box;
 
     void Reset()
     {
@@ -30,7 +31,23 @@ public class Jump : MonoBehaviour
         if (jumpAction.triggered && (!groundCheck || groundCheck.isGrounded))
         {
             rigidbody.AddForce(Vector3.up * 100 * jumpStrength);
+            
+            if (box != null)
+            {
+                box.AddForce(Vector3.up * 100 * jumpStrength);
+            }
+            
             Jumped?.Invoke();
         }
+    }
+
+    public void PushingObject(Rigidbody rigidbody)
+    {
+        box = rigidbody;
+    }
+
+    public void StopPushing()
+    {
+        box = null;
     }
 }
