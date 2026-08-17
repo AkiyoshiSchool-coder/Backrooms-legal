@@ -33,7 +33,7 @@ public class Armadilha : MonoBehaviour
 
     IEnumerator Timer()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.45f);
         ReativarComponente();
         yield break;
     }

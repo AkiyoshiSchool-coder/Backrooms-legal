@@ -6,7 +6,7 @@ public class ColliderTronco : MonoBehaviour
     [SerializeField] private GameObject tronco;
     private float startDelay = 2f;
     private float spawnInterval = 0.7f;
-    private int positionZ;
+    private float positionZ;
     private int num;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -21,9 +21,9 @@ public class ColliderTronco : MonoBehaviour
         num = UnityEngine.Random.Range(1,3);
         if(num == 1)
         {
-            positionZ = -16;
+            positionZ = -16f;
         }else{
-            positionZ = -6;
+            positionZ = -6.86f;
         }
 
         
@@ -38,7 +38,7 @@ public class ColliderTronco : MonoBehaviour
 
     void InvocarTronco()
     {
-        Vector3 randomPosition = new Vector3(Random.Range(-14, -5), 1, positionZ);
+        Vector3 randomPosition = new Vector3(Random.Range(-14, -5), 0.5f, positionZ);
         Instantiate(tronco, randomPosition, Quaternion.identity);
     }
 
