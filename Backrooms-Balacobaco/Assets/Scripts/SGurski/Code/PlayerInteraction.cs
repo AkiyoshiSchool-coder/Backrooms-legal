@@ -1,4 +1,5 @@
 using UnityEngine;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.InputSystem;
@@ -15,11 +16,14 @@ public class PlayerInteraction : MonoBehaviour
     [SerializeField] private GameObject pilarPos;
     [SerializeField] private GhostPlacement ghostPlacement;
     [SerializeField] private TableCraft tableCraft;
+
+    public InputActionAsset InputActions;
     private InputAction interactAction;
     private InputAction lookAction;
     private InputAction dropAction;
     private InputAction extraAction;
     private InputAction getInHandAction;
+    private InputAction pauseAction;
 
     public Transform ObjectViewer;
     public UnityEvent OnView;
@@ -39,6 +43,7 @@ public class PlayerInteraction : MonoBehaviour
     public FirstPersonLook camMovement;
     public PasswordCode passwordCode;
     public BottleSpin bottleCode;
+    public GameObject pauseMenu;
 
     void Start()
     {
@@ -48,16 +53,31 @@ public class PlayerInteraction : MonoBehaviour
         dropAction = InputSystem.actions.FindAction("Drop");
         extraAction = InputSystem.actions.FindAction("Extra");
         getInHandAction = InputSystem.actions.FindAction("Grab");
+        pauseAction = InputSystem.actions.FindAction("Pause");
     }
 
     void Update()
     {
         InteractCheck();
+        if(pauseAction.WasPressedThisFrame() && pauseMenu != null) // remover segunda condicao apos terminar o jogo
+        {
+            pauseMenu.SetActive(!pauseMenu.activeSelf);
+            Time.timeScale = Convert.ToInt32(!pauseMenu.activeSelf); // https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/types/how-to-convert-a-string-to-a-number
+            if(pauseMenu.activeSelf)
+            {
+                Cursor.lockState = CursorLockMode.None;
+                InputActions.FindActionMap("Player").Disable();
+            }
+            else
+            {
+                Cursor.lockState = CursorLockMode.Locked;
+                InputActions.FindActionMap("Player").Enable();
+            }
+        }
     }
 
     void InteractCheck()
     {
-        
         if(interacting)
         {
             Names[0] = currentObject.item.name;
@@ -249,5 +269,20 @@ public class PlayerInteraction : MonoBehaviour
             boxCollider.enabled = false;
         }
         OnFinishView.Invoke();
+    }
+
+    void PauseGame(bool pause)
+    {
+        pauseMenu.SetActive(!pause);
+        Time.timeScale = Convert.ToInt32(!pause); // https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/types/how-to-convert-a-string-to-a-number
+        camMovement.Freeze(pause);
+        if(pause)
+        {
+            Cursor.lockState = CursorLockMode.None;
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+        }
     }
 }
