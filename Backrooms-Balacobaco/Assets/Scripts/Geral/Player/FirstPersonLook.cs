@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Rendering;
 
 public class FirstPersonLook : MonoBehaviour
 {
@@ -20,7 +21,6 @@ public class FirstPersonLook : MonoBehaviour
     public InputActionAsset inputActions;
     private InputAction lookAction;
     private InputAction zoomAction;
-
 
     void Reset()
     {
@@ -51,12 +51,13 @@ public class FirstPersonLook : MonoBehaviour
         transform.localRotation = Quaternion.AngleAxis(-velocity.y, Vector3.right);
         character.localRotation = Quaternion.AngleAxis(velocity.x, Vector3.up);
 
-        if(zoomAction.WasPressedThisFrame())
+
+        if (zoomAction.WasPressedThisFrame())
         {
             mcam.fieldOfView = zoomVision;
         }
 
-        if(zoomAction.WasReleasedThisFrame())
+        if (zoomAction.WasReleasedThisFrame())
         {
             mcam.fieldOfView = normalVision;
         }

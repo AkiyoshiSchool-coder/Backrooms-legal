@@ -16,7 +16,7 @@ public class UIManager : MonoBehaviour
         image = gameObject.GetComponent<RawImage>().texture;
     }
 
-    public void changeColor(Color cor)
+    public void ChangeColor(Color cor)
     {
         gameObject.GetComponent<RawImage>().color = cor;
     }

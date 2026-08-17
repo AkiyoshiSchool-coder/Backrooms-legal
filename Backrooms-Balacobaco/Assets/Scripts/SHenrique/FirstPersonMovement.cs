@@ -16,7 +16,6 @@ public class FirstPersonMovement : MonoBehaviour
 
     Rigidbody rigidbody;
     Rigidbody box;
-    [SerializeField] private float offset;
     /// <summary> Functions to override movement speed. Will use the last added override. </summary>
     public List<System.Func<float>> speedOverrides = new List<System.Func<float>>();
 
@@ -48,8 +47,7 @@ public class FirstPersonMovement : MonoBehaviour
         rigidbody.linearVelocity = transform.rotation * new Vector3(targetVelocity.x, rigidbody.linearVelocity.y, targetVelocity.y);
         if(box != null)
         {
-            Debug.Log("OI");
-            box.linearVelocity = transform.rotation * new Vector3(targetVelocity.x, rigidbody.linearVelocity.y, targetVelocity.y + offset);
+            box.linearVelocity = transform.rotation * new Vector3(targetVelocity.x, rigidbody.linearVelocity.y, targetVelocity.y);
         }
     }
 

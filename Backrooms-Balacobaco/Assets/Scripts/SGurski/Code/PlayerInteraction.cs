@@ -104,7 +104,7 @@ public class PlayerInteraction : MonoBehaviour
             Interactables obj = hit.collider.GetComponent<Interactables>();
             if(obj != null)
             {
-                UIManager.instance.changeColor(Color.yellow);
+                UIManager.instance.ChangeColor(Color.yellow);
                 if(interactAction.WasPressedThisFrame())
                 {
                     if(obj.isMoving)
@@ -137,7 +137,7 @@ public class PlayerInteraction : MonoBehaviour
         }
         else
         {
-            UIManager.instance.changeColor(Color.black);
+            UIManager.instance.ChangeColor(Color.black);
         }
     }
 

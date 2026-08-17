@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using Mono.Cecil.Cil;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -12,8 +13,8 @@ public class Push : MonoBehaviour
     private Rigidbody rb;
     private bool pegavel;
     [SerializeField] private FirstPersonMovement firstPersonMovement;
+    [SerializeField] private Jump jump;
     [SerializeField] private GameObject box;
-
     private void OnEnable()
     {
         pushingAction.action.performed += PushingObject;
@@ -36,7 +37,7 @@ public class Push : MonoBehaviour
 
                 if(pegavel == true)
                 {
-                    UIManager.instance.changeColor(colorNew);
+                    UIManager.instance.ChangeColor(colorNew);
                 }
 
                 rb.constraints = RigidbodyConstraints.FreezeAll;
@@ -49,18 +50,22 @@ public class Push : MonoBehaviour
     {
         if(other.tag == "Box")
         {
-            if(pegavel == false)
+            if (pegavel == false)
             {
                 UIManager.instance.ChangeImage(hand);
-            
-                if(objpuxavel!=null)
+
+                if (objpuxavel != null)
                 {
                     rb.constraints = RigidbodyConstraints.FreezeAll;
+                    objpuxavel = null;
+                    perto = false;
+                    rb = null;
                 }
-                objpuxavel = null;
-                perto = false;
-                rb = null;
             }
+            else
+            {
+                StopCarrying();
+            } 
         }
     }
 
@@ -79,15 +84,11 @@ public class Push : MonoBehaviour
                     else
                     {
                         rb.constraints &= ~RigidbodyConstraints.FreezePositionX;
+                        rb.constraints &= ~RigidbodyConstraints.FreezePositionY;
                         rb.constraints &= ~RigidbodyConstraints.FreezePositionZ;
                         objpuxavel.transform.position = box.transform.position;
                         firstPersonMovement.PushingObject(rb);
-                        //objpuxavel.transform.SetParent(this.transform);
-                        //objpuxavel.transform.position = objectBox.transform.position;
-                        //objectBox.transform.localScale = objpuxavel.transform.localScale;
-                        //boxCollider.size = pegavelColider.size;
-                        //pegavelColider.enabled = false;
-                        //boxCollider.enabled = true;
+                        jump.PushingObject(rb);
                         umavez = true;
                     }
                 }
@@ -95,20 +96,22 @@ public class Push : MonoBehaviour
         }
         else
         {
-            firstPersonMovement.StopPushing();
-            //objectBox.transform.localScale = new Vector3(1f, 1f, 1f);
-            //boxCollider.enabled = false;
-            //objpuxavel.transform.SetParent(originalP.transform);
-            rb.constraints = RigidbodyConstraints.None;
-            UIManager.instance.ChangeImage(hand);
-            UIManager.instance.changeColor(Color.black);
-            objpuxavel = null;
-            //pegavelColider.enabled = true;
-            //pegavelColider = null;
-            perto = false;
-            umavez = false;
-            rb = null;
+            StopCarrying();
         }
-
+    }
+    public void StopCarrying()
+    {
+        firstPersonMovement.StopPushing();
+        jump.StopPushing();
+        rb.constraints = RigidbodyConstraints.None;
+        UIManager.instance.ChangeImage(hand);
+        UIManager.instance.ChangeColor(Color.black);
+        if (objpuxavel != null)
+        {
+            objpuxavel = null;
+        }
+        perto = false;
+        umavez = false;
+        rb = null;
     }
 }
