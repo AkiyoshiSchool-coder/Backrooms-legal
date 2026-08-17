@@ -32,11 +32,12 @@ public class PlayerInteraction : MonoBehaviour
     private Interactables currentObject;
     private Vector3 originPosition;
     private Quaternion originRotation;
+    [SerializeField] private Quaternion HammerRotation; 
     [SerializeField] private BoxCollider boxCollider;
 
     private bool interacting;
     private bool canFinish;
-    private bool Grabbed;
+    private bool Grabbed = false;
     [SerializeField] private List<string> Names = new List<string>();
     
 
@@ -215,6 +216,11 @@ public class PlayerInteraction : MonoBehaviour
                 {
                     boxCollider.enabled = false;
                     tableCraft.boxCollider.enabled = true;
+                    
+                }
+                else if(Names[0] == Names[2])
+                {
+                    handPos.transform.rotation = HammerRotation;
                 }
                 else
                 {
@@ -228,6 +234,7 @@ public class PlayerInteraction : MonoBehaviour
             cam.transform.rotation = originRotation;
         }
         OnFinishView.Invoke();
+        Grabbed = false;
     }
 
     IEnumerator MovingObject(Interactables heldItem, Vector3 pos)
@@ -267,12 +274,13 @@ public class PlayerInteraction : MonoBehaviour
 
     void GrabObject()
     {
-        if (currentObject.item.inHand)
+        if (currentObject.item.inHand && Grabbed != true)
         {
             currentObject.transform.rotation = handPos.transform.rotation;
             currentObject.transform.position = handPos.transform.position;
             currentObject.transform.SetParent(handPos.transform);
             boxCollider.enabled = false;
+            Grabbed = true;
         }
         OnFinishView.Invoke();
     }
