@@ -113,11 +113,13 @@ public class PlayerInteraction : MonoBehaviour
                     if(Names[0] == Names[3] && chestAnim.PlayerInRange)
                     {
                         chestAnim.StartAnim();
+                        OnFinishView.Invoke();
+                        tableCraft.DestroyHammer();
                     }
                 }
             }
 
-            if(getInHandAction.WasPressedThisFrame())
+            if(getInHandAction.WasPressedThisFrame() && canFinish)
             {
                 GrabObject();
             }
