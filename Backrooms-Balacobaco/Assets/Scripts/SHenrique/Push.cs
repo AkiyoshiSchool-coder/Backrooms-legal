@@ -63,8 +63,10 @@ public class Push : MonoBehaviour
                 }
             }
             else
-            {
-                StopCarrying();
+            {   if (umavez == true)
+                {
+                    StopCarrying();
+                }
             } 
         }
     }

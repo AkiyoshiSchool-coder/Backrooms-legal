@@ -283,7 +283,7 @@ Transform:
   m_GameObject: {fileID: 5112039274939059279}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.3, z: 2.6}
+  m_LocalPosition: {x: 0, y: 0, z: 1.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -462,7 +462,6 @@ MonoBehaviour:
   canRun: 1
   runSpeed: 9
   inputActions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-  offset: 1.6
 --- !u!114 &2343381427822934097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -483,6 +482,7 @@ MonoBehaviour:
   pilarPos: {fileID: 0}
   ghostPlacement: {fileID: 0}
   tableCraft: {fileID: 0}
+  InputActions: {fileID: 0}
   ObjectViewer: {fileID: 8627616412587608354}
   OnView:
     m_PersistentCalls:
@@ -539,9 +539,11 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   boxCollider: {fileID: 0}
+  Names: []
   camMovement: {fileID: 3704872978644299485}
   passwordCode: {fileID: 0}
   bottleCode: {fileID: 0}
+  pauseMenu: {fileID: 0}
 --- !u!114 &-1116358540801230556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -575,8 +577,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.5, y: 0.83593416, z: 0.7206607}
-  m_Center: {x: 0, y: 0.5820329, z: 0.38966966}
+  m_Size: {x: 1.5, y: 0.83593416, z: 1.3763168}
+  m_Center: {x: 0, y: 0.5820329, z: 0.7174977}
 --- !u!114 &2633877100225383704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -594,6 +596,7 @@ MonoBehaviour:
   umavez: 0
   colorNew: {r: 1, g: 0, b: 0, a: 1}
   firstPersonMovement: {fileID: 2726557219122891078}
+  jump: {fileID: -1116358540801230556}
   box: {fileID: 5112039274939059279}
 --- !u!1 &5241892580736583940
 GameObject:
@@ -850,7 +853,6 @@ MonoBehaviour:
   mcam: {fileID: 0}
   zoomVision: 30
   normalVision: 60
-  inputActions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
 --- !u!1 &5242082517093631028
 GameObject:
   m_ObjectHideFlags: 0
