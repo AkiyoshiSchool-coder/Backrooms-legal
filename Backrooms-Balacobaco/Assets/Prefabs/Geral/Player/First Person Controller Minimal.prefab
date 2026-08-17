@@ -368,6 +368,7 @@ GameObject:
   - component: {fileID: -1116358540801230556}
   - component: {fileID: 2536667789107392207}
   - component: {fileID: 2633877100225383704}
+  - component: {fileID: 4609453899747716903}
   m_Layer: 0
   m_Name: First Person Controller Minimal
   m_TagString: Untagged
@@ -386,7 +387,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 5239100585477912294}
   - {fileID: 5239139276810530380}
@@ -482,7 +483,7 @@ MonoBehaviour:
   pilarPos: {fileID: 0}
   ghostPlacement: {fileID: 0}
   tableCraft: {fileID: 0}
-  InputActions: {fileID: 0}
+  InputActions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   ObjectViewer: {fileID: 8627616412587608354}
   OnView:
     m_PersistentCalls:
@@ -598,6 +599,19 @@ MonoBehaviour:
   firstPersonMovement: {fileID: 2726557219122891078}
   jump: {fileID: -1116358540801230556}
   box: {fileID: 5112039274939059279}
+--- !u!114 &4609453899747716903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5241267463746980526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fee5445702440746a64299cb75da391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Keys
+  textochave: {fileID: 0}
 --- !u!1 &5241892580736583940
 GameObject:
   m_ObjectHideFlags: 0
@@ -898,7 +912,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GroundCheck
   distanceThreshold: 0.3
-  isGrounded: 0
+  isGrounded: 1
 --- !u!1 &5635186881921769758
 GameObject:
   m_ObjectHideFlags: 0
