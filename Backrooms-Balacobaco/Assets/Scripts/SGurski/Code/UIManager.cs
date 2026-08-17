@@ -6,7 +6,7 @@ using Unity.VisualScripting;
 public class UIManager : MonoBehaviour
 {
     public static UIManager instance;
-    public TextMeshProUGUI interactText;
+    public TextMeshProUGUI interactText, extraText;
     Texture image;
     bool mudanca = false;
 
@@ -33,5 +33,13 @@ public class UIManager : MonoBehaviour
     public void InteractText(bool setYorN)
     {
         interactText.gameObject.SetActive(setYorN);
+    }
+
+    public void ExtraText(string textoExtra)
+    {
+        if(extraText != null) // remover if quando o jogo estiver pronto
+        {
+            extraText.text = textoExtra;
+        }
     }
 }

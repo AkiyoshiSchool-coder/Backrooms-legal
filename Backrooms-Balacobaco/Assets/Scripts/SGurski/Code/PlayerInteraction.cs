@@ -63,7 +63,10 @@ public class PlayerInteraction : MonoBehaviour
             Names[0] = currentObject.item.name;
             if(currentObject.item.canGrab)
             {
-                boxCollider = currentObject.GetComponent<BoxCollider>();
+                if(currentObject.GetComponent<BoxCollider>() != null)
+                {
+                    boxCollider = currentObject.GetComponent<BoxCollider>();
+                }
                 if(interactAction.IsPressed() && Grabbed == false)
                 {
                     RotateObject();
@@ -147,6 +150,7 @@ public class PlayerInteraction : MonoBehaviour
         if(currentObject.item.canGrab)
         {
             UIManager.instance.InteractText(true);
+            UIManager.instance.ExtraText(currentObject.item.texto);
         }
     }
 
@@ -173,19 +177,23 @@ public class PlayerInteraction : MonoBehaviour
         canFinish = false;
         interacting = false;
         UIManager.instance.InteractText(false);
+        UIManager.instance.ExtraText(null);
         if(currentObject.item.canGrab)
         {
             currentObject.transform.SetParent(null);
             currentObject.transform.rotation = originRotation;
             StartCoroutine(MovingObject(currentObject, originPosition));
-            if(ghostPlacement.onPillar &&  Names[0] == Names[1])
+            if(boxCollider!=null)
             {
-                boxCollider.enabled = false;
-                tableCraft.boxCollider.enabled = true;
-            }
-            else
-            {
-                boxCollider.enabled = true;
+                if(ghostPlacement.onPillar &&  Names[0] == Names[1])
+                {
+                    boxCollider.enabled = false;
+                    tableCraft.boxCollider.enabled = true;
+                }
+                else
+                {
+                    boxCollider.enabled = true;
+                }
             }
 
         }
