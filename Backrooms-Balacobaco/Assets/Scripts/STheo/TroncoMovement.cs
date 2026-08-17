@@ -5,7 +5,7 @@ using Unity.VisualScripting;
 public class TroncoMovement : MonoBehaviour
 {
     [SerializeField] private Transform playerTransform; 
-    [SerializeField] private float speed = 3f;
+    [SerializeField] private float speed = 5f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

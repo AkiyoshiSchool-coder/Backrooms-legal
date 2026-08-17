@@ -126,4 +126,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TroncoMovement
   playerTransform: {fileID: 0}
-  speed: 3
+  speed: 5
