@@ -10,6 +10,7 @@ TagManager:
   - Pilar
   - Banquinho
   - PilarTopo
+  - Chave
   layers:
   - Default
   - TransparentFX

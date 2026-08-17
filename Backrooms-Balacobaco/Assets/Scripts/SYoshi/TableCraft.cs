@@ -40,6 +40,9 @@ public class TableCraft : MonoBehaviour
         Destroy(Base);
         Marcelo.SetActive(true);
         boxCollider.enabled = true;
-        
+    }
+    public void DestroyHammer()
+    {
+        Destroy(Marcelo);
     }
 }
