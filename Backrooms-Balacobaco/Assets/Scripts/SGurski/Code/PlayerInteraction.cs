@@ -16,6 +16,7 @@ public class PlayerInteraction : MonoBehaviour
     [SerializeField] private GameObject pilarPos;
     [SerializeField] private GhostPlacement ghostPlacement;
     [SerializeField] private TableCraft tableCraft;
+    [SerializeField] private ChestAnim chestAnim;
 
     public InputActionAsset InputActions;
     private InputAction interactAction;
@@ -109,10 +110,10 @@ public class PlayerInteraction : MonoBehaviour
                         canFinish = false;
                         Invoke("FinishView", 1f);
                     }
-                    //if(currentObject.item.name == "Hammer")
-                    //{
-                        
-                    //}
+                    if(Names[0] == Names[3] && chestAnim.PlayerInRange)
+                    {
+                        chestAnim.StartAnim();
+                    }
                 }
             }
 

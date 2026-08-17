@@ -4,17 +4,8 @@ public class ChestAnim : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public bool open;
-    [SerializeField] private Animator animator;
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [SerializeField] private Animation animation;
+    public bool PlayerInRange;
 
     public void StartAnim()
     {
@@ -24,6 +15,20 @@ public class ChestAnim : MonoBehaviour
 
     private void Animator()
     {
-        animator.SetBool("aberto", open);
+        animation.enabled = true;
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("Player"))
+        {
+            PlayerInRange = true;
+        }
+    }
+    private void OnTriggerExit(Collider colisao)
+    {
+        if(colisao.CompareTag("Player"))
+        {
+            PlayerInRange = false;
+        }
     }
 }
