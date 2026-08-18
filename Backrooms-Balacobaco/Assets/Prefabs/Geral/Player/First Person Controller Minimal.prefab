@@ -283,7 +283,7 @@ Transform:
   m_GameObject: {fileID: 5112039274939059279}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1.5}
+  m_LocalPosition: {x: 0, y: 0.2, z: 1.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -369,6 +369,8 @@ GameObject:
   - component: {fileID: 2536667789107392207}
   - component: {fileID: 2633877100225383704}
   - component: {fileID: 4609453899747716903}
+  - component: {fileID: 7594872340924617319}
+  - component: {fileID: 8471404925192806550}
   m_Layer: 0
   m_Name: First Person Controller Minimal
   m_TagString: Player
@@ -403,7 +405,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5241267463746980526}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: bcca3f94bf533814cb3393380ce366c5, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -462,6 +464,10 @@ MonoBehaviour:
   canRun: 1
   runSpeed: 9
   inputActions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  MyCamera: {fileID: 0}
+  cPos: {x: 0, y: 0, z: 0}
+  steps: {fileID: 8471404925192806550}
+  stepCD: 0.35
 --- !u!114 &2343381427822934097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -483,7 +489,7 @@ MonoBehaviour:
   ghostPlacement: {fileID: 0}
   tableCraft: {fileID: 0}
   chestAnim: {fileID: 0}
-  keys: {fileID: 0}
+  keys: {fileID: 4609453899747716903}
   InputActions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   ObjectViewer: {fileID: 8627616412587608354}
   OnView:
@@ -620,6 +626,69 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Keys
   keys: 0
   textochave: {fileID: 0}
+  keySound: {fileID: 7594872340924617319}
+--- !u!114 &7594872340924617319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5241267463746980526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 778572953
+      Data2: 1112356922
+      Data3: -1708125001
+      Data4: 826800700
+    Path: event:/KeyCollect
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &8471404925192806550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5241267463746980526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 90589468
+      Data2: 1182664910
+      Data3: -647326291
+      Data4: -1176599731
+    Path: event:/Footsteps/FS
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &5241892580736583940
 GameObject:
   m_ObjectHideFlags: 0
@@ -631,6 +700,7 @@ GameObject:
   - component: {fileID: 5239139276810530380}
   - component: {fileID: 5246596055365794806}
   - component: {fileID: 5253712882846181220}
+  - component: {fileID: 4098798696146888099}
   m_Layer: 0
   m_Name: Capsule Mesh
   m_TagString: Untagged
@@ -710,6 +780,37 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &4098798696146888099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5241892580736583940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 2025696175
+      Data2: 1276563929
+      Data3: -756701281
+      Data4: -1177507657
+    Path: event:/Ambience
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &5242082517093631028
 GameObject:
   m_ObjectHideFlags: 0
