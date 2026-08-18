@@ -65,7 +65,7 @@ public class PlayerInteraction : MonoBehaviour
     void Update()
     {
         InteractCheck();
-        if(pauseAction.WasPressedThisFrame() && pauseMenu != null) // remover segunda condicao apos terminar o jogo
+        if(pauseAction.WasPressedThisFrame())
         {
             Pausar();
         }

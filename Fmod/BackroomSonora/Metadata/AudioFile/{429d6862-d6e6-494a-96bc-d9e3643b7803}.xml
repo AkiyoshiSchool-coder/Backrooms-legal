@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{429d6862-d6e6-494a-96bc-d9e3643b7803}">
+		<property name="assetPath">
+			<value>bottleopen.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>4.0493424036281178</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{4dd52775-7a0a-4758-b6ac-f0cabfdf28a7}</destination>
+		</relationship>
+	</object>
+</objects>

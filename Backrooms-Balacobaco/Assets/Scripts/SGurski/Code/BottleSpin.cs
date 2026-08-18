@@ -1,15 +1,18 @@
 using UnityEngine;
 using System.Collections;
+using FMODUnity;
 
 public class BottleSpin : MonoBehaviour
 {
     [SerializeField] private bool spin = false;
     public GameObject tampa, tampaSpawn, thisTampa;
     public PasswordCode passcode;
+    [SerializeField] private StudioEventEmitter openBottle;
     
     public void OpenBottle()
     {
         spin = true;
+        openBottle.Play();
         Invoke("DisableSpin", 1f);
     }
 

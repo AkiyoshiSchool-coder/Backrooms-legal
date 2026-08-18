@@ -1871,7 +1871,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8991649992084623105, guid: 72274de488f9a2f429c4cc1eb9351dc4, type: 3}
   m_PrefabInstance: {fileID: 625432417}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1577969132}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 47fbb9399b2cca249ac9ed807bec11cd, type: 3}
@@ -4391,6 +4391,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1680547399}
     - target: {fileID: 8991649992084623105, guid: 72274de488f9a2f429c4cc1eb9351dc4, type: 3}
+      propertyPath: openBottle
+      value: 
+      objectReference: {fileID: 1577969137}
+    - target: {fileID: 8991649992084623105, guid: 72274de488f9a2f429c4cc1eb9351dc4, type: 3}
       propertyPath: tampaSpawn
       value: 
       objectReference: {fileID: 1381361356}
@@ -4401,7 +4405,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7811944006387749974, guid: 72274de488f9a2f429c4cc1eb9351dc4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1577969137}
   m_SourcePrefab: {fileID: 100100000, guid: 72274de488f9a2f429c4cc1eb9351dc4, type: 3}
 --- !u!4 &625432418 stripped
 Transform:
@@ -10395,6 +10402,42 @@ Transform:
   - {fileID: 1465301188}
   m_Father: {fileID: 718287535}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1577969132 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7811944006387749974, guid: 72274de488f9a2f429c4cc1eb9351dc4, type: 3}
+  m_PrefabInstance: {fileID: 625432417}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1577969137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1577969132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 2035704960
+      Data2: 1184875126
+      Data3: -986236242
+      Data4: 1803577151
+    Path: event:/OpenBottle
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!4 &1591251739 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5238820401998598406, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
