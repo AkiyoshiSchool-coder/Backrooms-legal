@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
+using Unity.Cinemachine;
 
 public class FirstPersonLook : MonoBehaviour
 {
@@ -10,7 +11,8 @@ public class FirstPersonLook : MonoBehaviour
     public float baseSensivity = 2f;
     public float smoothing = 1.5f;
 
-    [SerializeField] private Camera mcam;
+    [SerializeField] private CinemachineCamera mcam;
+    [SerializeField] private CinemachineInputAxisController mcamControl;
 
     [SerializeField] private float zoomVision = 30;
     [SerializeField] private float normalVision = 60;
@@ -48,12 +50,12 @@ public class FirstPersonLook : MonoBehaviour
 
         if(zoomAction.WasPressedThisFrame())
         {
-            mcam.fieldOfView = zoomVision;
+            mcam.Lens.FieldOfView = zoomVision;
         }
 
         if(zoomAction.WasReleasedThisFrame())
         {
-            mcam.fieldOfView = normalVision;
+            mcam.Lens.FieldOfView = normalVision;
         }
     }
 
@@ -61,11 +63,13 @@ public class FirstPersonLook : MonoBehaviour
     {
         if(freeze)
         {
-            sensitivity = 0;
+            mcamControl.Controllers[0].Enabled = false; // https://discussions.unity.com/t/919323
+            mcamControl.Controllers[1].Enabled = false;
         }
         else
         {
-            sensitivity = baseSensivity;
+            mcamControl.Controllers[0].Enabled = true;
+            mcamControl.Controllers[1].Enabled = true;
         }
     }
 }
