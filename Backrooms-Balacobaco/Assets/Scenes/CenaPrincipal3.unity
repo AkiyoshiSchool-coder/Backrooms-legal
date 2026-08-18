@@ -6540,6 +6540,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: First Person Controller Minimal
       objectReference: {fileID: 0}
+    - target: {fileID: 5241267463746980526, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8122,6 +8126,8 @@ PlayableDirector:
     value: {fileID: 582388094}
   - key: {fileID: 1288993623381004821, guid: 7186b8ed4ba4442448993cc413072e8f, type: 2}
     value: {fileID: 524614087}
+  - key: {fileID: -1691536027082605833, guid: 7186b8ed4ba4442448993cc413072e8f, type: 2}
+    value: {fileID: 65694180}
   m_ExposedReferences:
     m_References:
     - 363c3da9f4ce0504ca12f34a026357aa: {fileID: 1523184630}
