@@ -1,10 +1,12 @@
 using UnityEngine;
+using FMODUnity;
 
 public class Porta : MonoBehaviour
 {
     Keys keys;
     [SerializeField] private GameObject naoTemChaves;
     [SerializeField] private Animator animator;
+    public StudioEventEmitter doorSound;
     private bool aberto = false;
 
     void OnTriggerEnter(Collider other)
@@ -14,6 +16,7 @@ public class Porta : MonoBehaviour
         {
             if (keys.keys == 3)
             {
+                doorSound.Play();
                 aberto = true;
                 animator.SetBool("Aberto", aberto);
             }

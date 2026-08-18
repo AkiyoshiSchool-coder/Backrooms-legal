@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using FMODUnity;
 
 public class FirstPersonMovement : MonoBehaviour
 {
@@ -15,6 +16,9 @@ public class FirstPersonMovement : MonoBehaviour
     private InputAction moveAction;
     [SerializeField] private Transform MyCamera;
     [SerializeField] private Vector3 cPos;
+    public StudioEventEmitter steps;
+    private float stepTimer = 0;
+    [SerializeField] private float stepCD;
 
     Rigidbody rigidbody;
     Rigidbody box;
@@ -54,6 +58,16 @@ public class FirstPersonMovement : MonoBehaviour
         if(box != null)
         {
             box.linearVelocity = transform.rotation * new Vector3(targetVelocity.x, rigidbody.linearVelocity.y, targetVelocity.y);
+        }
+    }
+
+    void Update()
+    {
+        stepTimer += Time.deltaTime;
+        if(moveAction.IsPressed() && stepTimer > stepCD)
+        {
+            stepTimer = 0;
+            steps.Play();
         }
     }
 
