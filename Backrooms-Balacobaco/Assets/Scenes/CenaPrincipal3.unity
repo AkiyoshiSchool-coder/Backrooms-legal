@@ -6102,7 +6102,7 @@ Transform:
   m_GameObject: {fileID: 844015122}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 21.477703, y: 11.8, z: 11.784325}
+  m_LocalPosition: {x: 15.99, y: 11.8, z: 11.78}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8120,7 +8120,7 @@ PlayableDirector:
   m_SceneBindings:
   - key: {fileID: -8752146649057845079, guid: 7186b8ed4ba4442448993cc413072e8f, type: 2}
     value: {fileID: 582388094}
-  - key: {fileID: -7599491337945905900, guid: 7186b8ed4ba4442448993cc413072e8f, type: 2}
+  - key: {fileID: 1288993623381004821, guid: 7186b8ed4ba4442448993cc413072e8f, type: 2}
     value: {fileID: 524614087}
   m_ExposedReferences:
     m_References:
@@ -14200,7 +14200,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Voc\xEA est\xE1 em um n\xE3o lugar "
+  m_text: "Voc\xEA est\xE1 em um n\xE3o-lugar "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
