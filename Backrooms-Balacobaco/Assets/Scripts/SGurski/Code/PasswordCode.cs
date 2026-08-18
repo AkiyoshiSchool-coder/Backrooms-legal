@@ -23,7 +23,6 @@ public class PasswordCode : MonoBehaviour
             if(passInput.Length < 4)
             {
                 passInput += number;
-                Debug.Log(passInput);
             }
             if(passInput.Length >= 4)
             {
@@ -37,12 +36,10 @@ public class PasswordCode : MonoBehaviour
         canType = false;
         if(passInput == password)
         {
-            Debug.Log("SENHA CORRETA");
             safeDoor.PlayAnim();
         }
         else
         {
-            Debug.Log("SENHA INCORRETA");
             passInput = "";
             canType = true;
         }
