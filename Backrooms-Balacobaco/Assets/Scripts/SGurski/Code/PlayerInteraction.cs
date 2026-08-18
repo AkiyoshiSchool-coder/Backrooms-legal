@@ -150,7 +150,10 @@ public class PlayerInteraction : MonoBehaviour
                 UIManager.instance.ChangeColor(Color.yellow);
                 if(interactAction.WasPressedThisFrame())
                 {
-                    boxCollider.enabled = false;
+                    if(boxCollider != null)
+                    {
+                        boxCollider.enabled = false;
+                    }
                     if(obj.isMoving)
                     {
                         return;
@@ -281,7 +284,10 @@ public class PlayerInteraction : MonoBehaviour
     {
         if(currentObject.item.canRotate)
         {
-            boxCollider.enabled = false;
+            if(boxCollider != null)
+            {
+                boxCollider.enabled = false;
+            }
             Vector2 rotation = lookAction.ReadValue<Vector2>();
             currentObject.transform.Rotate(cam.transform.up, -Mathf.Deg2Rad*rotation.x*rotateSpeed, Space.World);
             currentObject.transform.Rotate(cam.transform.right, -Mathf.Deg2Rad*rotation.y*rotateSpeed, Space.World);
@@ -295,7 +301,10 @@ public class PlayerInteraction : MonoBehaviour
             currentObject.transform.rotation = handPos.transform.rotation;
             currentObject.transform.position = handPos.transform.position;
             currentObject.transform.SetParent(handPos.transform);
-            boxCollider.enabled = false;
+            if(boxCollider != null)
+            {
+                boxCollider.enabled = false;
+            }
             Grabbed = true;
             OnFinishView.Invoke();
         }   

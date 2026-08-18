@@ -46,14 +46,12 @@ public class FirstPersonLook : MonoBehaviour
         velocity += frameVelocity;
         velocity.y = Mathf.Clamp(velocity.y, -90, 90);
 
-        // Rotate camera up-down and controller left-right from velocity.
-
-        if (zoomAction.WasPressedThisFrame())
+        if(zoomAction.WasPressedThisFrame())
         {
             mcam.fieldOfView = zoomVision;
         }
 
-        if (zoomAction.WasReleasedThisFrame())
+        if(zoomAction.WasReleasedThisFrame())
         {
             mcam.fieldOfView = normalVision;
         }
