@@ -21,7 +21,7 @@ public class ColliderTronco : MonoBehaviour
         num = UnityEngine.Random.Range(1,3);
         if(num == 1)
         {
-            positionZ = -16f;
+            positionZ = -14f;
         }else{
             positionZ = -6.96f;
         }
