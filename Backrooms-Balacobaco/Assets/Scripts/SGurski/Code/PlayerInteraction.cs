@@ -157,7 +157,7 @@ public class PlayerInteraction : MonoBehaviour
                 {
                     UIManager.instance.ChangeColor(Color.yellow);
                 }
-                if(interactAction.WasPressedThisFrame())
+                if(interactAction.WasPressedThisFrame() && !interacting)
                 {
                     currentObject = obj;
                     interacting = true;
