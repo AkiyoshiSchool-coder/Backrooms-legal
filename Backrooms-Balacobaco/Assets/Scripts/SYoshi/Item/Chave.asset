@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Item
   canGrab: 1
   audio: {fileID: 0}
-  texto: Uma chave, deve abrir algo
+  texto: Uma chave, deve abrir algo. Aperte F para pegar
   canRotate: 1
   inHand: 0
   hasExtraAction: 1
