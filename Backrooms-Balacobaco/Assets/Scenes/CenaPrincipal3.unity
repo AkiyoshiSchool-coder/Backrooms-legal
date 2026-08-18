@@ -3402,6 +3402,26 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2343381427822934097, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 582388099}
+    - target: {fileID: 2343381427822934097, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
+      propertyPath: keys
+      value: 
+      objectReference: {fileID: 1807937926}
+    - target: {fileID: 2343381427822934097, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
+      propertyPath: handPos
+      value: 
+      objectReference: {fileID: 368907643}
+    - target: {fileID: 2343381427822934097, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
+      propertyPath: pilarPos
+      value: 
+      objectReference: {fileID: 897309747}
+    - target: {fileID: 2343381427822934097, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
+      propertyPath: chestAnim
+      value: 
+      objectReference: {fileID: 2085105313}
+    - target: {fileID: 2343381427822934097, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
       propertyPath: pauseMenu
       value: 
       objectReference: {fileID: 1965766581}
@@ -3410,9 +3430,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 284413406}
     - target: {fileID: 2343381427822934097, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
+      propertyPath: tableCraft
+      value: 
+      objectReference: {fileID: 503851132}
+    - target: {fileID: 2343381427822934097, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
       propertyPath: camMovement
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 582388095}
     - target: {fileID: 2343381427822934097, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
       propertyPath: InputActions
       value: 
@@ -3421,6 +3445,10 @@ PrefabInstance:
       propertyPath: passwordCode
       value: 
       objectReference: {fileID: 1680547399}
+    - target: {fileID: 2343381427822934097, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
+      propertyPath: ghostPlacement
+      value: 
+      objectReference: {fileID: 897309749}
     - target: {fileID: 2343381427822934097, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
       propertyPath: cinemachineCamera
       value: 
@@ -3437,6 +3465,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 2726557219122891078, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
+      propertyPath: MyCamera
+      value: 
+      objectReference: {fileID: 582388100}
     - target: {fileID: 4609453899747716903, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
       propertyPath: textochave
       value: 
@@ -6963,6 +6995,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4984e87189335404582418ab6081ba2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerInteraction
+--- !u!114 &1807937926 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4609453899747716903, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
+  m_PrefabInstance: {fileID: 871949882}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fee5445702440746a64299cb75da391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Keys
 --- !u!4 &1831512204 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7104316468628707942, guid: 3e719a14335c40c4681ba700aeb5a17a, type: 3}
