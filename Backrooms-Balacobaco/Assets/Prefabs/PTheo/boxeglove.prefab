@@ -117,7 +117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TroncoMovement
   playerTransform: {fileID: 0}
-  speed: 7
+  speed: 0
   timer: 1.25
   punchSound: {fileID: 1510325313185247125}
 --- !u!114 &1510325313185247125
