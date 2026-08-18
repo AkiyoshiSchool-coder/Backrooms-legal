@@ -123,7 +123,7 @@ public class PlayerInteraction : MonoBehaviour
                         FinishView();
                         tableCraft.DestroyHammer();
                         LockB.Play();
-                        StartCoroutine(LockSound(LockF,1f));
+                        StartCoroutine(LockSound(LockF,1.3f));
                     }
                     if(currentObject.CompareTag("Chave"))
                     {

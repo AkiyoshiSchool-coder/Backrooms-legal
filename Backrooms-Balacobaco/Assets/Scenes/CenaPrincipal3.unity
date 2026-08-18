@@ -3282,14 +3282,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 483624357}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.49704963, z: 0, w: 0.86772215}
+  m_LocalRotation: {x: -0, y: 0.49704963, z: -0, w: 0.86772215}
   m_LocalPosition: {x: -12.561, y: 1.852, z: -3.643}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1940531766}
   - {fileID: 341329477}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1044861416}
   m_LocalEulerAnglesHint: {x: 0, y: 59.61, z: 0}
 --- !u!114 &483624359
 MonoBehaviour:
@@ -7889,6 +7889,7 @@ Transform:
   - {fileID: 648921316}
   - {fileID: 283887200}
   - {fileID: 2085105315}
+  - {fileID: 483624358}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1052938910 stripped
@@ -16393,7 +16394,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11100000, guid: 63878c47173aa774687bf1dcb9a14938, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11100000, guid: 63878c47173aa774687bf1dcb9a14938, type: 3}
       propertyPath: m_AnimatePhysics
@@ -16401,7 +16402,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11100000, guid: 63878c47173aa774687bf1dcb9a14938, type: 3}
       propertyPath: m_PlayAutomatically
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 13700000, guid: 63878c47173aa774687bf1dcb9a14938, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -16889,7 +16890,6 @@ SceneRoots:
   - {fileID: 794584736}
   - {fileID: 1858309977}
   - {fileID: 1217650415}
-  - {fileID: 483624358}
   - {fileID: 1394339173}
   - {fileID: 1710457919}
   - {fileID: 1085609828}
