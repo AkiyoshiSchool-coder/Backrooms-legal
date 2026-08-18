@@ -3648,6 +3648,7 @@ GameObject:
   - component: {fileID: 503851131}
   - component: {fileID: 503851133}
   - component: {fileID: 503851132}
+  - component: {fileID: 503851134}
   m_Layer: 0
   m_Name: ChairPos
   m_TagString: Banquinho
@@ -3689,6 +3690,7 @@ MonoBehaviour:
   Marcelo: {fileID: 686057850}
   Cabeca: {fileID: 341329478}
   boxCollider: {fileID: 341329479}
+  hammerCraft: {fileID: 503851134}
 --- !u!65 &503851133
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3710,6 +3712,37 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 0.80313265}
   m_Center: {x: 0, y: 0, z: 0.09843369}
+--- !u!114 &503851134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 503851130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -239199696
+      Data2: 1101687918
+      Data3: -1748989050
+      Data4: 2055526593
+    Path: event:/Akiyoshi/CraftHammer
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &511010836
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7356,7 +7389,6 @@ Transform:
   - {fileID: 675933073}
   - {fileID: 648921316}
   - {fileID: 283887200}
-  - {fileID: 1675512086}
   - {fileID: 2085105315}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8007,19 +8039,19 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1044861416}
+    m_TransformParent: {fileID: 1648029796}
     m_Modifications:
     - target: {fileID: 2498504952586042402, guid: 5dd5a1ab6047d4848b7668734815016f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.25
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 2498504952586042402, guid: 5dd5a1ab6047d4848b7668734815016f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.1593
+      value: 0.45929998
       objectReference: {fileID: 0}
     - target: {fileID: 2498504952586042402, guid: 5dd5a1ab6047d4848b7668734815016f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 11.8894
+      value: -0.11060047
       objectReference: {fileID: 0}
     - target: {fileID: 2498504952586042402, guid: 5dd5a1ab6047d4848b7668734815016f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8697,6 +8729,7 @@ MonoBehaviour:
   Marcelo: {fileID: 686057850}
   Cabeca: {fileID: 341329478}
   boxCollider: {fileID: 341329479}
+  hammerCraft: {fileID: 0}
 --- !u!65 &1260285261
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12160,6 +12193,7 @@ Transform:
   - {fileID: 1680547400}
   - {fileID: 625432418}
   - {fileID: 1381361357}
+  - {fileID: 1675512086}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1665051745 stripped

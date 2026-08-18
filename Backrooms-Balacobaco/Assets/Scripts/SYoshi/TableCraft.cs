@@ -1,4 +1,5 @@
 using UnityEngine;
+using FMODUnity;
 
 public class TableCraft : MonoBehaviour
 {
@@ -7,7 +8,7 @@ public class TableCraft : MonoBehaviour
     public GameObject posicao;
     public GameObject Base,Marcelo,Cabeca;
     public BoxCollider boxCollider;
-    
+    [SerializeField] private StudioEventEmitter hammerCraft;
 
     void Update()
     {
@@ -35,6 +36,7 @@ public class TableCraft : MonoBehaviour
     }
     private void CraftHammer()
     {
+        hammerCraft.Play();
         Marcelo.transform.SetParent(null);
         Destroy(Cabeca);
         Destroy(Base);
