@@ -6,6 +6,7 @@ public class Porta : MonoBehaviour
     Keys keys;
     [SerializeField] private GameObject naoTemChaves;
     [SerializeField] private Animator animator;
+    [SerializeField] private GameObject fim;
     public StudioEventEmitter doorSound;
     private bool aberto = false;
 
@@ -19,6 +20,7 @@ public class Porta : MonoBehaviour
                 doorSound.Play();
                 aberto = true;
                 animator.SetBool("Aberto", aberto);
+                fim.SetActive(true);
             }
             else
             {

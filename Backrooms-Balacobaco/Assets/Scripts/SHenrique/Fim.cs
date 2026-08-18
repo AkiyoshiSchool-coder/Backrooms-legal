@@ -4,12 +4,17 @@ using UnityEngine;
 public class Fim : MonoBehaviour
 {
     [SerializeField] private GameObject fim;
-    [SerializeField] private GameObject Player;
     
     void OnTriggerEnter(Collider other)
     {
-        fim.SetActive(true);
-        Player.SetActive(false);
-        Cursor.lockState = CursorLockMode.None;
+        if(this.enabled == true)
+        {
+            if(other.CompareTag("Player"))
+            {
+                fim.SetActive(true);
+                other.gameObject.SetActive(false);
+                Cursor.lockState = CursorLockMode.None;
+            }
+        }
     }
 }
