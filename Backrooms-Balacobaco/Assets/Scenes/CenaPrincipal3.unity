@@ -12927,6 +12927,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 63878c47173aa774687bf1dcb9a14938, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2085105312}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 63878c47173aa774687bf1dcb9a14938, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2085105316}
     - targetCorrespondingSourceObject: {fileID: 100004, guid: 63878c47173aa774687bf1dcb9a14938, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2085105314}
@@ -12990,6 +12993,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ChestAnim
   open: 0
   animation: {fileID: 2085105310}
+  woodChest: {fileID: 2085105316}
   PlayerInRange: 0
 --- !u!65 &2085105314
 BoxCollider:
@@ -13017,6 +13021,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 63878c47173aa774687bf1dcb9a14938, type: 3}
   m_PrefabInstance: {fileID: 2085105308}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2085105316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2085105309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1002042242
+      Data2: 1329330208
+      Data3: -614229098
+      Data4: -1439473787
+    Path: event:/Akiyoshi/ChestWood
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!65 &2085105318
 BoxCollider:
   m_ObjectHideFlags: 0

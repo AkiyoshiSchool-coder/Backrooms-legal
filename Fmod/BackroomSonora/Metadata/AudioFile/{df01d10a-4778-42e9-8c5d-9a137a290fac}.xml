@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{df01d10a-4778-42e9-8c5d-9a137a290fac}">
+		<property name="assetPath">
+			<value>LockBreak.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.0710204081632653</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{4dd52775-7a0a-4758-b6ac-f0cabfdf28a7}</destination>
+		</relationship>
+	</object>
+</objects>

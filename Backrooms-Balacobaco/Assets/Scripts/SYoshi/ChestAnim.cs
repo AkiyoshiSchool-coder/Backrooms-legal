@@ -1,16 +1,19 @@
 using UnityEngine;
+using FMODUnity;
 
 public class ChestAnim : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public bool open;
     [SerializeField] private Animation animation;
+    [SerializeField] private StudioEventEmitter woodChest;
     public bool PlayerInRange;
 
     public void StartAnim()
     {
-       open = true;
-       Animator();
+        woodChest.Play();
+        open = true;
+        Animator();
     }
 
     private void Animator()
