@@ -4,8 +4,8 @@ using Unity.VisualScripting;
 
 public class Armadilha : MonoBehaviour
 {
-    public GameObject objetoAlvo; 
-    [SerializeField] private BoxCollider meuColisor;
+    [SerializeField]  GameObject objetoAlvo; 
+    private BoxCollider meuColisor;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

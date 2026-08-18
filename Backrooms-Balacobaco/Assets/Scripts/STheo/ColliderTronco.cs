@@ -21,7 +21,7 @@ public class ColliderTronco : MonoBehaviour
         num = UnityEngine.Random.Range(1,3);
         if(num == 1)
         {
-            positionZ = -14f;
+            positionZ = -15.5f;
         }else{
             positionZ = -6.96f;
         }
@@ -38,7 +38,7 @@ public class ColliderTronco : MonoBehaviour
 
     void InvocarTronco()
     {
-        Vector3 randomPosition = new Vector3(Random.Range(-14, -5), 0.5f, positionZ);
+        Vector3 randomPosition = new Vector3(Random.Range(-12, -5), 0.5f, positionZ);
         Instantiate(tronco, randomPosition, Quaternion.identity);
     }
 
