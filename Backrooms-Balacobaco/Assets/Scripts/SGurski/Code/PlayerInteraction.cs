@@ -48,6 +48,8 @@ public class PlayerInteraction : MonoBehaviour
     public BottleSpin bottleCode;
     public GameObject pauseMenu;
 
+    public Interactables teste;
+
     void Start()
     {
         cam = Camera.main;
@@ -119,9 +121,9 @@ public class PlayerInteraction : MonoBehaviour
                     }
                     if(currentObject.CompareTag("Chave"))
                     {
+                        keys.KeyChange();
                         currentObject.gameObject.SetActive(false);
                         FinishView();
-                        keys.KeyChange();
                     }
                 }
             }
@@ -142,11 +144,13 @@ public class PlayerInteraction : MonoBehaviour
         if(Physics.Raycast(rayOrigin, cam.transform.forward, out hit, rayRange))
         {
             Interactables obj = hit.collider.GetComponent<Interactables>();
+            teste = obj;
             if(obj != null)
             {
                 UIManager.instance.ChangeColor(Color.yellow);
                 if(interactAction.WasPressedThisFrame())
                 {
+                    boxCollider.enabled = false;
                     if(obj.isMoving)
                     {
                         return;
@@ -177,6 +181,7 @@ public class PlayerInteraction : MonoBehaviour
         }
         else
         {
+            
             UIManager.instance.ChangeColor(Color.black);
         }
     }
@@ -276,6 +281,7 @@ public class PlayerInteraction : MonoBehaviour
     {
         if(currentObject.item.canRotate)
         {
+            boxCollider.enabled = false;
             Vector2 rotation = lookAction.ReadValue<Vector2>();
             currentObject.transform.Rotate(cam.transform.up, -Mathf.Deg2Rad*rotation.x*rotateSpeed, Space.World);
             currentObject.transform.Rotate(cam.transform.right, -Mathf.Deg2Rad*rotation.y*rotateSpeed, Space.World);
