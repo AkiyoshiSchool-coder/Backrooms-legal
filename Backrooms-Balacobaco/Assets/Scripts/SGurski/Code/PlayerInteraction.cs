@@ -17,6 +17,7 @@ public class PlayerInteraction : MonoBehaviour
     [SerializeField] private GhostPlacement ghostPlacement;
     [SerializeField] private TableCraft tableCraft;
     [SerializeField] private ChestAnim chestAnim;
+    [SerializeField] private Keys keys;
 
     public InputActionAsset InputActions;
     private InputAction interactAction;
@@ -113,8 +114,14 @@ public class PlayerInteraction : MonoBehaviour
                     if(Names[0] == Names[3] && chestAnim.PlayerInRange)
                     {
                         chestAnim.StartAnim();
-                        OnFinishView.Invoke();
+                        FinishView();
                         tableCraft.DestroyHammer();
+                    }
+                    if(currentObject.CompareTag("Chave"))
+                    {
+                        currentObject.gameObject.SetActive(false);
+                        FinishView();
+                        keys.KeyChange();
                     }
                 }
             }
@@ -284,8 +291,8 @@ public class PlayerInteraction : MonoBehaviour
             currentObject.transform.SetParent(handPos.transform);
             boxCollider.enabled = false;
             Grabbed = true;
-        }
-        OnFinishView.Invoke();
+            OnFinishView.Invoke();
+        }   
     }
 
     void PauseGame(bool pause)

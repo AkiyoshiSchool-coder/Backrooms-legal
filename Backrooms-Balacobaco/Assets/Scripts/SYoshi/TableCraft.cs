@@ -43,6 +43,6 @@ public class TableCraft : MonoBehaviour
     }
     public void DestroyHammer()
     {
-        Destroy(Marcelo);
+        Marcelo.SetActive(false);
     }
 }
