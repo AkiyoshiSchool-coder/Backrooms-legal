@@ -18,7 +18,7 @@ public class ChestAnim : MonoBehaviour
 
     private void Animator()
     {
-        animation.enabled = true;
+        animation.Play("ChestAnim");
     }
     private void OnTriggerEnter(Collider other)
     {
