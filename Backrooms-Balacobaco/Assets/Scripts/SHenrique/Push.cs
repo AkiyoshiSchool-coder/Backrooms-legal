@@ -8,6 +8,7 @@ public class Push : MonoBehaviour
 {
     [SerializeField] private InputActionReference pushingAction;
     [SerializeField] private Texture hand;
+    [SerializeField] private Texture normal;
     private GameObject objpuxavel;
     private bool perto;
     public bool umavez = false;
@@ -51,15 +52,15 @@ public class Push : MonoBehaviour
     {
         if(other.tag == "Box")
         {
-            UIManager.instance.ChangeImage(hand);
+            UIManager.instance.ChangeImage(normal);
             UIManager.instance.ChangeScale(normalTamanho);
+            UIManager.instance.ChangeColor(Color.black);
 
             if (pegavel == false)
             {
 
                 if (objpuxavel != null)
                 {
-                    UIManager.instance.ChangeColor(Color.black);
                     rb.constraints = RigidbodyConstraints.FreezeAll;
                     objpuxavel = null;
                     perto = false;
@@ -84,6 +85,8 @@ public class Push : MonoBehaviour
             {
                 if (objpuxavel != null)
                 {
+                    UIManager.instance.ChangeImage(hand);
+                    UIManager.instance.ChangeScale(maoTamanho);
                     UIManager.instance.ChangeColor(colorNew);
                     caixaSound.Play();
 
@@ -113,8 +116,7 @@ public class Push : MonoBehaviour
         rb.constraints &= ~RigidbodyConstraints.FreezePositionX;
         rb.constraints &= ~RigidbodyConstraints.FreezePositionY;
         rb.constraints &= ~RigidbodyConstraints.FreezePositionZ;
-        UIManager.instance.ChangeColor(Color.black);
-
+    
         if (objpuxavel != null)
         {
             objpuxavel = null;

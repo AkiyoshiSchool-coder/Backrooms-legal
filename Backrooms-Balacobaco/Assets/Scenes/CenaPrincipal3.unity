@@ -2948,7 +2948,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Fim
   fim: {fileID: 244576104}
-  Player: {fileID: 65694180}
 --- !u!1 &405764072 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
@@ -7068,7 +7067,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8559450848074965709, guid: 78db1c7ad4147da4bbb9b983c5efb3cc, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12704,6 +12703,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Porta
   naoTemChaves: {fileID: 1717523680}
   animator: {fileID: 1513148860}
+  fim: {fileID: 0}
   doorSound: {fileID: 1513148862}
 --- !u!95 &1513148860
 Animator:

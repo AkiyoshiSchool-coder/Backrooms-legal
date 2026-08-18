@@ -7,13 +7,11 @@ public class UIManager : MonoBehaviour
 {
     public static UIManager instance;
     public TextMeshProUGUI interactText, extraText;
-    Texture image;
     bool mudanca = false;
 
     void Awake()
     {
         instance = this;
-        image = gameObject.GetComponent<RawImage>().texture;
     }
 
     public void ChangeColor(Color cor)
@@ -23,11 +21,7 @@ public class UIManager : MonoBehaviour
 
     public void ChangeImage(Texture texture)
     {
-        mudanca = !mudanca;
-        if (mudanca == true)
-            gameObject.GetComponent<RawImage>().texture = texture;
-        else
-            gameObject.GetComponent<RawImage>().texture = image;
+        gameObject.GetComponent<RawImage>().texture = texture;
     }
 
     public void ChangeScale(Vector3 scale)
