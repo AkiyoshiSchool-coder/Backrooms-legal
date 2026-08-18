@@ -38,7 +38,7 @@ public class ColliderTronco : MonoBehaviour
 
     void InvocarTronco()
     {
-        Vector3 randomPosition = new Vector3(Random.Range(-12, -5), 0.5f, positionZ);
+        Vector3 randomPosition = new Vector3(Random.Range(-12, -5), 0.8f, positionZ);
         Instantiate(tronco, randomPosition, Quaternion.identity);
     }
 
