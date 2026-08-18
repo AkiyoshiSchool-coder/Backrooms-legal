@@ -371,6 +371,7 @@ GameObject:
   - component: {fileID: 4609453899747716903}
   - component: {fileID: 7594872340924617319}
   - component: {fileID: 8471404925192806550}
+  - component: {fileID: 6591060920020099360}
   m_Layer: 0
   m_Name: First Person Controller Minimal
   m_TagString: Player
@@ -468,6 +469,7 @@ MonoBehaviour:
   cPos: {x: 0, y: 0, z: 0}
   steps: {fileID: 8471404925192806550}
   stepCD: 0.35
+  groundcode: {fileID: 6207569049622709842}
 --- !u!114 &2343381427822934097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -548,6 +550,8 @@ MonoBehaviour:
         m_CallState: 2
   HammerRotation: {x: 0.18301275, y: 0.18301275, z: -0.68301266, w: -0.68301266}
   boxCollider: {fileID: 0}
+  LockB: {fileID: 0}
+  LockF: {fileID: 0}
   Names:
   - 
   - GChest
@@ -612,6 +616,7 @@ MonoBehaviour:
   firstPersonMovement: {fileID: 2726557219122891078}
   jump: {fileID: -1116358540801230556}
   box: {fileID: 5112039274939059279}
+  caixaSound: {fileID: 6591060920020099360}
 --- !u!114 &4609453899747716903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -678,6 +683,37 @@ MonoBehaviour:
       Data3: -647326291
       Data4: -1176599731
     Path: event:/Footsteps/FS
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &6591060920020099360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5241267463746980526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -848288685
+      Data2: 1253178028
+      Data3: 741335173
+      Data4: -1749968900
+    Path: event:/Boxes/Box
   Event: 
   EventPlayTrigger: 0
   EventStopTrigger: 0
