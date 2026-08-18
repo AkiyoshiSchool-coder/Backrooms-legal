@@ -13,7 +13,8 @@ public class FirstPersonMovement : MonoBehaviour
     public InputActionAsset inputActions;
     private InputAction runAction;
     private InputAction moveAction;
-    private Transform MyCamera;
+    [SerializeField] private Transform MyCamera;
+    [SerializeField] private Vector3 cPos;
 
     Rigidbody rigidbody;
     Rigidbody box;
@@ -24,6 +25,7 @@ public class FirstPersonMovement : MonoBehaviour
     {
         rigidbody = GetComponent<Rigidbody>();
         MyCamera = Camera.main.transform;
+        cPos = new Vector3(transform.eulerAngles.x,MyCamera.transform.eulerAngles.y, transform.eulerAngles.z);
     }
 
     void Start()
@@ -36,7 +38,7 @@ public class FirstPersonMovement : MonoBehaviour
     {
 
         transform.eulerAngles = new Vector3(transform.eulerAngles.x,MyCamera.transform.eulerAngles.y, transform.eulerAngles.z);
-
+        cPos = new Vector3(transform.eulerAngles.x,MyCamera.transform.eulerAngles.y, transform.eulerAngles.z);
         // Get targetMovingSpeed.
         float targetMovingSpeed = IsRunning ? runSpeed : speed;
         if (speedOverrides.Count > 0)
