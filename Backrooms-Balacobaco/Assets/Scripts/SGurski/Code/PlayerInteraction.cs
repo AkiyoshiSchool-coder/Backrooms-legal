@@ -239,6 +239,7 @@ public class PlayerInteraction : MonoBehaviour
                 else if(Names[0] == Names[2])
                 {
                     handPos.transform.rotation = HammerRotation;
+                    boxCollider.enabled = true;
                 }
                 else
                 {
@@ -278,6 +279,12 @@ public class PlayerInteraction : MonoBehaviour
             UIManager.instance.InteractText(false);
         }
         canFinish = true;
+        if(ghostPlacement.onPillar &&  Names[0] == Names[1])
+        {
+            boxCollider.enabled = false;
+            tableCraft.boxCollider.enabled = true;
+            
+        }
     }
 
     void RotateObject()
