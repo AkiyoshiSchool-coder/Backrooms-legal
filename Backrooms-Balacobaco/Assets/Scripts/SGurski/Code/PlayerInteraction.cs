@@ -186,6 +186,7 @@ public class PlayerInteraction : MonoBehaviour
                         {
                             passwordCode.InsertCharacter(currentObject.name);
                             currentObject.gameObject.GetComponent<BlinkButton>().Blink();
+                            interacting = false;
                         }
                     }
                 }
