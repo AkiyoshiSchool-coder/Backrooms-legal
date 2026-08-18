@@ -298,7 +298,10 @@ public class PlayerInteraction : MonoBehaviour
         canFinish = true;
         if(ghostPlacement.onPillar &&  Names[0] == Names[1])
         {
-            boxCollider.enabled = false;
+            if(boxCollider != null)
+            {
+                boxCollider.enabled = false;
+            }
             tableCraft.boxCollider.enabled = true;
             
         }
