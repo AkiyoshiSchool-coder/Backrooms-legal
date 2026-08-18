@@ -2280,8 +2280,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\nSoltar item - Mouse 2\nZoom - Mouse 3\nArrastar/empurrar caixas - E\nIntera\xE7\xE3o
-    extra - F\nEquipar itens - G\n"
+  m_text: "\nSoltar objeto - Clique direito\nZoom - Pressionar scroll\nArrastar/empurrar
+    caixas - E\nIntera\xE7\xE3o extra - F\nEquipar itens - G\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2984,8 +2984,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 420, y: -450}
-  m_SizeDelta: {x: 1000, y: 50}
+  m_AnchoredPosition: {x: 520, y: -450}
+  m_SizeDelta: {x: 800, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &427227021
 MonoBehaviour:
@@ -3042,7 +3042,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 4
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 1024
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_characterHorizontalScale: 1
@@ -9080,7 +9080,7 @@ PrefabInstance:
     - target: {fileID: 6751934791955342079, guid: 5dd5a1ab6047d4848b7668734815016f, type: 3}
       propertyPath: item
       value: 
-      objectReference: {fileID: 11400000, guid: 0e81cd0b2b1cd6440a98799e5af3bad5, type: 2}
+      objectReference: {fileID: 11400000, guid: dc8c8edeed3de2c4cbcb3d30ad1978a3, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9528,6 +9528,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5792502558316135409, guid: 5a8f323516dc94289942fcbd7b91ed01, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1253750002}
+    - targetCorrespondingSourceObject: {fileID: 5792502558316135409, guid: 5a8f323516dc94289942fcbd7b91ed01, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1253750005}
+    - targetCorrespondingSourceObject: {fileID: 5792502558316135409, guid: 5a8f323516dc94289942fcbd7b91ed01, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1253750004}
     - targetCorrespondingSourceObject: {fileID: 6702769297484543784, guid: 5a8f323516dc94289942fcbd7b91ed01, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1253750003}
@@ -9582,6 +9588,100 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.1108193, y: 0.863431, z: 1.153386}
   m_Center: {x: -0.34459084, y: 0.41000003, z: 0.3233054}
+--- !u!114 &1253750004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1253749999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_CustomShadowLayers: 0
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
+--- !u!108 &1253750005
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1253749999}
+  m_Enabled: 1
+  serializedVersion: 12
+  m_Type: 2
+  m_Color: {r: 0.23113209, g: 0.4139609, b: 1, a: 1}
+  m_Intensity: 0.4
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize2D: {x: 0.5, y: 0.5}
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ForceVisible: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_LightUnit: 1
+  m_LuxAtDistance: 1
+  m_EnableSpotReflector: 1
 --- !u!1 &1255853977 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
@@ -9781,7 +9881,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Movimenta\xE7\xE3o - WASD\nPulo - Espa\xE7o\nPausar - Escape\nInteragir/rotacionar
-    item - Mouse 1\n"
+    item - Clique direito\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -15133,7 +15233,7 @@ PrefabInstance:
     - target: {fileID: 6751934791955342079, guid: 5dd5a1ab6047d4848b7668734815016f, type: 3}
       propertyPath: item
       value: 
-      objectReference: {fileID: 11400000, guid: 7de5f4f714ad8a540b80b420c5e2c92a, type: 2}
+      objectReference: {fileID: 11400000, guid: dc8c8edeed3de2c4cbcb3d30ad1978a3, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15806,6 +15906,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100008, guid: 1767a871119a05747b0bfcb4b4f87383, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1940531767}
+    - targetCorrespondingSourceObject: {fileID: 100008, guid: 1767a871119a05747b0bfcb4b4f87383, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1940531769}
+    - targetCorrespondingSourceObject: {fileID: 100008, guid: 1767a871119a05747b0bfcb4b4f87383, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1940531768}
   m_SourcePrefab: {fileID: 100100000, guid: 1767a871119a05747b0bfcb4b4f87383, type: 3}
 --- !u!95 &1940531765 stripped
 Animator:
@@ -15848,6 +15954,100 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
+--- !u!114 &1940531768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191204659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_CustomShadowLayers: 0
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
+--- !u!108 &1940531769
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191204659}
+  m_Enabled: 1
+  serializedVersion: 12
+  m_Type: 2
+  m_Color: {r: 0.23113209, g: 0.4139609, b: 1, a: 1}
+  m_Intensity: 0.82
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize2D: {x: 0.5, y: 0.5}
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ForceVisible: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_LightUnit: 1
+  m_LuxAtDistance: 1
+  m_EnableSpotReflector: 1
 --- !u!1 &1949719130
 GameObject:
   m_ObjectHideFlags: 0
@@ -16105,7 +16305,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Soltar objeto - clique direito
+  m_text: Soltar objeto - Clique direito
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
