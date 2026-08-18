@@ -2280,8 +2280,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\nSoltar item - Mouse 2\nZoom - Mouse 3\nArrastar/empurrar caixas - E\nIntera\xE7\xE3o
-    extra - F\nEquipar itens - G\n"
+  m_text: "\nSoltar objeto - Clique direito\nZoom - Pressionar scroll\nArrastar/empurrar
+    caixas - E\nIntera\xE7\xE3o extra - F\nEquipar itens - G\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9881,7 +9881,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Movimenta\xE7\xE3o - WASD\nPulo - Espa\xE7o\nPausar - Escape\nInteragir/rotacionar
-    item - Mouse 1\n"
+    item - Clique direito\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -16305,7 +16305,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Soltar objeto - clique direito
+  m_text: Soltar objeto - Clique direito
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
