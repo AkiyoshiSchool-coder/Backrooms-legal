@@ -19,6 +19,8 @@ public class FirstPersonMovement : MonoBehaviour
     public StudioEventEmitter steps;
     private float stepTimer = 0;
     [SerializeField] private float stepCD;
+    private bool playerGrounded;
+    [SerializeField] private GroundCheck groundcode;
 
     Rigidbody rigidbody;
     Rigidbody box;
@@ -40,7 +42,6 @@ public class FirstPersonMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-
         transform.eulerAngles = new Vector3(transform.eulerAngles.x,MyCamera.transform.eulerAngles.y, transform.eulerAngles.z);
         cPos = new Vector3(transform.eulerAngles.x,MyCamera.transform.eulerAngles.y, transform.eulerAngles.z);
         // Get targetMovingSpeed.
@@ -64,7 +65,8 @@ public class FirstPersonMovement : MonoBehaviour
     void Update()
     {
         stepTimer += Time.deltaTime;
-        if(moveAction.IsPressed() && stepTimer > stepCD)
+        playerGrounded = groundcode.groundedcheck();
+        if(moveAction.IsPressed() && stepTimer > stepCD && playerGrounded)
         {
             stepTimer = 0;
             steps.Play();

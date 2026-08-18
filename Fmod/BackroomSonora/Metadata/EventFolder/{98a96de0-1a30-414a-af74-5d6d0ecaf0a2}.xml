@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="EventFolder" id="{98a96de0-1a30-414a-af74-5d6d0ecaf0a2}">
+		<property name="name">
+			<value>Glass-Generic</value>
+		</property>
+		<relationship name="folder">
+			<destination>{28b08d35-e04f-4651-b98b-6483fb83de59}</destination>
+		</relationship>
+	</object>
+</objects>

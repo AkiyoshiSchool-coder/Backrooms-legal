@@ -2,6 +2,8 @@ using JetBrains.Annotations;
 using Mono.Cecil.Cil;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using FMODUnity;
+
 public class Push : MonoBehaviour
 {
     [SerializeField] private InputActionReference pushingAction;
@@ -15,6 +17,8 @@ public class Push : MonoBehaviour
     [SerializeField] private FirstPersonMovement firstPersonMovement;
     [SerializeField] private Jump jump;
     [SerializeField] private GameObject box;
+    [SerializeField] private StudioEventEmitter caixaSound;
+
     private void OnEnable()
     {
         pushingAction.action.performed += PushingObject;
@@ -63,7 +67,8 @@ public class Push : MonoBehaviour
                 }
             }
             else
-            {   if (umavez == true)
+            {   
+                if (umavez == true)
                 {
                     StopCarrying();
                 }
@@ -79,6 +84,7 @@ public class Push : MonoBehaviour
             {
                 if (objpuxavel != null)
                 {
+                    caixaSound.Play();
                     if (pegavel == false)
                     {
                         rb.constraints = RigidbodyConstraints.None;

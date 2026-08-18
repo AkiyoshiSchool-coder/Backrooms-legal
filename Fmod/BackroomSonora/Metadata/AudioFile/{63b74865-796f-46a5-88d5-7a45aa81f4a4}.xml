@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{63b74865-796f-46a5-88d5-7a45aa81f4a4}">
+		<property name="assetPath">
+			<value>glassbreak.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>8.4480000000000004</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{4dd52775-7a0a-4758-b6ac-f0cabfdf28a7}</destination>
+		</relationship>
+	</object>
+</objects>

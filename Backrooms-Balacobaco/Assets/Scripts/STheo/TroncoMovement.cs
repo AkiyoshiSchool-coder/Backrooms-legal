@@ -1,11 +1,13 @@
 using UnityEngine;
 using System.Collections;
 using Unity.VisualScripting;
+using FMODUnity;
 
 public class TroncoMovement : MonoBehaviour
 {
     [SerializeField] private Transform playerTransform; 
     private float speed = 5f;
+    [SerializeField] private StudioEventEmitter punchSound;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -31,5 +33,9 @@ public class TroncoMovement : MonoBehaviour
 
     void OnTriggerEnter(Collider other){
         //other.velocity.y = 10;
+        if(other.CompareTag("Player"))
+        {
+            punchSound.Play();
+        }
     }
 }

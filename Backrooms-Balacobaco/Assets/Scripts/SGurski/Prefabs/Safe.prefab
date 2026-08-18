@@ -775,7 +775,7 @@ MonoBehaviour:
       Data2: 1176441554
       Data3: 370034358
       Data4: -2106493394
-    Path: event:/Safe-Button
+    Path: event:/Safe/Safe-Button
   Event: 
   EventPlayTrigger: 0
   EventStopTrigger: 0
@@ -806,7 +806,7 @@ MonoBehaviour:
       Data2: 1310175812
       Data3: 1227055277
       Data4: 2133478945
-    Path: event:/SafeWrong
+    Path: event:/Safe/SafeWrong
   Event: 
   EventPlayTrigger: 0
   EventStopTrigger: 0
@@ -3280,7 +3280,7 @@ MonoBehaviour:
       Data2: 1141215463
       Data3: -1325185144
       Data4: -412243302
-    Path: event:/SafeRight
+    Path: event:/Safe/SafeRight
   Event: 
   EventPlayTrigger: 0
   EventStopTrigger: 0

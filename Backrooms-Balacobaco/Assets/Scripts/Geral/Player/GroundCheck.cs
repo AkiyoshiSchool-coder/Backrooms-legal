@@ -24,6 +24,12 @@ public class GroundCheck : MonoBehaviour
             Grounded?.Invoke();
         }
         isGrounded = isGroundedNow;
+        
+    }
+
+    public bool groundedcheck()
+    {
+        return isGrounded;
     }
 
     void OnDrawGizmosSelected()
