@@ -6699,6 +6699,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 582388095}
     - target: {fileID: 2343381427822934097, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
+      propertyPath: rotateSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343381427822934097, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
       propertyPath: ObjectViewer
       value: 
       objectReference: {fileID: 1448624538}
@@ -6718,6 +6722,14 @@ PrefabInstance:
       propertyPath: OnFinishView.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 582388095}
+    - target: {fileID: 2536667789107392207, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
+      propertyPath: m_Size.y
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2536667789107392207, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
+      propertyPath: m_Center.y
+      value: 0.45
+      objectReference: {fileID: 0}
     - target: {fileID: 2726557219122891078, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
       propertyPath: MyCamera
       value: 
