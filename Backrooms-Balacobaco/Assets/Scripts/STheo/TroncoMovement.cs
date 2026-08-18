@@ -18,7 +18,7 @@ public class TroncoMovement : MonoBehaviour
             transform.Rotate(0,180f,0);
         }
         
-        StartCoroutine("Timer");
+       // StartCoroutine("Timer");
     }
     IEnumerator Timer()
     {
