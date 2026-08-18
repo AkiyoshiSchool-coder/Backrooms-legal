@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 567fb9dbf554c054297a8e04a1932e2f
-timeCreated: 1487160118
+guid: 16d5f37a3e036394d879af2ec45fff28
+timeCreated: 1487088175
 licenseType: Store
 NativeFormatImporter:
   userData: 
@@ -11,5 +11,5 @@ AssetOrigin:
   productId: 83113
   packageName: sTargeting
   packageVersion: 1.0
-  assetPath: Assets/sTargeting/Prefabs/2d ring target 17 Red.prefab
+  assetPath: Assets/sTargeting/Materials/Green/ring target 5.mat
   uploadId: 175437
