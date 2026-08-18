@@ -13,6 +13,7 @@ public class FirstPersonMovement : MonoBehaviour
     public InputActionAsset inputActions;
     private InputAction runAction;
     private InputAction moveAction;
+    private Transform MyCamera;
 
     Rigidbody rigidbody;
     Rigidbody box;
@@ -22,6 +23,7 @@ public class FirstPersonMovement : MonoBehaviour
     void Awake()
     {
         rigidbody = GetComponent<Rigidbody>();
+        MyCamera = Camera.main.transform;
     }
 
     void Start()
@@ -32,6 +34,8 @@ public class FirstPersonMovement : MonoBehaviour
 
     void FixedUpdate()
     {
+
+        transform.eulerAngles = new Vector3(transform.eulerAngles.x,MyCamera.transform.eulerAngles.y, transform.eulerAngles.z);
 
         // Get targetMovingSpeed.
         float targetMovingSpeed = IsRunning ? runSpeed : speed;
