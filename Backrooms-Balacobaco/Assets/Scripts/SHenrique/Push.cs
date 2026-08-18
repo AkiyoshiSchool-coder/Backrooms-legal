@@ -85,15 +85,13 @@ public class Push : MonoBehaviour
                 if (objpuxavel != null)
                 {
                     caixaSound.Play();
-                    if (pegavel == false)
+
+                    rb.constraints &= ~RigidbodyConstraints.FreezePositionX;
+                    rb.constraints &= ~RigidbodyConstraints.FreezePositionY;
+                    rb.constraints &= ~RigidbodyConstraints.FreezePositionZ;
+    
+                    if(pegavel == true)
                     {
-                        rb.constraints = RigidbodyConstraints.None;
-                    }
-                    else
-                    {
-                        rb.constraints &= ~RigidbodyConstraints.FreezePositionX;
-                        rb.constraints &= ~RigidbodyConstraints.FreezePositionY;
-                        rb.constraints &= ~RigidbodyConstraints.FreezePositionZ;
                         objpuxavel.transform.position = box.transform.position;
                         firstPersonMovement.PushingObject(rb);
                         jump.PushingObject(rb);
@@ -111,7 +109,9 @@ public class Push : MonoBehaviour
     {
         firstPersonMovement.StopPushing();
         jump.StopPushing();
-        rb.constraints = RigidbodyConstraints.None;
+        rb.constraints &= ~RigidbodyConstraints.FreezePositionX;
+        rb.constraints &= ~RigidbodyConstraints.FreezePositionY;
+        rb.constraints &= ~RigidbodyConstraints.FreezePositionZ;
         UIManager.instance.ChangeImage(hand);
         UIManager.instance.ChangeColor(Color.black);
         if (objpuxavel != null)
