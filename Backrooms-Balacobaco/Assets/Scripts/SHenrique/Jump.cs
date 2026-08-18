@@ -32,7 +32,7 @@ public class Jump : MonoBehaviour
         {
             rigidbody.AddForce(Vector3.up * 100 * jumpStrength); 
             
-            if (box != null)
+            if (box != null)  //Se o Push script da box um valor ela se move com ele
             {
                 box.AddForce(Vector3.up * 100 * jumpStrength);
             }
@@ -41,12 +41,12 @@ public class Jump : MonoBehaviour
         }
     }
 
-    public void PushingObject(Rigidbody rigidbody)
+    public void PushingObject(Rigidbody rigidbody) //chamado pelo Push Script
     {
         box = rigidbody;
     }
 
-    public void StopPushing()
+    public void StopPushing() //chamado pelo Push Script
     {
         box = null;
     }

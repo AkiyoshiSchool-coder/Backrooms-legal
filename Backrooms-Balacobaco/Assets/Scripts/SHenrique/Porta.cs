@@ -3,8 +3,8 @@ using FMODUnity;
 
 public class Porta : MonoBehaviour
 {
-    Keys keys;
-    [SerializeField] private GameObject naoTemChaves;
+    Keys keys; //Está no player
+    [SerializeField] private GameObject naoTemChaves; //Caso nao tem todas as chaves
     [SerializeField] private Animator animator;
     [SerializeField] private GameObject fim;
     public StudioEventEmitter doorSound;
@@ -15,14 +15,14 @@ public class Porta : MonoBehaviour
         keys = other.GetComponent<Keys>();
         if (keys != null)
         {
-            if (keys.keys == 3)
+            if (keys.keys == 3) //Caso tenha
             {
                 doorSound.Play();
                 aberto = true;
                 animator.SetBool("Aberto", aberto);
                 fim.SetActive(true);
             }
-            else
+            else //Caso nao tenha
             {
                 naoTemChaves.SetActive(true);
                 aberto = false;
@@ -31,7 +31,7 @@ public class Porta : MonoBehaviour
         }
     }
 
-    void OnTriggerExit(Collider other)
+    void OnTriggerExit(Collider other) //Tira o texto
     {
         naoTemChaves.SetActive(false);
     }

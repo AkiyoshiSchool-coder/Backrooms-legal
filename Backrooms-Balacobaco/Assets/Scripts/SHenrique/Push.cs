@@ -6,21 +6,21 @@ using FMODUnity;
 
 public class Push : MonoBehaviour
 {
-    [SerializeField] private InputActionReference pushingAction;
-    [SerializeField] private Texture hand;
-    [SerializeField] private Texture normal;
-    private GameObject objpuxavel;
-    private bool perto;
-    public bool umavez = false;
-    [SerializeField] private Color colorNew;
+    [SerializeField] private InputActionReference pushingAction; // Tecla E
+    [SerializeField] private Texture hand; //Cursor
+    [SerializeField] private Texture normal; //Cursor
+    private GameObject objpuxavel; //Caixa que o Player interage
+    private bool perto; //Se o Player está perto
+    public bool umavez = false; //Para ele nao pegar a caixa mais de uma vez
+    [SerializeField] private Color colorNew; //Cor da mao
     [SerializeField] private Vector3 maoTamanho;
-     [SerializeField] private Vector3 normalTamanho;
-    private Rigidbody rb;
-    private bool pegavel;
-    [SerializeField] private FirstPersonMovement firstPersonMovement;
-    [SerializeField] private Jump jump;
-    [SerializeField] private GameObject box;
-    [SerializeField] private StudioEventEmitter caixaSound;
+     [SerializeField] private Vector3 normalTamanho; //Tamanho do cursor original
+    private Rigidbody rb; //Rigidbody da Caixa
+    private bool pegavel; //Ve se ele tem o Script Pegavel 
+    [SerializeField] private FirstPersonMovement firstPersonMovement; //Movimento do Player
+    [SerializeField] private Jump jump; //Pulo do Player
+    [SerializeField] private GameObject box; //Define a posicao a onde a caixa vai ficar quando pega
+    [SerializeField] private StudioEventEmitter caixaSound; //Fmod
 
     private void OnEnable()
     {
@@ -31,35 +31,35 @@ public class Push : MonoBehaviour
         pushingAction.action.performed -= PushingObject;
     }
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other) //Quando o Player entra em contato com qualquer objeto
     {
-        if(umavez == false)
+        if(umavez == false) //Para ele nao pegar a caixa mais de uma vez
         {
-            if(other.tag == "Box")
+            if(other.tag == "Box") //Ve se e uma caixa 
             {
-                UIManager.instance.ChangeImage(hand);
-                UIManager.instance.ChangeScale(maoTamanho);
-                objpuxavel = other.gameObject;
-                rb = objpuxavel.GetComponent<Rigidbody>();
+                UIManager.instance.ChangeImage(hand); //Cursor
+                UIManager.instance.ChangeScale(maoTamanho); //Cursor
+                objpuxavel = other.gameObject;  //Caixa que o Player interage
+                rb = objpuxavel.GetComponent<Rigidbody>(); //Rigidbody da Caixa
                 pegavel = objpuxavel.GetComponent<Pegavel>();
-                rb.constraints = RigidbodyConstraints.FreezeAll;
-                perto = true;
+                rb.constraints = RigidbodyConstraints.FreezeAll; //Congela a gravidade
+                perto = true; //O Player está perto
             }  
         }
     }
 
     void OnTriggerExit(Collider other)
     {
-        if(other.tag == "Box")
+        if(other.tag == "Box") //Ve se e uma caixa
         {
-            UIManager.instance.ChangeImage(normal);
-            UIManager.instance.ChangeScale(normalTamanho);
-            UIManager.instance.ChangeColor(Color.black);
+            UIManager.instance.ChangeImage(normal); //Cursor
+            UIManager.instance.ChangeScale(normalTamanho); //Cursor
+            UIManager.instance.ChangeColor(Color.black); //Cursor
 
-            if (pegavel == false)
+            if (pegavel == false) //Ve se ele tem o Script Pegavel caso nao ter ele e arrastavel
             {
 
-                if (objpuxavel != null)
+                if (objpuxavel != null) //Se ele existe nao vai mais
                 {
                     rb.constraints = RigidbodyConstraints.FreezeAll;
                     objpuxavel = null;
@@ -67,7 +67,7 @@ public class Push : MonoBehaviour
                     rb = null;
                 }
             }
-            else
+            else //Tem Pegavel vai a um lugar diferente
             {   
                 if (umavez == true)
                 {
@@ -77,7 +77,7 @@ public class Push : MonoBehaviour
         }
     }
 
-    public void PushingObject(InputAction.CallbackContext context)
+    public void PushingObject(InputAction.CallbackContext context) //Caixa ativa
     {
         if (umavez == false)
         {

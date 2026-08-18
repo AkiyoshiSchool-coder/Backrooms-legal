@@ -56,7 +56,7 @@ public class FirstPersonMovement : MonoBehaviour
 
         // Apply movement.
         rigidbody.linearVelocity = transform.rotation * new Vector3(targetVelocity.x, rigidbody.linearVelocity.y, targetVelocity.y);
-        if(box != null)
+        if(box != null) //Se o Push script da box um valor ela se move com ele
         {
             box.linearVelocity = transform.rotation * new Vector3(targetVelocity.x, rigidbody.linearVelocity.y, targetVelocity.y);
         }
@@ -73,11 +73,11 @@ public class FirstPersonMovement : MonoBehaviour
         }
     }
 
-    public void PushingObject(Rigidbody rigidbody)
+    public void PushingObject(Rigidbody rigidbody) //chamado pelo Push Script
     {
         box = rigidbody;
     }
-    public void StopPushing()
+    public void StopPushing()  //chamado pelo Push Script
     {
         box = null;
     }

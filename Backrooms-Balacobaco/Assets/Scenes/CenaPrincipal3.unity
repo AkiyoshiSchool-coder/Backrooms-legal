@@ -12703,7 +12703,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Porta
   naoTemChaves: {fileID: 1717523680}
   animator: {fileID: 1513148860}
-  fim: {fileID: 0}
+  fim: {fileID: 244576104}
   doorSound: {fileID: 1513148862}
 --- !u!95 &1513148860
 Animator:
