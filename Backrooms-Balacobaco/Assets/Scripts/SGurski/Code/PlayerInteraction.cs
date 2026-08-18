@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using UnityEngine.InputSystem;
 using UnityEngine.Events;
 using UnityEngine.XR;
+using FMODUnity;
 
 public class PlayerInteraction : MonoBehaviour
 {
@@ -36,6 +37,9 @@ public class PlayerInteraction : MonoBehaviour
     private Quaternion originRotation;
     [SerializeField] private Quaternion HammerRotation; 
     [SerializeField] private BoxCollider boxCollider;
+
+    [SerializeField] private StudioEventEmitter LockB;
+    [SerializeField] private StudioEventEmitter LockF;
 
     private bool interacting;
     private bool canFinish;
@@ -118,6 +122,8 @@ public class PlayerInteraction : MonoBehaviour
                         chestAnim.StartAnim();
                         FinishView();
                         tableCraft.DestroyHammer();
+                        LockB.Play();
+                        StartCoroutine(LockSound(LockF,1f));
                     }
                     if(currentObject.CompareTag("Chave"))
                     {
@@ -198,7 +204,11 @@ public class PlayerInteraction : MonoBehaviour
             UIManager.instance.ExtraText(currentObject.item.texto);
         }
     }
-
+    IEnumerator LockSound(StudioEventEmitter Lock, float timer)
+    {
+        yield return new WaitForSeconds(timer);
+        Lock.Play();
+    }
     void FinishView()
     {
         if(ghostPlacement!=null)
@@ -284,6 +294,10 @@ public class PlayerInteraction : MonoBehaviour
             boxCollider.enabled = false;
             tableCraft.boxCollider.enabled = true;
             
+        }
+        else
+        {
+            boxCollider.enabled = true;
         }
     }
 

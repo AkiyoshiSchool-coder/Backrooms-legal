@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using FMODUnity;
 
 public class GhostPlacement : MonoBehaviour
 {
@@ -7,10 +8,12 @@ public class GhostPlacement : MonoBehaviour
     [SerializeField] private Animator animator;
     public bool onPillar;
     public bool open;
+    [SerializeField] private bool Tocado = false;
+    [SerializeField] private StudioEventEmitter GhostSound;
 
     void Update()
     {
-        if(onPillar)
+        if(onPillar && Tocado != true)
         {
             StartAnim();
         }
@@ -18,8 +21,10 @@ public class GhostPlacement : MonoBehaviour
 
      public void StartAnim()
     {
-       open = true;
-       Animator();
+        open = true;
+        Animator();
+        GhostSound.Play();
+        Tocado = true;
     }
 
     private void Animator()

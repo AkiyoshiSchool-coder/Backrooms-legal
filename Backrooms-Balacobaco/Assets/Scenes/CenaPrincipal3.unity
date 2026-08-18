@@ -2783,7 +2783,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &427227020
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2823,7 +2823,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: A
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4042,11 +4042,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3093169491782719760, guid: 5dd5a1ab6047d4848b7668734815016f, type: 3}
       propertyPath: m_Size.z
-      value: 0.33286893
+      value: 0.15234673
+      objectReference: {fileID: 0}
+    - target: {fileID: 3093169491782719760, guid: 5dd5a1ab6047d4848b7668734815016f, type: 3}
+      propertyPath: m_Center.x
+      value: -0.0029670668
       objectReference: {fileID: 0}
     - target: {fileID: 3093169491782719760, guid: 5dd5a1ab6047d4848b7668734815016f, type: 3}
       propertyPath: m_Center.z
-      value: -0.1637438
+      value: -0.07348217
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6425,6 +6429,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 582388099}
     - target: {fileID: 2343381427822934097, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
+      propertyPath: LockB
+      value: 
+      objectReference: {fileID: 1504765956}
+    - target: {fileID: 2343381427822934097, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
+      propertyPath: LockF
+      value: 
+      objectReference: {fileID: 966137958}
+    - target: {fileID: 2343381427822934097, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
       propertyPath: handPos
       value: 
       objectReference: {fileID: 368907643}
@@ -6674,6 +6686,8 @@ MonoBehaviour:
   animator: {fileID: 1940531765}
   onPillar: 0
   open: 0
+  Tocado: 0
+  GhostSound: {fileID: 1940531767}
 --- !u!65 &897309750
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7062,6 +7076,42 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4512172318196280, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
   m_PrefabInstance: {fileID: 945532629}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &966137956 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100006, guid: 63878c47173aa774687bf1dcb9a14938, type: 3}
+  m_PrefabInstance: {fileID: 2085105308}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &966137958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966137956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -551486180
+      Data2: 1193354550
+      Data3: -1734987329
+      Data4: 845467593
+    Path: event:/Akiyoshi/LockFall
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &977051065
 GameObject:
   m_ObjectHideFlags: 0
@@ -11790,6 +11840,42 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1949719131}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1504765954 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100008, guid: 63878c47173aa774687bf1dcb9a14938, type: 3}
+  m_PrefabInstance: {fileID: 2085105308}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1504765956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504765954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1479889077
+      Data2: 1241097875
+      Data3: 1350666117
+      Data4: -857085693
+    Path: event:/Akiyoshi/LockBreak
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1513148857 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8559450848074965709, guid: 78db1c7ad4147da4bbb9b983c5efb3cc, type: 3}
@@ -13837,6 +13923,32 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
+--- !u!1 &1740115049 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100012, guid: 63878c47173aa774687bf1dcb9a14938, type: 3}
+  m_PrefabInstance: {fileID: 2085105308}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1740115051
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740115049}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.6678, y: 0.08825288, z: 1.3006767}
+  m_Center: {x: -0.3673026, y: 0.04320041, z: 0.000986935}
 --- !u!1 &1740206803 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
@@ -16189,6 +16301,10 @@ PrefabInstance:
       propertyPath: m_AnimatePhysics
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11100000, guid: 63878c47173aa774687bf1dcb9a14938, type: 3}
+      propertyPath: m_PlayAutomatically
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 13700000, guid: 63878c47173aa774687bf1dcb9a14938, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -16206,12 +16322,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 63878c47173aa774687bf1dcb9a14938, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2085105316}
-    - targetCorrespondingSourceObject: {fileID: 100000, guid: 63878c47173aa774687bf1dcb9a14938, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 100008, guid: 63878c47173aa774687bf1dcb9a14938, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2085105321}
-    - targetCorrespondingSourceObject: {fileID: 100000, guid: 63878c47173aa774687bf1dcb9a14938, type: 3}
+      addedObject: {fileID: 1504765956}
+    - targetCorrespondingSourceObject: {fileID: 100006, guid: 63878c47173aa774687bf1dcb9a14938, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2085105317}
+      addedObject: {fileID: 966137958}
+    - targetCorrespondingSourceObject: {fileID: 100012, guid: 63878c47173aa774687bf1dcb9a14938, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1740115051}
     - targetCorrespondingSourceObject: {fileID: 100004, guid: 63878c47173aa774687bf1dcb9a14938, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2085105314}
@@ -16334,37 +16453,6 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
---- !u!114 &2085105317
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2085105309}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -551486180
-      Data2: 1193354550
-      Data3: -1734987329
-      Data4: 845467593
-    Path: event:/Akiyoshi/LockFall
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!65 &2085105318
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16428,37 +16516,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.062764965, y: 1.3359816, z: 0.5536717}
   m_Center: {x: -0.38, y: -0.00000057577745, z: -0.002390254}
---- !u!114 &2085105321
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2085105309}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -1479889077
-      Data2: 1241097875
-      Data3: 1350666117
-      Data4: -857085693
-    Path: event:/Akiyoshi/LockBreak
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1001 &2087265634
 PrefabInstance:
   m_ObjectHideFlags: 0
