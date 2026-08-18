@@ -42,7 +42,7 @@ public class Armadilha : MonoBehaviour
         {
             if (meuColisor != null)
             {
-                trapSound.Play();
+                //trapSound.Play();
                 meuColisor.enabled = false;
                 StartCoroutine("Timer");
             }

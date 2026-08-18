@@ -157,7 +157,7 @@ public class PlayerInteraction : MonoBehaviour
                 {
                     UIManager.instance.ChangeColor(Color.yellow);
                 }
-                if(interactAction.WasPressedThisFrame() && !interacting)
+                if(interactAction.WasPressedThisFrame() && !interacting) // o player podia carregar um item e interagir com outro
                 {
                     currentObject = obj;
                     interacting = true;
@@ -279,7 +279,7 @@ public class PlayerInteraction : MonoBehaviour
         heldItem.isMoving = true;
         float timer = 0;
         canFinish = false;
-        while(timer<1)
+        while(timer<1) // tempo que o item se move
         {
             heldItem.transform.position = Vector3.Lerp(heldItem.transform.position, pos, Time.deltaTime*interactSpeed);
             timer+=Time.deltaTime;
