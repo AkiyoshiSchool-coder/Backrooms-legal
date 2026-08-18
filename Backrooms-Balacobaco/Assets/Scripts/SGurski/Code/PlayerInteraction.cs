@@ -153,9 +153,14 @@ public class PlayerInteraction : MonoBehaviour
             teste = obj;
             if(obj != null)
             {
-                UIManager.instance.ChangeColor(Color.yellow);
+                if(!interacting)
+                {
+                    UIManager.instance.ChangeColor(Color.yellow);
+                }
                 if(interactAction.WasPressedThisFrame())
                 {
+                    currentObject = obj;
+                    interacting = true;
                     if(boxCollider != null)
                     {
                         boxCollider.enabled = false;
@@ -165,9 +170,6 @@ public class PlayerInteraction : MonoBehaviour
                         return;
                     }
 
-                    currentObject = obj;
-                    interacting = true;
-
                     Invoke("CanFinish", 1f);
 
                     if(currentObject.item.canGrab)
@@ -175,6 +177,7 @@ public class PlayerInteraction : MonoBehaviour
                         originPosition = currentObject.transform.position;
                         originRotation = currentObject.transform.rotation;
                         OnView.Invoke();
+                        UIManager.instance.ChangeColor(new Color(0f, 0f, 0f, 0f));
                         StartCoroutine(MovingObject(currentObject, ObjectViewer.position));
                     }
                     else
@@ -190,8 +193,10 @@ public class PlayerInteraction : MonoBehaviour
         }
         else
         {
-            
-            UIManager.instance.ChangeColor(Color.black);
+            if(!interacting)
+            {
+                UIManager.instance.ChangeColor(Color.black);
+            }
         }
     }
 
@@ -237,6 +242,7 @@ public class PlayerInteraction : MonoBehaviour
         {
             currentObject.transform.SetParent(null);
             currentObject.transform.rotation = originRotation;
+            UIManager.instance.ChangeColor(new Color(0f, 0f, 0f, 1f));
             StartCoroutine(MovingObject(currentObject, originPosition));
             if(boxCollider!=null)
             {
@@ -264,6 +270,7 @@ public class PlayerInteraction : MonoBehaviour
         }
         OnFinishView.Invoke();
         Grabbed = false;
+        boxCollider = null;
     }
 
     IEnumerator MovingObject(Interactables heldItem, Vector3 pos)
@@ -297,7 +304,10 @@ public class PlayerInteraction : MonoBehaviour
         }
         else
         {
-            boxCollider.enabled = true;
+            if(boxCollider != null)
+            {
+                boxCollider.enabled = true;
+            }
         }
     }
 

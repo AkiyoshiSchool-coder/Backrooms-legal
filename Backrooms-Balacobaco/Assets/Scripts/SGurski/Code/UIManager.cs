@@ -29,6 +29,12 @@ public class UIManager : MonoBehaviour
         else
             gameObject.GetComponent<RawImage>().texture = image;
     }
+
+    public void ChangeScale(Vector3 scale)
+    {
+        transform.localScale = scale;
+    }
+
     public void ChangeText(TextMeshProUGUI textMeshProUGUI, string texto)
     {
         textMeshProUGUI.text = texto;

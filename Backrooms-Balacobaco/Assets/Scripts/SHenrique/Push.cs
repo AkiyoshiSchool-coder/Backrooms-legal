@@ -12,6 +12,8 @@ public class Push : MonoBehaviour
     private bool perto;
     public bool umavez = false;
     [SerializeField] private Color colorNew;
+    [SerializeField] private Vector3 maoTamanho;
+     [SerializeField] private Vector3 normalTamanho;
     private Rigidbody rb;
     private bool pegavel;
     [SerializeField] private FirstPersonMovement firstPersonMovement;
@@ -27,7 +29,7 @@ public class Push : MonoBehaviour
     {
         pushingAction.action.performed -= PushingObject;
     }
-    
+
     void OnTriggerEnter(Collider other)
     {
         if(umavez == false)
@@ -35,6 +37,7 @@ public class Push : MonoBehaviour
             if(other.tag == "Box")
             {
                 UIManager.instance.ChangeImage(hand);
+                UIManager.instance.ChangeScale(maoTamanho);
                 objpuxavel = other.gameObject;
                 rb = objpuxavel.GetComponent<Rigidbody>();
                 pegavel = objpuxavel.GetComponent<Pegavel>();
@@ -49,6 +52,7 @@ public class Push : MonoBehaviour
         if(other.tag == "Box")
         {
             UIManager.instance.ChangeImage(hand);
+            UIManager.instance.ChangeScale(normalTamanho);
 
             if (pegavel == false)
             {
