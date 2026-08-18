@@ -10,6 +10,6 @@ public class Fim : MonoBehaviour
     {
         fim.SetActive(true);
         Player.SetActive(false);
-        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
     }
 }
