@@ -40,7 +40,6 @@ public class Armadilha : MonoBehaviour
     {
         if (objetoAlvo != null)
         {
-
             if (meuColisor != null)
             {
                 trapSound.Play();
@@ -48,6 +47,5 @@ public class Armadilha : MonoBehaviour
                 StartCoroutine("Timer");
             }
         }
-
     }
 }

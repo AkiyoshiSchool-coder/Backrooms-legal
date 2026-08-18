@@ -6,7 +6,9 @@ using FMODUnity;
 public class TroncoMovement : MonoBehaviour
 {
     [SerializeField] private Transform playerTransform; 
-    private float speed = 5f;
+    [SerializeField] private float speed = 5f;
+    [SerializeField] private float timer = 1.77f;
+
     [SerializeField] private StudioEventEmitter punchSound;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -20,7 +22,7 @@ public class TroncoMovement : MonoBehaviour
     }
     IEnumerator Timer()
     {
-        yield return new WaitForSeconds(1.3f);
+        yield return new WaitForSeconds(timer);
         Destroy(this.gameObject);
         yield break;
     }
