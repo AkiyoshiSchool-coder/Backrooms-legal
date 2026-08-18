@@ -38,12 +38,6 @@ public class Push : MonoBehaviour
                 objpuxavel = other.gameObject;
                 rb = objpuxavel.GetComponent<Rigidbody>();
                 pegavel = objpuxavel.GetComponent<Pegavel>();
-
-                if(pegavel == true)
-                {
-                    UIManager.instance.ChangeColor(colorNew);
-                }
-
                 rb.constraints = RigidbodyConstraints.FreezeAll;
                 perto = true;
             }  
@@ -54,12 +48,14 @@ public class Push : MonoBehaviour
     {
         if(other.tag == "Box")
         {
+            UIManager.instance.ChangeImage(hand);
+
             if (pegavel == false)
             {
-                UIManager.instance.ChangeImage(hand);
 
                 if (objpuxavel != null)
                 {
+                    UIManager.instance.ChangeColor(Color.black);
                     rb.constraints = RigidbodyConstraints.FreezeAll;
                     objpuxavel = null;
                     perto = false;
@@ -84,6 +80,7 @@ public class Push : MonoBehaviour
             {
                 if (objpuxavel != null)
                 {
+                    UIManager.instance.ChangeColor(colorNew);
                     caixaSound.Play();
 
                     rb.constraints &= ~RigidbodyConstraints.FreezePositionX;
@@ -112,8 +109,8 @@ public class Push : MonoBehaviour
         rb.constraints &= ~RigidbodyConstraints.FreezePositionX;
         rb.constraints &= ~RigidbodyConstraints.FreezePositionY;
         rb.constraints &= ~RigidbodyConstraints.FreezePositionZ;
-        UIManager.instance.ChangeImage(hand);
         UIManager.instance.ChangeColor(Color.black);
+
         if (objpuxavel != null)
         {
             objpuxavel = null;
