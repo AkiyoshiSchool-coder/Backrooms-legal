@@ -7,7 +7,6 @@ public class UIManager : MonoBehaviour
 {
     public static UIManager instance;
     public TextMeshProUGUI interactText, extraText;
-    bool mudanca = false;
 
     void Awake()
     {
