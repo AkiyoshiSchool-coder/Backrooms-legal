@@ -6,7 +6,7 @@ public class PasswordCode : MonoBehaviour
 {
     [SerializeField] private string password;
     [SerializeField] private string passInput;
-    public StudioEventEmitter audioEmitter; // https://fmod.com/docs/2.03/unity/api-studioeventemitter.html
+    public StudioEventEmitter audioEmitter, wrongSound; // https://fmod.com/docs/2.03/unity/api-studioeventemitter.html
     public SafeDoorAnimation safeDoor;
     private bool canType = true;
 
@@ -41,6 +41,7 @@ public class PasswordCode : MonoBehaviour
         else
         {
             passInput = "";
+            wrongSound.Play();
             canType = true;
         }
     }
