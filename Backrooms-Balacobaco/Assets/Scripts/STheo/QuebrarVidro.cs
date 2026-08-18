@@ -10,7 +10,7 @@ public class QuebrarVidro : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        glassBreak.Play();
+        //glassBreak.Play();
         Destroy(this.gameObject, timer);
     }
 }

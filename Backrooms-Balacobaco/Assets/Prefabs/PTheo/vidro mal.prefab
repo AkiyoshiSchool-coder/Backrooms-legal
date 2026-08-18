@@ -126,3 +126,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::QuebrarVidro
   timer: 0.001
+  glassBreak: {fileID: 0}
