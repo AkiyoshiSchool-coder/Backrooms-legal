@@ -5,7 +5,7 @@ public class ColliderTronco : MonoBehaviour
 {
     [SerializeField] private GameObject tronco;
     private float startDelay = 2f;
-    private float spawnInterval = 1f;
+    [SerializeField] private float spawnInterval = 1f;
     private float positionZ;
     private int num;
     
@@ -25,25 +25,11 @@ public class ColliderTronco : MonoBehaviour
         }else{
             positionZ = -6.96f;
         }
-
-        
-    }
-
-    IEnumerator Timer()
-    {
-        yield return new WaitForSeconds(5f);
-        print("oJogo");
-        yield break;
     }
 
     void InvocarTronco()
     {
         Vector3 randomPosition = new Vector3(Random.Range(-12, -5), 0.8f, positionZ);
         Instantiate(tronco, randomPosition, Quaternion.identity);
-    }
-
-    void OnTriggerStay(Collider other)
-    {
-        //InvocarTronco();
     }
 }
