@@ -5,7 +5,16 @@ public class RandomGlass : MonoBehaviour
     [SerializeField] private GameObject vidroBom;
     [SerializeField] private GameObject vidroMal;
     private int num;
-    private float vidroX, vidroBomZ, vidroMalZ;
+    [SerializeField] private float vidroX;
+    [SerializeField] private float vidroBomZ;
+    [SerializeField] private float vidroMalZ;
+    [SerializeField] private float vidroX1 = 6.2f;
+    [SerializeField] private float vidroX2 = 2f;
+    [SerializeField] private float vidroX3 = -2.3f;
+
+    [SerializeField] private float vidroZ1 = -9.75f;
+
+    [SerializeField] private float vidroZ2 = -12.45f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -13,15 +22,15 @@ public class RandomGlass : MonoBehaviour
         print(num);
         if(num == 1)
         {
-            vidroX = 6.2f;
-            vidroBomZ = -9.75f;
-            vidroMalZ = -12.45f;
+            vidroX = vidroX1; // 6.2f;
+            vidroBomZ = vidroZ1; // -9.75f;
+            vidroMalZ = vidroZ2; // -12.45f;
         }
         else
         {
-            vidroX = 6.2f;
-            vidroBomZ = -12.45f;
-            vidroMalZ = -9.75f;
+            vidroX = vidroX1; // 6.2f;
+            vidroBomZ = vidroZ2; // -12.45f;
+            vidroMalZ = vidroZ1; // -9.75f;
         }
         Vidro();
 
@@ -29,15 +38,15 @@ public class RandomGlass : MonoBehaviour
         print(num);
         if(num == 1)
         {
-            vidroX = 2f;
-            vidroBomZ = -9.75f;
-            vidroMalZ = -12.45f;
+            vidroX = vidroX2; // 2f;
+            vidroBomZ = vidroZ1; // -9.75f;
+            vidroMalZ = vidroZ2; // -12.45f;
         }
         else
         {
-            vidroX = 2f;
-            vidroBomZ = -12.45f;
-            vidroMalZ = -9.75f;
+            vidroX = vidroX2; // 2f;
+            vidroBomZ = vidroZ2; // -12.45f;
+            vidroMalZ = vidroZ1; // -9.75f;
         }
         Vidro();
 
@@ -45,15 +54,15 @@ public class RandomGlass : MonoBehaviour
         print(num);
         if(num == 1)
         {
-            vidroX = -2.3f;
-            vidroBomZ = -9.75f;
-            vidroMalZ = -12.45f;
+            vidroX = vidroX3; // -2.3f;
+            vidroBomZ = vidroZ1; // -9.75f;
+            vidroMalZ = vidroZ2; // -12.45f;
         }
         else
         {
-            vidroX = -2.3f;
-            vidroBomZ = -12.45f;
-            vidroMalZ = -9.75f;
+            vidroX = vidroX3; // -2.3f;
+            vidroBomZ = vidroZ2; // -12.45f;
+            vidroMalZ = vidroZ1; // -9.75f;
         }
         Vidro();
         

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 23527916148371910}
   - component: {fileID: 7244296748200496577}
   - component: {fileID: 961064190101680202}
+  - component: {fileID: -2172149839837884501}
   m_Layer: 0
   m_Name: armadilha
   m_TagString: Untagged
@@ -61,7 +62,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
@@ -148,5 +149,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7edc63976706536409cf4769ac9e9c07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Armadilha
-  objetoAlvo: {fileID: 0}
-  meuColisor: {fileID: 0}
+  objetoAlvoCapsula: {fileID: 0}
+  objetoAlvoBox: {fileID: 0}
+  trapSound: {fileID: -2172149839837884501}
+  player: {fileID: 0}
+--- !u!114 &-2172149839837884501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670366538259734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 695192087
+      Data2: 1234691662
+      Data3: 1124800179
+      Data4: 2003935235
+    Path: event:/TrapTrigger
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20

@@ -34,7 +34,6 @@ public class TroncoMovement : MonoBehaviour
     }
 
     void OnTriggerEnter(Collider other){
-        //other.velocity.y = 10;
         if(other.CompareTag("Player"))
         {
             punchSound.Play();

@@ -171,17 +171,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64432161708330368, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1807937925}
     - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
       propertyPath: objetoAlvo
       value: 
-      objectReference: {fileID: 1490018423}
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoBox
+      value: 
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoCapsula
+      value: 
+      objectReference: {fileID: 65694180}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1914251204}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
 --- !u!4 &864726 stripped
 Transform:
@@ -250,11 +263,6 @@ Transform:
   - {fileID: 2065309019}
   m_Father: {fileID: 718287535}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &78281905 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-  m_PrefabInstance: {fileID: 1407590903}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &78966525
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -512,11 +520,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4146698100257321701, guid: 3857728036168af4487fc614c42e6467, type: 3}
   m_PrefabInstance: {fileID: 101374192}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &104710302 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-  m_PrefabInstance: {fileID: 1838042354}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &119163932
 GameObject:
   m_ObjectHideFlags: 0
@@ -649,17 +652,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64432161708330368, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1807937925}
     - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
       propertyPath: objetoAlvo
       value: 
-      objectReference: {fileID: 1490018423}
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoBox
+      value: 
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoCapsula
+      value: 
+      objectReference: {fileID: 65694180}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 720228117}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
 --- !u!4 &131252987 stripped
 Transform:
@@ -718,17 +734,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64432161708330368, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1807937925}
     - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
       propertyPath: objetoAlvo
       value: 
-      objectReference: {fileID: 1490018423}
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoBox
+      value: 
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoCapsula
+      value: 
+      objectReference: {fileID: 65694180}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1489324725}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
 --- !u!4 &163235882 stripped
 Transform:
@@ -787,17 +816,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64432161708330368, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1807937925}
     - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
       propertyPath: objetoAlvo
       value: 
-      objectReference: {fileID: 1490018423}
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoBox
+      value: 
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoCapsula
+      value: 
+      objectReference: {fileID: 65694180}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 364773835}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
 --- !u!4 &169978441 stripped
 Transform:
@@ -1117,32 +1159,35 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64432161708330368, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1807937925}
     - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
       propertyPath: objetoAlvo
       value: 
-      objectReference: {fileID: 1490018423}
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoBox
+      value: 
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoCapsula
+      value: 
+      objectReference: {fileID: 65694180}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1710921505}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
 --- !u!4 &200489980 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4512172318196280, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
   m_PrefabInstance: {fileID: 200489979}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &206039647 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-  m_PrefabInstance: {fileID: 999212832}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &210836063 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-  m_PrefabInstance: {fileID: 1466883432}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &230377620 stripped
 GameObject:
@@ -1342,17 +1387,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64432161708330368, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1807937925}
     - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
       propertyPath: objetoAlvo
       value: 
-      objectReference: {fileID: 1490018423}
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoBox
+      value: 
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoCapsula
+      value: 
+      objectReference: {fileID: 65694180}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1419477643}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
 --- !u!4 &232557362 stripped
 Transform:
@@ -1621,16 +1679,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4146698100257321701, guid: 3857728036168af4487fc614c42e6467, type: 3}
   m_PrefabInstance: {fileID: 260385087}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &261313120 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-  m_PrefabInstance: {fileID: 266428709}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &262061996 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-  m_PrefabInstance: {fileID: 658969141}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &266428709
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1683,54 +1731,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64432161708330368, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1807937925}
     - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
       propertyPath: objetoAlvo
       value: 
-      objectReference: {fileID: 1490018423}
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoBox
+      value: 
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoCapsula
+      value: 
+      objectReference: {fileID: 65694180}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 266428716}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
 --- !u!4 &266428710 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4512172318196280, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
   m_PrefabInstance: {fileID: 266428709}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &266428716
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 261313120}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 695192087
-      Data2: 1234691662
-      Data3: 1124800179
-      Data4: 2003935235
-    Path: event:/TrapTrigger
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1001 &269036823
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2002,17 +2032,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64432161708330368, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1807937925}
     - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
       propertyPath: objetoAlvo
       value: 
-      objectReference: {fileID: 1490018423}
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoBox
+      value: 
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoCapsula
+      value: 
+      objectReference: {fileID: 65694180}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 501561066}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
 --- !u!4 &281630202 stripped
 Transform:
@@ -2035,11 +2078,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47fbb9399b2cca249ac9ed807bec11cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BottleSpin
---- !u!1 &289353238 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-  m_PrefabInstance: {fileID: 1468697319}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &304453231
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2663,47 +2701,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 347692993}
   m_CullTransparentMesh: 1
---- !u!1 &354957292 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-  m_PrefabInstance: {fileID: 1031294211}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &364773829 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-  m_PrefabInstance: {fileID: 169978440}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &364773835
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 364773829}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 695192087
-      Data2: 1234691662
-      Data3: 1124800179
-      Data4: 2003935235
-    Path: event:/TrapTrigger
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1001 &367364502
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2948,16 +2945,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Fim
   fim: {fileID: 244576104}
---- !u!1 &405764072 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-  m_PrefabInstance: {fileID: 633261368}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &424398111 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-  m_PrefabInstance: {fileID: 1252569831}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &427227019
 GameObject:
   m_ObjectHideFlags: 0
@@ -3221,27 +3208,35 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64432161708330368, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1807937925}
     - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
       propertyPath: objetoAlvo
       value: 
-      objectReference: {fileID: 1490018423}
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoBox
+      value: 
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoCapsula
+      value: 
+      objectReference: {fileID: 65694180}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2058910191}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
 --- !u!4 &430731656 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4512172318196280, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
   m_PrefabInstance: {fileID: 430731655}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &435181538 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-  m_PrefabInstance: {fileID: 1596218263}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &465727519
 PrefabInstance:
@@ -3554,17 +3549,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64432161708330368, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1807937925}
     - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
       propertyPath: objetoAlvo
       value: 
-      objectReference: {fileID: 1490018423}
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoBox
+      value: 
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoCapsula
+      value: 
+      objectReference: {fileID: 65694180}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1667366839}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
 --- !u!4 &484938838 stripped
 Transform:
@@ -3719,17 +3727,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64432161708330368, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1807937925}
     - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
       propertyPath: objetoAlvo
       value: 
-      objectReference: {fileID: 1490018423}
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoBox
+      value: 
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoCapsula
+      value: 
+      objectReference: {fileID: 65694180}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1690175573}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
 --- !u!4 &498099163 stripped
 Transform:
@@ -3873,42 +3894,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 498619034}
   m_CullTransparentMesh: 1
---- !u!1 &501561060 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-  m_PrefabInstance: {fileID: 281630201}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &501561066
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 501561060}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 695192087
-      Data2: 1234691662
-      Data3: 1124800179
-      Data4: 2003935235
-    Path: event:/TrapTrigger
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1 &503851130
 GameObject:
   m_ObjectHideFlags: 0
@@ -4068,16 +4053,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-      propertyPath: objetoAlvo
+      propertyPath: player
       value: 
-      objectReference: {fileID: 1490018423}
+      objectReference: {fileID: 1807937925}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoBox
+      value: 
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoCapsula
+      value: 
+      objectReference: {fileID: 65694180}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 787522380}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
 --- !u!4 &511010837 stripped
 Transform:
@@ -4238,17 +4228,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64432161708330368, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1807937925}
     - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
       propertyPath: objetoAlvo
       value: 
-      objectReference: {fileID: 1490018423}
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoBox
+      value: 
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoCapsula
+      value: 
+      objectReference: {fileID: 65694180}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1709737288}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
 --- !u!4 &526538131 stripped
 Transform:
@@ -4606,17 +4609,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64432161708330368, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1807937925}
     - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
       propertyPath: objetoAlvo
       value: 
-      objectReference: {fileID: 1490018423}
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoBox
+      value: 
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoCapsula
+      value: 
+      objectReference: {fileID: 65694180}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2069137760}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
 --- !u!4 &576164580 stripped
 Transform:
@@ -4882,17 +4898,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64432161708330368, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1807937925}
     - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
       propertyPath: objetoAlvo
       value: 
-      objectReference: {fileID: 1490018423}
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoBox
+      value: 
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoCapsula
+      value: 
+      objectReference: {fileID: 65694180}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1740206809}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
 --- !u!4 &605649380 stripped
 Transform:
@@ -4951,17 +4980,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64432161708330368, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1807937925}
     - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
       propertyPath: objetoAlvo
       value: 
-      objectReference: {fileID: 1490018423}
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoBox
+      value: 
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoCapsula
+      value: 
+      objectReference: {fileID: 65694180}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1985890541}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
 --- !u!4 &617066296 stripped
 Transform:
@@ -5136,54 +5178,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64432161708330368, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1807937925}
     - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
       propertyPath: objetoAlvo
       value: 
-      objectReference: {fileID: 1490018423}
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoBox
+      value: 
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoCapsula
+      value: 
+      objectReference: {fileID: 65694180}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 633261375}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
 --- !u!4 &633261369 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4512172318196280, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
   m_PrefabInstance: {fileID: 633261368}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &633261375
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 405764072}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 695192087
-      Data2: 1234691662
-      Data3: 1124800179
-      Data4: 2003935235
-    Path: event:/TrapTrigger
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1001 &641348480
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5288,18 +5312,12 @@ Transform:
   - {fileID: 1710457919}
   - {fileID: 632789012}
   - {fileID: 1490018427}
-  - {fileID: 1619143943}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &648921316 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2498504952586042402, guid: 5dd5a1ab6047d4848b7668734815016f, type: 3}
   m_PrefabInstance: {fileID: 534014618}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &651880774 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-  m_PrefabInstance: {fileID: 2145547394}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &658969141
 PrefabInstance:
@@ -5353,58 +5371,35 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64432161708330368, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1807937925}
     - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
       propertyPath: objetoAlvo
       value: 
-      objectReference: {fileID: 1490018423}
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoBox
+      value: 
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoCapsula
+      value: 
+      objectReference: {fileID: 65694180}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 658969148}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
 --- !u!4 &658969142 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4512172318196280, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
   m_PrefabInstance: {fileID: 658969141}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &658969148
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 262061996}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 695192087
-      Data2: 1234691662
-      Data3: 1124800179
-      Data4: 2003935235
-    Path: event:/TrapTrigger
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
---- !u!1 &667266170 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-  m_PrefabInstance: {fileID: 1403862781}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &674267264
 GameObject:
@@ -5776,47 +5771,6 @@ Transform:
   - {fileID: 65834379}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &718977898 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-  m_PrefabInstance: {fileID: 943275817}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &720228111 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-  m_PrefabInstance: {fileID: 131252986}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &720228117
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 720228111}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 695192087
-      Data2: 1234691662
-      Data3: 1124800179
-      Data4: 2003935235
-    Path: event:/TrapTrigger
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1 &724705861
 GameObject:
   m_ObjectHideFlags: 0
@@ -5944,17 +5898,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64432161708330368, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1807937925}
     - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
       propertyPath: objetoAlvo
       value: 
-      objectReference: {fileID: 1490018423}
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoBox
+      value: 
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoCapsula
+      value: 
+      objectReference: {fileID: 65694180}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1375281009}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
 --- !u!4 &741117807 stripped
 Transform:
@@ -6054,11 +6021,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4146698100257321701, guid: 3857728036168af4487fc614c42e6467, type: 3}
   m_PrefabInstance: {fileID: 745848647}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &760138125 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-  m_PrefabInstance: {fileID: 1284535881}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &773999680
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6137,42 +6099,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3590041352909267888, guid: b895d7fb51dc37c4a98ff1bc707acbbb, type: 3}
   m_PrefabInstance: {fileID: 304453231}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &787522374 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-  m_PrefabInstance: {fileID: 511010836}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &787522380
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 787522374}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 695192087
-      Data2: 1234691662
-      Data3: 1124800179
-      Data4: 2003935235
-    Path: event:/TrapTrigger
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1001 &787541456
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6295,17 +6221,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64432161708330368, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1807937925}
     - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
       propertyPath: objetoAlvo
       value: 
-      objectReference: {fileID: 1490018423}
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoBox
+      value: 
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoCapsula
+      value: 
+      objectReference: {fileID: 65694180}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1667479642}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
 --- !u!4 &788793777 stripped
 Transform:
@@ -6410,11 +6349,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 5731761584504813892, guid: eab45a9c49edaaa4fa2c5389a3b29888, type: 3}
   m_PrefabInstance: {fileID: 810178939}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &815914882 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-  m_PrefabInstance: {fileID: 1183973727}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &842005717
 GameObject:
@@ -6723,17 +6657,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64432161708330368, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1807937925}
     - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
       propertyPath: objetoAlvo
       value: 
-      objectReference: {fileID: 1490018423}
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoBox
+      value: 
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoCapsula
+      value: 
+      objectReference: {fileID: 65694180}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1389110121}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
 --- !u!4 &852033474 stripped
 Transform:
@@ -6895,6 +6842,10 @@ PrefabInstance:
     - target: {fileID: 2536667789107392207, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
       propertyPath: m_Size.y
       value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2536667789107392207, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2536667789107392207, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
       propertyPath: m_Center.y
@@ -7541,54 +7492,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64432161708330368, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1807937925}
     - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
       propertyPath: objetoAlvo
       value: 
-      objectReference: {fileID: 1490018423}
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoBox
+      value: 
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoCapsula
+      value: 
+      objectReference: {fileID: 65694180}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 943275824}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
 --- !u!4 &943275818 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4512172318196280, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
   m_PrefabInstance: {fileID: 943275817}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &943275824
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 718977898}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 695192087
-      Data2: 1234691662
-      Data3: 1124800179
-      Data4: 2003935235
-    Path: event:/TrapTrigger
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1001 &945532629
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7641,17 +7574,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64432161708330368, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1807937925}
     - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
       propertyPath: objetoAlvo
       value: 
-      objectReference: {fileID: 1490018423}
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoBox
+      value: 
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoCapsula
+      value: 
+      objectReference: {fileID: 65694180}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1255853983}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
 --- !u!4 &945532630 stripped
 Transform:
@@ -7917,54 +7863,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64432161708330368, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1807937925}
     - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
       propertyPath: objetoAlvo
       value: 
-      objectReference: {fileID: 1490018423}
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoBox
+      value: 
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoCapsula
+      value: 
+      objectReference: {fileID: 65694180}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 999212839}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
 --- !u!4 &999212833 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4512172318196280, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
   m_PrefabInstance: {fileID: 999212832}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &999212839
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 206039647}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 695192087
-      Data2: 1234691662
-      Data3: 1124800179
-      Data4: 2003935235
-    Path: event:/TrapTrigger
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1 &1005857619
 GameObject:
   m_ObjectHideFlags: 0
@@ -8154,54 +8082,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64432161708330368, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1807937925}
     - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
       propertyPath: objetoAlvo
       value: 
-      objectReference: {fileID: 1490018423}
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoBox
+      value: 
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoCapsula
+      value: 
+      objectReference: {fileID: 65694180}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1031294218}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
 --- !u!4 &1031294212 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4512172318196280, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
   m_PrefabInstance: {fileID: 1031294211}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1031294218
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 354957292}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 695192087
-      Data2: 1234691662
-      Data3: 1124800179
-      Data4: 2003935235
-    Path: event:/TrapTrigger
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1 &1033173721
 GameObject:
   m_ObjectHideFlags: 0
@@ -8449,17 +8359,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64432161708330368, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1807937925}
     - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
       propertyPath: objetoAlvo
       value: 
-      objectReference: {fileID: 1490018423}
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoBox
+      value: 
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoCapsula
+      value: 
+      objectReference: {fileID: 65694180}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1453653815}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
 --- !u!4 &1057430524 stripped
 Transform:
@@ -8685,7 +8608,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!320 &1085609827
 PlayableDirector:
   m_ObjectHideFlags: 0
@@ -8961,16 +8884,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7104316468628707942, guid: 3e719a14335c40c4681ba700aeb5a17a, type: 3}
   m_PrefabInstance: {fileID: 1100917608}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1108357486 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-  m_PrefabInstance: {fileID: 1423555882}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1121838061 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-  m_PrefabInstance: {fileID: 1370963948}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1152177281
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9045,11 +8958,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3590041352909267888, guid: b895d7fb51dc37c4a98ff1bc707acbbb, type: 3}
   m_PrefabInstance: {fileID: 1152177281}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1157624750 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-  m_PrefabInstance: {fileID: 1827864164}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1172221210
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9102,17 +9010,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64432161708330368, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1807937925}
     - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
       propertyPath: objetoAlvo
       value: 
-      objectReference: {fileID: 1490018423}
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoBox
+      value: 
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoCapsula
+      value: 
+      objectReference: {fileID: 65694180}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1368313107}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
 --- !u!4 &1172221211 stripped
 Transform:
@@ -9171,54 +9092,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64432161708330368, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1807937925}
     - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
       propertyPath: objetoAlvo
       value: 
-      objectReference: {fileID: 1490018423}
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoBox
+      value: 
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoCapsula
+      value: 
+      objectReference: {fileID: 65694180}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1183973734}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
 --- !u!4 &1183973728 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4512172318196280, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
   m_PrefabInstance: {fileID: 1183973727}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1183973734
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 815914882}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 695192087
-      Data2: 1234691662
-      Data3: 1124800179
-      Data4: 2003935235
-    Path: event:/TrapTrigger
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1001 &1193715392
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9426,17 +9329,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64432161708330368, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1807937925}
     - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
       propertyPath: objetoAlvo
       value: 
-      objectReference: {fileID: 1490018423}
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoBox
+      value: 
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoCapsula
+      value: 
+      objectReference: {fileID: 65694180}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1803714536}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
 --- !u!4 &1217560663 stripped
 Transform:
@@ -9608,54 +9524,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64432161708330368, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1807937925}
     - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
       propertyPath: objetoAlvo
       value: 
-      objectReference: {fileID: 1490018423}
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoBox
+      value: 
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoCapsula
+      value: 
+      objectReference: {fileID: 65694180}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1252569838}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
 --- !u!4 &1252569832 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4512172318196280, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
   m_PrefabInstance: {fileID: 1252569831}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1252569838
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 424398111}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 695192087
-      Data2: 1234691662
-      Data3: 1124800179
-      Data4: 2003935235
-    Path: event:/TrapTrigger
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1001 &1253749998
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9904,42 +9802,6 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
---- !u!1 &1255853977 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-  m_PrefabInstance: {fileID: 945532629}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1255853983
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1255853977}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 695192087
-      Data2: 1234691662
-      Data3: 1124800179
-      Data4: 2003935235
-    Path: event:/TrapTrigger
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1 &1258070008
 GameObject:
   m_ObjectHideFlags: 0
@@ -10235,17 +10097,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64432161708330368, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1807937925}
     - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
       propertyPath: objetoAlvo
       value: 
-      objectReference: {fileID: 1490018423}
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoBox
+      value: 
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoCapsula
+      value: 
+      objectReference: {fileID: 65694180}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1516082843}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
 --- !u!4 &1274937803 stripped
 Transform:
@@ -10304,54 +10179,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64432161708330368, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1807937925}
     - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
       propertyPath: objetoAlvo
       value: 
-      objectReference: {fileID: 1490018423}
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoBox
+      value: 
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoCapsula
+      value: 
+      objectReference: {fileID: 65694180}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1284535888}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
 --- !u!4 &1284535882 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4512172318196280, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
   m_PrefabInstance: {fileID: 1284535881}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1284535888
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 760138125}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 695192087
-      Data2: 1234691662
-      Data3: 1124800179
-      Data4: 2003935235
-    Path: event:/TrapTrigger
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1 &1303793592
 GameObject:
   m_ObjectHideFlags: 0
@@ -10756,42 +10613,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4146698100257321701, guid: 3857728036168af4487fc614c42e6467, type: 3}
   m_PrefabInstance: {fileID: 1340148635}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1368313101 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-  m_PrefabInstance: {fileID: 1172221210}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1368313107
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1368313101}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 695192087
-      Data2: 1234691662
-      Data3: 1124800179
-      Data4: 2003935235
-    Path: event:/TrapTrigger
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1001 &1370963948
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10844,54 +10665,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64432161708330368, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1807937925}
     - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
       propertyPath: objetoAlvo
       value: 
-      objectReference: {fileID: 1490018423}
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoBox
+      value: 
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoCapsula
+      value: 
+      objectReference: {fileID: 65694180}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1370963955}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
 --- !u!4 &1370963949 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4512172318196280, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
   m_PrefabInstance: {fileID: 1370963948}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1370963955
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1121838061}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 695192087
-      Data2: 1234691662
-      Data3: 1124800179
-      Data4: 2003935235
-    Path: event:/TrapTrigger
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1 &1373155551
 GameObject:
   m_ObjectHideFlags: 0
@@ -11029,42 +10832,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1373155551}
   m_CullTransparentMesh: 1
---- !u!1 &1375281003 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-  m_PrefabInstance: {fileID: 741117806}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1375281009
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1375281003}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 695192087
-      Data2: 1234691662
-      Data3: 1124800179
-      Data4: 2003935235
-    Path: event:/TrapTrigger
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1 &1381361356
 GameObject:
   m_ObjectHideFlags: 0
@@ -11096,42 +10863,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1648029796}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1389110115 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-  m_PrefabInstance: {fileID: 852033473}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1389110121
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1389110115}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 695192087
-      Data2: 1234691662
-      Data3: 1124800179
-      Data4: 2003935235
-    Path: event:/TrapTrigger
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1 &1394339168
 GameObject:
   m_ObjectHideFlags: 0
@@ -11356,54 +11087,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64432161708330368, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1807937925}
     - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
       propertyPath: objetoAlvo
       value: 
-      objectReference: {fileID: 1490018423}
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoBox
+      value: 
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoCapsula
+      value: 
+      objectReference: {fileID: 65694180}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1403862788}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
 --- !u!4 &1403862782 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4512172318196280, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
   m_PrefabInstance: {fileID: 1403862781}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1403862788
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 667266170}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 695192087
-      Data2: 1234691662
-      Data3: 1124800179
-      Data4: 2003935235
-    Path: event:/TrapTrigger
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1001 &1407590903
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11456,90 +11169,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64432161708330368, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1807937925}
     - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
       propertyPath: objetoAlvo
       value: 
-      objectReference: {fileID: 1490018423}
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoBox
+      value: 
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoCapsula
+      value: 
+      objectReference: {fileID: 65694180}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1407590910}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
 --- !u!4 &1407590904 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4512172318196280, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
   m_PrefabInstance: {fileID: 1407590903}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1407590910
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 78281905}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 695192087
-      Data2: 1234691662
-      Data3: 1124800179
-      Data4: 2003935235
-    Path: event:/TrapTrigger
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
---- !u!1 &1419477637 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-  m_PrefabInstance: {fileID: 232557361}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1419477643
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1419477637}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 695192087
-      Data2: 1234691662
-      Data3: 1124800179
-      Data4: 2003935235
-    Path: event:/TrapTrigger
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1001 &1423555882
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11592,54 +11251,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64432161708330368, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1807937925}
     - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
       propertyPath: objetoAlvo
       value: 
-      objectReference: {fileID: 1490018423}
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoBox
+      value: 
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoCapsula
+      value: 
+      objectReference: {fileID: 65694180}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1423555889}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
 --- !u!4 &1423555883 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4512172318196280, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
   m_PrefabInstance: {fileID: 1423555882}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1423555889
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1108357486}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 695192087
-      Data2: 1234691662
-      Data3: 1124800179
-      Data4: 2003935235
-    Path: event:/TrapTrigger
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1 &1423582113
 GameObject:
   m_ObjectHideFlags: 0
@@ -11976,47 +11617,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 582388100}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1450851237 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4099692367770755245, guid: eab45a9c49edaaa4fa2c5389a3b29888, type: 3}
-  m_PrefabInstance: {fileID: 7150921125654608923}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1453653809 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-  m_PrefabInstance: {fileID: 1057430523}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1453653815
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1453653809}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 695192087
-      Data2: 1234691662
-      Data3: 1124800179
-      Data4: 2003935235
-    Path: event:/TrapTrigger
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1001 &1458375530
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12069,17 +11669,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64432161708330368, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1807937925}
     - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
       propertyPath: objetoAlvo
       value: 
-      objectReference: {fileID: 1490018423}
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoBox
+      value: 
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoCapsula
+      value: 
+      objectReference: {fileID: 65694180}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1832583685}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
 --- !u!4 &1458375531 stripped
 Transform:
@@ -12278,54 +11891,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64432161708330368, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1807937925}
     - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
       propertyPath: objetoAlvo
       value: 
-      objectReference: {fileID: 1490018423}
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoBox
+      value: 
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoCapsula
+      value: 
+      objectReference: {fileID: 65694180}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1466883439}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
 --- !u!4 &1466883433 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4512172318196280, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
   m_PrefabInstance: {fileID: 1466883432}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1466883439
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 210836063}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 695192087
-      Data2: 1234691662
-      Data3: 1124800179
-      Data4: 2003935235
-    Path: event:/TrapTrigger
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1001 &1468697319
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12378,95 +11973,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64432161708330368, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1807937925}
     - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
       propertyPath: objetoAlvo
       value: 
-      objectReference: {fileID: 1490018423}
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoBox
+      value: 
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoCapsula
+      value: 
+      objectReference: {fileID: 65694180}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1468697326}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
 --- !u!4 &1468697320 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4512172318196280, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
   m_PrefabInstance: {fileID: 1468697319}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1468697326
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 289353238}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 695192087
-      Data2: 1234691662
-      Data3: 1124800179
-      Data4: 2003935235
-    Path: event:/TrapTrigger
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
---- !u!1 &1480069872 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-  m_PrefabInstance: {fileID: 1738365043}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1489324719 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-  m_PrefabInstance: {fileID: 163235881}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1489324725
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1489324719}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 695192087
-      Data2: 1234691662
-      Data3: 1124800179
-      Data4: 2003935235
-    Path: event:/TrapTrigger
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1001 &1489784879
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12519,17 +12055,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64432161708330368, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1807937925}
     - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
       propertyPath: objetoAlvo
       value: 
-      objectReference: {fileID: 1490018423}
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoBox
+      value: 
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoCapsula
+      value: 
+      objectReference: {fileID: 65694180}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1876985219}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
 --- !u!4 &1489784880 stripped
 Transform:
@@ -12773,42 +12322,6 @@ MonoBehaviour:
       Data3: -458017918
       Data4: 792554001
     Path: event:/WoodenDoor
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
---- !u!1 &1516082837 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-  m_PrefabInstance: {fileID: 1274937802}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1516082843
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1516082837}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 695192087
-      Data2: 1234691662
-      Data3: 1124800179
-      Data4: 2003935235
-    Path: event:/TrapTrigger
   Event: 
   EventPlayTrigger: 0
   EventStopTrigger: 0
@@ -13249,17 +12762,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64432161708330368, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1807937925}
     - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
       propertyPath: objetoAlvo
       value: 
-      objectReference: {fileID: 1490018423}
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoBox
+      value: 
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoCapsula
+      value: 
+      objectReference: {fileID: 65694180}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1665051751}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
 --- !u!4 &1551117966 stripped
 Transform:
@@ -13399,204 +12925,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64432161708330368, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1807937925}
     - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
       propertyPath: objetoAlvo
       value: 
-      objectReference: {fileID: 1490018423}
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoBox
+      value: 
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoCapsula
+      value: 
+      objectReference: {fileID: 65694180}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1596218270}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
 --- !u!4 &1596218264 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4512172318196280, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
   m_PrefabInstance: {fileID: 1596218263}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1596218270
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 435181538}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 695192087
-      Data2: 1234691662
-      Data3: 1124800179
-      Data4: 2003935235
-    Path: event:/TrapTrigger
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
---- !u!1 &1619143938
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1619143943}
-  - component: {fileID: 1619143942}
-  - component: {fileID: 1619143941}
-  - component: {fileID: 1619143940}
-  - component: {fileID: 1619143939}
-  - component: {fileID: 1619143944}
-  m_Layer: 0
-  m_Name: Plane
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1619143939
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1619143938}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7edc63976706536409cf4769ac9e9c07, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Armadilha
-  objetoAlvo: {fileID: 1490018423}
-  trapSound: {fileID: 0}
---- !u!64 &1619143940
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1619143938}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &1619143941
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1619143938}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1619143942
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1619143938}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1619143943
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1619143938}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.53576, y: -0.01, z: -5.4}
-  m_LocalScale: {x: 0.9359694, y: 0.19566, z: 0.043115143}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 648765236}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1619143944
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1619143938}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 10, y: 2.2204459e-16, z: 9.999999}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1621078124
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13924,17 +13282,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64432161708330368, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1807937925}
     - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
       propertyPath: objetoAlvo
       value: 
-      objectReference: {fileID: 1490018423}
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoBox
+      value: 
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoCapsula
+      value: 
+      objectReference: {fileID: 65694180}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1965689047}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
 --- !u!4 &1637535406 stripped
 Transform:
@@ -13977,114 +13348,6 @@ Transform:
   - {fileID: 1675512086}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1665051745 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-  m_PrefabInstance: {fileID: 1551117965}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1665051751
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1665051745}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 695192087
-      Data2: 1234691662
-      Data3: 1124800179
-      Data4: 2003935235
-    Path: event:/TrapTrigger
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
---- !u!1 &1667366833 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-  m_PrefabInstance: {fileID: 484938837}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1667366839
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1667366833}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 695192087
-      Data2: 1234691662
-      Data3: 1124800179
-      Data4: 2003935235
-    Path: event:/TrapTrigger
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
---- !u!1 &1667479636 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-  m_PrefabInstance: {fileID: 788793776}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1667479642
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1667479636}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 695192087
-      Data2: 1234691662
-      Data3: 1124800179
-      Data4: 2003935235
-    Path: event:/TrapTrigger
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!4 &1675512086 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2498504952586042402, guid: 5dd5a1ab6047d4848b7668734815016f, type: 3}
@@ -14163,42 +13426,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1346975475223392631, guid: cf94eb26842951a4b92f30bde9cd1d17, type: 3}
   m_PrefabInstance: {fileID: 1680547398}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1690175567 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-  m_PrefabInstance: {fileID: 498099162}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1690175573
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1690175567}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 695192087
-      Data2: 1234691662
-      Data3: 1124800179
-      Data4: 2003935235
-    Path: event:/TrapTrigger
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1 &1698271785
 GameObject:
   m_ObjectHideFlags: 0
@@ -14360,42 +13587,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1215909194585254843, guid: 6ae6274da19e4d440b2b517879201b36, type: 3}
   m_PrefabInstance: {fileID: 1705869542}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1709737282 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-  m_PrefabInstance: {fileID: 526538130}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1709737288
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1709737282}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 695192087
-      Data2: 1234691662
-      Data3: 1124800179
-      Data4: 2003935235
-    Path: event:/TrapTrigger
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1 &1710457917
 GameObject:
   m_ObjectHideFlags: 0
@@ -14444,42 +13635,6 @@ Transform:
   - {fileID: 810178940}
   m_Father: {fileID: 648765236}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1710921499 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-  m_PrefabInstance: {fileID: 200489979}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1710921505
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1710921499}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 695192087
-      Data2: 1234691662
-      Data3: 1124800179
-      Data4: 2003935235
-    Path: event:/TrapTrigger
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1 &1713310651
 GameObject:
   m_ObjectHideFlags: 0
@@ -15042,54 +14197,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64432161708330368, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1807937925}
     - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
       propertyPath: objetoAlvo
       value: 
-      objectReference: {fileID: 1490018423}
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoBox
+      value: 
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoCapsula
+      value: 
+      objectReference: {fileID: 65694180}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1738365050}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
 --- !u!4 &1738365044 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4512172318196280, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
   m_PrefabInstance: {fileID: 1738365043}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1738365050
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1480069872}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 695192087
-      Data2: 1234691662
-      Data3: 1124800179
-      Data4: 2003935235
-    Path: event:/TrapTrigger
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1 &1740115049 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100012, guid: 63878c47173aa774687bf1dcb9a14938, type: 3}
@@ -15116,42 +14253,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.6678, y: 0.08825288, z: 1.3006767}
   m_Center: {x: -0.3673026, y: 0.04320041, z: 0.000986935}
---- !u!1 &1740206803 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-  m_PrefabInstance: {fileID: 605649379}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1740206809
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1740206803}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 695192087
-      Data2: 1234691662
-      Data3: 1124800179
-      Data4: 2003935235
-    Path: event:/TrapTrigger
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1001 &1762483936
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15293,17 +14394,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64432161708330368, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1807937925}
     - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
       propertyPath: objetoAlvo
       value: 
-      objectReference: {fileID: 1490018423}
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoBox
+      value: 
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoCapsula
+      value: 
+      objectReference: {fileID: 65694180}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1894230079}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
 --- !u!4 &1768384948 stripped
 Transform:
@@ -15499,59 +14613,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64432161708330368, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1807937925}
     - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
       propertyPath: objetoAlvo
       value: 
-      objectReference: {fileID: 1490018423}
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoBox
+      value: 
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoCapsula
+      value: 
+      objectReference: {fileID: 65694180}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2006053936}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
 --- !u!4 &1783712385 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4512172318196280, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
   m_PrefabInstance: {fileID: 1783712384}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1803714530 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-  m_PrefabInstance: {fileID: 1217560662}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1803714536
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1803714530}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 695192087
-      Data2: 1234691662
-      Data3: 1124800179
-      Data4: 2003935235
-    Path: event:/TrapTrigger
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1001 &1804429324
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15737,6 +14828,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4984e87189335404582418ab6081ba2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerInteraction
+--- !u!114 &1807937925 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2726557219122891078, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
+  m_PrefabInstance: {fileID: 871949882}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65694180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8fa8fa8ee8a7364b8f307c503944e39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FirstPersonMovement
 --- !u!1001 &1827864164
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15789,95 +14891,41 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64432161708330368, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1807937925}
     - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
       propertyPath: objetoAlvo
       value: 
-      objectReference: {fileID: 1490018423}
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoBox
+      value: 
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoCapsula
+      value: 
+      objectReference: {fileID: 65694180}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1827864171}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
 --- !u!4 &1827864165 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4512172318196280, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
   m_PrefabInstance: {fileID: 1827864164}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1827864171
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1157624750}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 695192087
-      Data2: 1234691662
-      Data3: 1124800179
-      Data4: 2003935235
-    Path: event:/TrapTrigger
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!4 &1831512204 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7104316468628707942, guid: 3e719a14335c40c4681ba700aeb5a17a, type: 3}
   m_PrefabInstance: {fileID: 557244966}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1832583679 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-  m_PrefabInstance: {fileID: 1458375530}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1832583685
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1832583679}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 695192087
-      Data2: 1234691662
-      Data3: 1124800179
-      Data4: 2003935235
-    Path: event:/TrapTrigger
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1001 &1838042354
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15930,54 +14978,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64432161708330368, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1807937925}
     - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
       propertyPath: objetoAlvo
       value: 
-      objectReference: {fileID: 1490018423}
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoBox
+      value: 
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoCapsula
+      value: 
+      objectReference: {fileID: 65694180}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1838042361}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
 --- !u!4 &1838042355 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4512172318196280, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
   m_PrefabInstance: {fileID: 1838042354}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1838042361
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 104710302}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 695192087
-      Data2: 1234691662
-      Data3: 1124800179
-      Data4: 2003935235
-    Path: event:/TrapTrigger
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1 &1845580088
 GameObject:
   m_ObjectHideFlags: 0
@@ -16167,42 +15197,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7104316468628707942, guid: 3e719a14335c40c4681ba700aeb5a17a, type: 3}
   m_PrefabInstance: {fileID: 1433288882}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1876985213 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-  m_PrefabInstance: {fileID: 1489784879}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1876985219
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1876985213}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 695192087
-      Data2: 1234691662
-      Data3: 1124800179
-      Data4: 2003935235
-    Path: event:/TrapTrigger
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!4 &1886866552 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7636723064886273277, guid: c78b24518f3f85e4c80bbb88d5865ff6, type: 3}
@@ -16242,78 +15236,6 @@ Transform:
   - {fileID: 1225724926}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1894230073 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-  m_PrefabInstance: {fileID: 1768384947}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1894230079
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1894230073}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 695192087
-      Data2: 1234691662
-      Data3: 1124800179
-      Data4: 2003935235
-    Path: event:/TrapTrigger
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
---- !u!1 &1914251198 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-  m_PrefabInstance: {fileID: 864725}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1914251204
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1914251198}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 695192087
-      Data2: 1234691662
-      Data3: 1124800179
-      Data4: 2003935235
-    Path: event:/TrapTrigger
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1001 &1940531764
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16643,42 +15565,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.46, y: 0.3, z: 0.36}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &1965689041 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-  m_PrefabInstance: {fileID: 1637535405}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1965689047
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1965689041}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 695192087
-      Data2: 1234691662
-      Data3: 1124800179
-      Data4: 2003935235
-    Path: event:/TrapTrigger
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1 &1965766581
 GameObject:
   m_ObjectHideFlags: 0
@@ -16871,78 +15757,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1980925739}
   m_CullTransparentMesh: 1
---- !u!1 &1985890535 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-  m_PrefabInstance: {fileID: 617066295}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1985890541
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1985890535}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 695192087
-      Data2: 1234691662
-      Data3: 1124800179
-      Data4: 2003935235
-    Path: event:/TrapTrigger
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
---- !u!1 &2006053930 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-  m_PrefabInstance: {fileID: 1783712384}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2006053936
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2006053930}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 695192087
-      Data2: 1234691662
-      Data3: 1124800179
-      Data4: 2003935235
-    Path: event:/TrapTrigger
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1 &2026884401
 GameObject:
   m_ObjectHideFlags: 0
@@ -17236,42 +16050,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2040632733}
   m_CullTransparentMesh: 1
---- !u!1 &2058910185 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-  m_PrefabInstance: {fileID: 430731655}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2058910191
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2058910185}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 695192087
-      Data2: 1234691662
-      Data3: 1124800179
-      Data4: 2003935235
-    Path: event:/TrapTrigger
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1001 &2060099783
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17487,42 +16265,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1215909194585254843, guid: 6ae6274da19e4d440b2b517879201b36, type: 3}
   m_PrefabInstance: {fileID: 870809367}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2069137754 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-  m_PrefabInstance: {fileID: 576164579}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2069137760
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2069137754}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 695192087
-      Data2: 1234691662
-      Data3: 1124800179
-      Data4: 2003935235
-    Path: event:/TrapTrigger
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1001 &2085105308
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18250,54 +16992,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64432161708330368, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1807937925}
     - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
       propertyPath: objetoAlvo
       value: 
-      objectReference: {fileID: 1490018423}
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoBox
+      value: 
+      objectReference: {fileID: 65694180}
+    - target: {fileID: 961064190101680202, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
+      propertyPath: objetoAlvoCapsula
+      value: 
+      objectReference: {fileID: 65694180}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1670366538259734, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2145547401}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
 --- !u!4 &2145547395 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4512172318196280, guid: 567fb9dbf554c054297a8e04a1932e2f, type: 3}
   m_PrefabInstance: {fileID: 2145547394}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2145547401
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 651880774}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 695192087
-      Data2: 1234691662
-      Data3: 1124800179
-      Data4: 2003935235
-    Path: event:/TrapTrigger
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1001 &7150921125654608923
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18353,30 +17077,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4099692367770755245, guid: eab45a9c49edaaa4fa2c5389a3b29888, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 7150921125654608925}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eab45a9c49edaaa4fa2c5389a3b29888, type: 3}
 --- !u!4 &7150921125654608924 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5731761584504813892, guid: eab45a9c49edaaa4fa2c5389a3b29888, type: 3}
   m_PrefabInstance: {fileID: 7150921125654608923}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &7150921125654608925
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1450851237}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7edc63976706536409cf4769ac9e9c07, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Armadilha
-  objetoAlvo: {fileID: 1490018423}
-  trapSound: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

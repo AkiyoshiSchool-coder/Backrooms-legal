@@ -5,32 +5,33 @@ using FMODUnity;
 
 public class Armadilha : MonoBehaviour
 {
-    [SerializeField]  GameObject objetoAlvo; 
-    private BoxCollider meuColisor;
+    [SerializeField] GameObject objetoAlvoCapsula; 
+    private CapsuleCollider meuColisorCapsula;
+    [SerializeField] GameObject objetoAlvoBox; 
+    private BoxCollider meuColisorBox;
     [SerializeField] private StudioEventEmitter trapSound;
+    [SerializeField] private FirstPersonMovement player;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        meuColisor = objetoAlvo.GetComponent<BoxCollider>();
-        meuColisor.enabled = true;
+        meuColisorCapsula = objetoAlvoCapsula.GetComponent<CapsuleCollider>();
+        meuColisorCapsula.enabled = true;
+        meuColisorBox = objetoAlvoBox.GetComponent<BoxCollider>();
+        meuColisorBox.enabled = true;
         trapSound = gameObject.GetComponent<StudioEventEmitter>();
     }
 
     void ReativarComponente()
     {
-        if (objetoAlvo != null)
-        {
-            if (meuColisor != null)
-            {
-                meuColisor.enabled = true;
-                Destroy(this.gameObject);
-            }
-        }
+        meuColisorCapsula.enabled = true;
+        meuColisorBox.enabled = true;
+        player.Stop(false);
+        Destroy(this.gameObject);
     }
 
     IEnumerator Timer()
     {
-        yield return new WaitForSeconds(0.45f);
+        yield return new WaitForSeconds(0.7f);
         ReativarComponente();
         yield break;
     }
@@ -38,14 +39,10 @@ public class Armadilha : MonoBehaviour
     // Update is called once per frame
     void OnTriggerEnter(Collider other)
     {
-        if (objetoAlvo != null)
-        {
-            if (meuColisor != null)
-            {
-                //trapSound.Play();
-                meuColisor.enabled = false;
-                StartCoroutine("Timer");
-            }
-        }
+        meuColisorCapsula.enabled = false;
+        meuColisorBox.enabled = false;
+        trapSound.Play();
+        StartCoroutine("Timer");
+        player.Stop(true);
     }
 }
