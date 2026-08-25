@@ -32,7 +32,7 @@ public class FirstPersonLook : MonoBehaviour
     void Start()
     {
         // Lock the mouse cursor to the game screen.
-        Cursor.lockState = CursorLockMode.Locked;
+       // Cursor.lockState = CursorLockMode.Locked;
         lookAction = InputSystem.actions.FindAction("Look");
         zoomAction = InputSystem.actions.FindAction("Zoom");
 
