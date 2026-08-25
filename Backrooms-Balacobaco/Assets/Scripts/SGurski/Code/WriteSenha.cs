@@ -9,6 +9,6 @@ public class WriteSenha : MonoBehaviour
     public void Init(PasswordCode pass)
     {
         passcode = pass;
-        textoSenha.text = passcode.sendSenha();
+        textoSenha.text = passcode.sendSenha(); // manda a senha pro papel
     }
 }
