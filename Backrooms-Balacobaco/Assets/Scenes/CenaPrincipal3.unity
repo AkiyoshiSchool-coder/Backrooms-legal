@@ -7198,6 +7198,10 @@ PrefabInstance:
       propertyPath: MyCamera
       value: 
       objectReference: {fileID: 582388100}
+    - target: {fileID: 4098798696146888099, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
+      propertyPath: EventStopTrigger
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4609453899747716903, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
       propertyPath: textochave
       value: 
