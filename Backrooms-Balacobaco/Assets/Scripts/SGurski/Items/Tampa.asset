@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Tampa
   m_EditorClassIdentifier: Assembly-CSharp::Item
   canGrab: 1
-  audio: {fileID: 0}
-  texto: Zoom - Pressionar scroll
+  texto: 
   canRotate: 1
   inHand: 0
   hasExtraAction: 0

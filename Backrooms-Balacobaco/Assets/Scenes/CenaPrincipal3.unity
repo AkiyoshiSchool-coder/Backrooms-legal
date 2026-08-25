@@ -4092,7 +4092,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &524614087
 Animator:
   serializedVersion: 7
@@ -15957,6 +15957,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1965766582}
   - component: {fileID: 1965766583}
+  - component: {fileID: 1965766584}
   m_Layer: 5
   m_Name: PauseMenu
   m_TagString: Untagged
@@ -16002,6 +16003,38 @@ MonoBehaviour:
   controlesMenu: {fileID: 487410395}
   pauseMenu: {fileID: 984845700}
   playerCode: {fileID: 1807937924}
+  audioEmitter: {fileID: 1965766584}
+--- !u!114 &1965766584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965766581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -388697849
+      Data2: 1176441554
+      Data3: 370034358
+      Data4: -2106493394
+    Path: event:/Safe/Safe-Button
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1980925739
 GameObject:
   m_ObjectHideFlags: 0
