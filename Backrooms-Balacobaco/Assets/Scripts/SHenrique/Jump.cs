@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.InputSystem;
+using System.Collections;
 
 public class Jump : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class Jump : MonoBehaviour
     GroundCheck groundCheck;
     private InputAction jumpAction;
     Rigidbody box;
+    bool chao;
+    [SerializeField] private float tempo;
 
     void Reset()
     {
@@ -34,10 +37,21 @@ public class Jump : MonoBehaviour
             
             if (box != null)  //Se o Push script da box um valor ela se move com ele
             {
-                box.AddForce(Vector3.up * 100 * jumpStrength);
+                box.constraints &= ~RigidbodyConstraints.FreezePositionY;
+                box.AddForce(Vector3.up * 100 * jumpStrength); 
+                StartCoroutine(TempoParaVoltar());
             }
             
             Jumped?.Invoke();
+        }
+    }
+
+    IEnumerator TempoParaVoltar()
+    {
+        yield return new WaitForSeconds(tempo);
+        if (box != null)  //Se o Push script da box um valor ela se move com ele
+        {
+            box.constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotation;;
         }
     }
 
@@ -48,6 +62,9 @@ public class Jump : MonoBehaviour
 
     public void StopPushing() //chamado pelo Push Script
     {
-        box = null;
+        if(box != null)
+        {
+            box = null;
+        }
     }
 }

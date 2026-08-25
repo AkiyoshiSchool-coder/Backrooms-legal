@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Garrafa
   m_EditorClassIdentifier: Assembly-CSharp::Item
   canGrab: 1
-  audio: {fileID: 0}
-  texto: Abrir garrafa - F
+  texto: "Intera\xE7\xE3o extra - F"
   canRotate: 1
   inHand: 0
   hasExtraAction: 1
