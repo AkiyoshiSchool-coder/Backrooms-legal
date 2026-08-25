@@ -128,6 +128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::QuebrarVidro
   timer: 0.001
   glassBreak: {fileID: -7693748474629038267}
+  cacoVidro: {fileID: 7104053683348163478, guid: 456873ee5a015824e80bd63cd9e281bf, type: 3}
 --- !u!114 &-7693748474629038267
 MonoBehaviour:
   m_ObjectHideFlags: 0
