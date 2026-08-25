@@ -90,12 +90,11 @@ public class Push : MonoBehaviour
                     UIManager.instance.ChangeColor(colorNew);
                     caixaSound.Play();
 
-                    rb.constraints &= ~RigidbodyConstraints.FreezePositionX;
-                    rb.constraints &= ~RigidbodyConstraints.FreezePositionY;
-                    rb.constraints &= ~RigidbodyConstraints.FreezePositionZ;
+                    rb.constraints &= ~RigidbodyConstraints.FreezePosition;
     
                     if(pegavel == true)
                     {
+                        rb.constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotation;
                         objpuxavel.transform.position = box.transform.position;
                         firstPersonMovement.PushingObject(rb);
                         jump.PushingObject(rb);
@@ -113,9 +112,7 @@ public class Push : MonoBehaviour
     {
         firstPersonMovement.StopPushing();
         jump.StopPushing();
-        rb.constraints &= ~RigidbodyConstraints.FreezePositionX;
-        rb.constraints &= ~RigidbodyConstraints.FreezePositionY;
-        rb.constraints &= ~RigidbodyConstraints.FreezePositionZ;
+        rb.constraints &= ~RigidbodyConstraints.FreezePosition;
     
         if (objpuxavel != null)
         {

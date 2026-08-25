@@ -7146,6 +7146,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -1116358540801230556, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
+      propertyPath: tempo
+      value: 1.1
+      objectReference: {fileID: 0}
     - target: {fileID: 2343381427822934097, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
       propertyPath: cam
       value: 
@@ -7210,6 +7214,10 @@ PrefabInstance:
       propertyPath: OnFinishView.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 582388095}
+    - target: {fileID: 2406481937503994769, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.081
+      objectReference: {fileID: 0}
     - target: {fileID: 2536667789107392207, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
       propertyPath: m_Size.y
       value: 0.4
@@ -7220,7 +7228,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2536667789107392207, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
       propertyPath: m_Center.y
-      value: 0.45
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 2633877100225383704, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
       propertyPath: normal
