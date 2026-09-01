@@ -1414,7 +1414,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize2D: {x: 0.5, y: 0.5}
   m_Shadows:
-    m_Type: 2
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -3585,6 +3585,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BR_Wall_A_1x3 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 9178201192224070342, guid: 6ae6274da19e4d440b2b517879201b36, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -4989,7 +4993,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FirstPersonLook
   character: {fileID: 1591251739}
-  baseSensivity: 2
+  baseSensivity: 8
+  mobileSensivity: 1
   smoothing: 1.5
   mcam: {fileID: 1394339172}
   mcamControl: {fileID: 1394339169}
@@ -7634,6 +7639,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2085105313}
     - target: {fileID: 2343381427822934097, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343381427822934097, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
       propertyPath: pauseMenu
       value: 
       objectReference: {fileID: 1965766581}
@@ -7733,6 +7742,10 @@ PrefabInstance:
       propertyPath: MyCamera
       value: 
       objectReference: {fileID: 582388100}
+    - target: {fileID: 2726557219122891078, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4098798696146888099, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
       propertyPath: EventStopTrigger
       value: 2
@@ -7802,6 +7815,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1891276645}
     m_Modifications:
+    - target: {fileID: 4763684091357699537, guid: 78db1c7ad4147da4bbb9b983c5efb3cc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8204122550754738483, guid: 78db1c7ad4147da4bbb9b983c5efb3cc, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.5
@@ -7867,7 +7884,8 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 4763684091357699537, guid: 78db1c7ad4147da4bbb9b983c5efb3cc, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8204122550754738483, guid: 78db1c7ad4147da4bbb9b983c5efb3cc, type: 3}
       insertIndex: -1
@@ -11839,7 +11857,7 @@ MonoBehaviour:
       Enabled: 1
       Input:
         InputAction: {fileID: -5630151704836100654, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-        Gain: 8
+        Gain: 1
         CancelDeltaTime: 0
       InputValue: 0
       Driver:
@@ -11850,7 +11868,7 @@ MonoBehaviour:
       Enabled: 1
       Input:
         InputAction: {fileID: -5630151704836100654, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-        Gain: -8
+        Gain: -1
         CancelDeltaTime: 0
       InputValue: 0
       Driver:
@@ -13653,13 +13671,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1535029924}
+  - component: {fileID: 1535029925}
   m_Layer: 5
   m_Name: MobileControls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1535029924
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13685,6 +13704,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1535029925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535029923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b672b86dd602be444bae7a6232b50fc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HideOnPlatform
 --- !u!1001 &1551117965
 PrefabInstance:
   m_ObjectHideFlags: 0

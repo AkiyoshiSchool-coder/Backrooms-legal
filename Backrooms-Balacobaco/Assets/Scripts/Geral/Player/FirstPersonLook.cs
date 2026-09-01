@@ -8,7 +8,7 @@ public class FirstPersonLook : MonoBehaviour
     [SerializeField]
     Transform character;
     private float sensitivity = 2f;
-    public float baseSensivity = 2f;
+    public float baseSensivity, mobileSensivity;
     public float smoothing = 1.5f;
 
     [SerializeField] private CinemachineCamera mcam;
@@ -31,6 +31,16 @@ public class FirstPersonLook : MonoBehaviour
 
     void Start()
     {
+        if(Application.platform == RuntimePlatform.Android)
+        {
+            mcamControl.Controllers[0].Input.Gain = mobileSensivity; 
+            mcamControl.Controllers[1].Input.Gain = -mobileSensivity; 
+        }
+        else
+        {
+            mcamControl.Controllers[0].Input.Gain = baseSensivity; 
+            mcamControl.Controllers[1].Input.Gain = -baseSensivity; 
+        }
         // Lock the mouse cursor to the game screen.
        // Cursor.lockState = CursorLockMode.Locked;
         lookAction = InputSystem.actions.FindAction("Look");
