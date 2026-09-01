@@ -51,7 +51,7 @@ public class Jump : MonoBehaviour
         yield return new WaitForSeconds(tempo);
         if (box != null)  //Se o Push script da box um valor ela se move com ele
         {
-            box.constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotation;;
+            box.constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotation;
         }
     }
 
