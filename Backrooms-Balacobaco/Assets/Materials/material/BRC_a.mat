@@ -21,23 +21,24 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: BRC_a
-  m_Shader: {fileID: 4800000, guid: be891319084e9d147b09d89e80ce60e0, type: 3}
+  m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
   m_Parent: {fileID: 2100000, guid: cb0464f8701509943bae772ab57e7831, type: 2}
   m_ModifiedSerializedProperties: 18
   m_ValidKeywords:
   - _ALPHATEST_ON
+  - _EMISSION
+  m_InvalidKeywords:
   - _EMISSIVE_SIMPLE
   - _IS_CLIPPING_OFF
   - _IS_OUTLINE_CLIPPING_NO
   - _OUTLINE_NML
-  m_InvalidKeywords: []
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 2450
   stringTagMap:
     IgnoreProjection: False
-    RenderType: Opaque
+    RenderType: TransparentCutout
   disabledShaderPasses:
   - MOTIONVECTORS
   - SRPDEFAULTUNLIT
@@ -53,6 +54,14 @@ Material:
         m_Texture: {fileID: 2800000, guid: 15dfa3c010118034fb6e9efde7367c14, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _BaseMap:
+        m_Texture: {fileID: 2800000, guid: 8ba1b5d08f3b8ac4583d4e43f928d1e1, type: 3}
+        m_Scale: {x: 1.85, y: 1.85}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 2800000, guid: ed4c2bed136d14f44ba64de595acfa64, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _Emissive_Tex:
         m_Texture: {fileID: 2800000, guid: ed4c2bed136d14f44ba64de595acfa64, type: 3}
         m_Scale: {x: 1.5, y: 1.5}
@@ -63,8 +72,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: 8ba1b5d08f3b8ac4583d4e43f928d1e1, type: 3}
-        m_Scale: {x: 1.5, y: 1.5}
-        m_Offset: {x: 0.6, y: 0.57}
+        m_Scale: {x: 1.85, y: 1.85}
+        m_Offset: {x: 0, y: 0}
     - _NormalMap:
         m_Texture: {fileID: 2800000, guid: 1345e96359ba4eb45b8b65bbf6e42aa5, type: 3}
         m_Scale: {x: 1.5, y: 1.5}
@@ -105,8 +114,8 @@ Material:
     m_Colors:
     - _1st_ShadeColor: {r: 0.46666667, g: 0.5686275, b: 0.41960785, a: 1}
     - _2nd_ShadeColor: {r: 0, g: 0, b: 0, a: 1}
-    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _BaseColor: {r: 0.9843137, g: 1, b: 0.45882353, a: 1}
+    - _Color: {r: 0.98431367, g: 1, b: 0.45882344, a: 1}
     - _EmissionColor: {r: 5.7965837, g: 8.063651, b: 9.533959, a: 1}
     - _Emissive_Color: {r: 0.7490197, g: 0.7490197, b: 0.7490197, a: 1}
     - _HighColor: {r: 1, g: 1, b: 1, a: 1}

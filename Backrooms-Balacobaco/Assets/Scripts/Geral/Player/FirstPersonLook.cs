@@ -42,7 +42,7 @@ public class FirstPersonLook : MonoBehaviour
             mcamControl.Controllers[1].Input.Gain = -baseSensivity; 
         }
         // Lock the mouse cursor to the game screen.
-       // Cursor.lockState = CursorLockMode.Locked;
+        Cursor.lockState = CursorLockMode.Locked;
         lookAction = InputSystem.actions.FindAction("Look");
         zoomAction = InputSystem.actions.FindAction("Zoom");
 
