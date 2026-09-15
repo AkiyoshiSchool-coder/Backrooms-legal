@@ -384,6 +384,7 @@ MonoBehaviour:
   tampaSpawn: {fileID: 0}
   thisTampa: {fileID: 0}
   passcode: {fileID: 0}
+  openBottle: {fileID: 0}
 --- !u!114 &-2093802763327252932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -417,7 +418,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.002
+  m_Radius: 0.005
   m_Center: {x: 0.0000001254084, y: 0.0000034224659, z: -0.000096728225}
 --- !u!114 &5428354633407091228
 MonoBehaviour:
