@@ -212,8 +212,11 @@ public class PlayerInteraction : MonoBehaviour
         canFinish = true;
         if(currentObject.item.canGrab)
         {
-            UIManager.instance.InteractText(true);
-            UIManager.instance.ExtraText(currentObject.item.texto);
+            if(Application.platform != RuntimePlatform.Android)
+            {
+                UIManager.instance.InteractText(true);
+                UIManager.instance.ExtraText(currentObject.item.texto);
+            }
             dropButton.SetActive(true);
         }
     }
@@ -299,7 +302,10 @@ public class PlayerInteraction : MonoBehaviour
         heldItem.isMoving = false;
         if(interacting == true && currentObject.item.canGrab)
         {
-            UIManager.instance.InteractText(true);
+            if(Application.platform != RuntimePlatform.Android)
+            {
+                UIManager.instance.InteractText(true);
+            }
             dropButton.SetActive(true);
         }
         else
