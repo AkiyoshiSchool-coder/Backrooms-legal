@@ -9,7 +9,7 @@ public class RepositionPlatform : MonoBehaviour
 
     void Start()
     {
-        if(Application.platform == RuntimePlatform.WindowsEditor)
+        if(Application.platform == RuntimePlatform.Android)
         {
             objectPos.anchoredPosition = objectPos.anchoredPosition+pos;
             objectPos.localScale = objectPos.localScale*mobileScale;

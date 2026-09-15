@@ -7901,6 +7901,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 966137958}
     - target: {fileID: 2343381427822934097, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
+      propertyPath: keyHUD
+      value: 
+      objectReference: {fileID: 1713310651}
+    - target: {fileID: 2343381427822934097, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
       propertyPath: handPos
       value: 
       objectReference: {fileID: 368907643}
@@ -7916,6 +7920,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2343381427822934097, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
+      propertyPath: mobileHUD
+      value: 
+      objectReference: {fileID: 1535029923}
     - target: {fileID: 2343381427822934097, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
       propertyPath: pauseMenu
       value: 
@@ -17369,6 +17377,7 @@ GameObject:
   - component: {fileID: 1965766582}
   - component: {fileID: 1965766583}
   - component: {fileID: 1965766584}
+  - component: {fileID: 1965766585}
   m_Layer: 5
   m_Name: PauseMenu
   m_TagString: Untagged
@@ -17446,6 +17455,21 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
+--- !u!114 &1965766585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965766581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bfa577684aca6f4bb2117ac151cfcd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RepositionPlatform
+  pos: {x: 0, y: 0}
+  mobileScale: {x: 0.9, y: 0.9}
+  objectPos: {fileID: 1965766582}
 --- !u!1 &1980925739
 GameObject:
   m_ObjectHideFlags: 0

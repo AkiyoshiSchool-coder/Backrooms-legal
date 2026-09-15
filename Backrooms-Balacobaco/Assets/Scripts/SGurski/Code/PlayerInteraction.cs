@@ -50,7 +50,7 @@ public class PlayerInteraction : MonoBehaviour
     public FirstPersonLook camMovement;
     public PasswordCode passwordCode;
     public BottleSpin bottleCode;
-    public GameObject pauseMenu;
+    public GameObject pauseMenu, mobileHUD, keyHUD;
 
     public Interactables teste;
 
@@ -83,11 +83,18 @@ public class PlayerInteraction : MonoBehaviour
         {
             Cursor.lockState = CursorLockMode.None;
             InputActions.FindActionMap("Player").Disable();
+            mobileHUD.SetActive(false);
+            keyHUD.SetActive(false);
         }
         else
         {
             Cursor.lockState = CursorLockMode.Locked;
             InputActions.FindActionMap("Player").Enable();
+            if(Application.platform == RuntimePlatform.Android)
+            {
+                mobileHUD.SetActive(true);
+            }
+            keyHUD.SetActive(true);
         }
     }
 
