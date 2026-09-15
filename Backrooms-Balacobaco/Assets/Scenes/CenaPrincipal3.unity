@@ -5168,7 +5168,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FirstPersonLook
   character: {fileID: 1591251739}
   baseSensivity: 8
-  mobileSensivity: 1
+  mobileSensivity: 2
   smoothing: 1.5
   mcam: {fileID: 1394339172}
   mcamControl: {fileID: 1394339169}
