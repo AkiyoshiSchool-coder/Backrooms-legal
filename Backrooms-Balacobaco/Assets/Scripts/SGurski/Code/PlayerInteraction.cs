@@ -50,6 +50,7 @@ public class PlayerInteraction : MonoBehaviour
     public PasswordCode passwordCode;
     public BottleSpin bottleCode;
     public GameObject pauseMenu, mobileHUD, keyHUD;
+    public GameObject dropButton;
 
     public Interactables teste;
 
@@ -213,8 +214,10 @@ public class PlayerInteraction : MonoBehaviour
         {
             UIManager.instance.InteractText(true);
             UIManager.instance.ExtraText(currentObject.item.texto);
+            dropButton.SetActive(true);
         }
     }
+
     IEnumerator LockSound(StudioEventEmitter Lock, float timer)
     {
         yield return new WaitForSeconds(timer);
@@ -240,6 +243,7 @@ public class PlayerInteraction : MonoBehaviour
                 tableCraft.OnTable = true;
             } 
         }
+        dropButton.SetActive(false);
         canFinish = false;
         interacting = false;
         UIManager.instance.InteractText(false);

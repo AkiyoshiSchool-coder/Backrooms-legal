@@ -14,14 +14,12 @@ public class FirstPersonLook : MonoBehaviour
     [SerializeField] private CinemachineCamera mcam;
     [SerializeField] private CinemachineInputAxisController mcamControl;
 
-    [SerializeField] private float zoomVision = 30;
     [SerializeField] private float normalVision = 60;
 
     Vector2 velocity;
     Vector2 frameVelocity;
 
     private InputAction lookAction;
-    private InputAction zoomAction;
 
     void Reset()
     {
@@ -44,7 +42,6 @@ public class FirstPersonLook : MonoBehaviour
         // Lock the mouse cursor to the game screen.
         Cursor.lockState = CursorLockMode.Locked;
         lookAction = InputSystem.actions.FindAction("Look");
-        zoomAction = InputSystem.actions.FindAction("Zoom");
 
         sensitivity = baseSensivity;
     }
@@ -57,16 +54,6 @@ public class FirstPersonLook : MonoBehaviour
         frameVelocity = Vector2.Lerp(frameVelocity, rawFrameVelocity, 1 / smoothing);
         velocity += frameVelocity;
         velocity.y = Mathf.Clamp(velocity.y, -90, 90);
-
-        if(zoomAction.WasPressedThisFrame())
-        {
-            mcam.Lens.FieldOfView = zoomVision;
-        }
-
-        if(zoomAction.WasReleasedThisFrame())
-        {
-            mcam.Lens.FieldOfView = normalVision;
-        }
     }
 
     public void Freeze(bool freeze)
