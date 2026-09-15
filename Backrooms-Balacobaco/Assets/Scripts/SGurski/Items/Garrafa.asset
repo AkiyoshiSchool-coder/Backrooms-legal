@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Garrafa
   m_EditorClassIdentifier: Assembly-CSharp::Item
   canGrab: 1
-  texto: "Intera\xE7\xE3o extra - F"
+  texto: "Intera\xE7\xE3o extra - E"
   canRotate: 1
   inHand: 0
   hasExtraAction: 1
