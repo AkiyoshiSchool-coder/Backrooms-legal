@@ -300,10 +300,12 @@ public class PlayerInteraction : MonoBehaviour
         if(interacting == true && currentObject.item.canGrab)
         {
             UIManager.instance.InteractText(true);
+            dropButton.SetActive(true);
         }
         else
         {
             UIManager.instance.InteractText(false);
+            dropButton.SetActive(false);
         }
         canFinish = true;
         if(ghostPlacement.onPillar &&  Names[0] == Names[1])
