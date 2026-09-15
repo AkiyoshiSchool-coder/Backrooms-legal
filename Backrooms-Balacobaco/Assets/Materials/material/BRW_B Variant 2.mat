@@ -32,10 +32,14 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _BaseMap:
+        m_Texture: {fileID: 2800000, guid: 3d50928256f26f9428dbbec5d2b89f7d, type: 3}
+        m_Scale: {x: 0.7, y: 2}
+        m_Offset: {x: 0, y: 0.08}
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: 3d50928256f26f9428dbbec5d2b89f7d, type: 3}
-        m_Scale: {x: 4, y: 4}
-        m_Offset: {x: 0, y: 0}
+        m_Scale: {x: 0.7, y: 2}
+        m_Offset: {x: 0, y: 0.08}
     m_Ints: []
     m_Floats:
     - _1st_ShadeColor_Feather: 0.199
