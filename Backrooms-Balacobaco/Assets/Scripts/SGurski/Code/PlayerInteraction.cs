@@ -24,8 +24,7 @@ public class PlayerInteraction : MonoBehaviour
     private InputAction interactAction;
     private InputAction lookAction;
     private InputAction dropAction;
-    private InputAction extraAction;
-    private InputAction getInHandAction;
+    private InputAction actionButton;
     private InputAction pauseAction;
 
     public Transform ObjectViewer;
@@ -60,8 +59,7 @@ public class PlayerInteraction : MonoBehaviour
         interactAction = InputSystem.actions.FindAction("Interact");
         lookAction = InputSystem.actions.FindAction("Look");
         dropAction = InputSystem.actions.FindAction("Drop");
-        extraAction = InputSystem.actions.FindAction("Extra");
-        getInHandAction = InputSystem.actions.FindAction("Grab");
+        actionButton = InputSystem.actions.FindAction("Action");
         pauseAction = InputSystem.actions.FindAction("Pause");
         InputActions.FindActionMap("Player").Enable();
     }
@@ -115,7 +113,7 @@ public class PlayerInteraction : MonoBehaviour
                     return;
                 }
 
-                if(currentObject.item.hasExtraAction && canFinish && extraAction.WasPressedThisFrame())
+                if(currentObject.item.hasExtraAction && canFinish && actionButton.WasPressedThisFrame())
                 {
                     if(currentObject.item.name == "Garrafa")
                     {
@@ -141,7 +139,7 @@ public class PlayerInteraction : MonoBehaviour
                 }
             }
 
-            if(getInHandAction.WasPressedThisFrame() && canFinish)
+            if(actionButton.WasPressedThisFrame() && canFinish)
             {
                 GrabObject();
             }
