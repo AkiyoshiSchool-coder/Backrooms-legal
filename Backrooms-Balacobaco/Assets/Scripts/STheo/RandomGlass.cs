@@ -19,7 +19,6 @@ public class RandomGlass : MonoBehaviour
     void Start()
     {
         num = Random.Range(0,2);
-        print(num);
         if(num == 1)
         {
             vidroX = vidroX1; // 6.2f;
@@ -35,7 +34,6 @@ public class RandomGlass : MonoBehaviour
         Vidro();
 
         num = Random.Range(0,2);
-        print(num);
         if(num == 1)
         {
             vidroX = vidroX2; // 2f;
@@ -51,7 +49,6 @@ public class RandomGlass : MonoBehaviour
         Vidro();
 
         num = Random.Range(0,2);
-        print(num);
         if(num == 1)
         {
             vidroX = vidroX3; // -2.3f;
