@@ -9006,6 +9006,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4609453899747716903, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
+      propertyPath: keys
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4609453899747716903, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
       propertyPath: textochave
       value: 
       objectReference: {fileID: 1033173723}
@@ -17592,6 +17596,7 @@ GameObject:
   - component: {fileID: 1726108885}
   - component: {fileID: 1726108887}
   - component: {fileID: 1726108886}
+  - component: {fileID: 1726108888}
   m_Layer: 5
   m_Name: Texto
   m_TagString: Untagged
@@ -17718,6 +17723,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1726108884}
   m_CullTransparentMesh: 1
+--- !u!114 &1726108888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726108884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bfa577684aca6f4bb2117ac151cfcd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RepositionPlatform
+  pos: {x: 0, y: -150}
+  mobileScale: {x: 1, y: 1}
+  objectPos: {fileID: 1726108885}
 --- !u!1 &1730466050
 GameObject:
   m_ObjectHideFlags: 0
